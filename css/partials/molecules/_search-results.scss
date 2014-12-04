@@ -9,6 +9,25 @@
 	padding: 12px 10px;
 	position: relative;
 
+	.icon-twitter {
+		fill: rgb(85,172,238);
+	}
+	.icon-facebook {
+		fill: rgb(59,89,152);
+	}
+	.icon-googleplus {
+		fill: rgb(188,48,16);
+	}
+	.icon-youtube {
+		fill: rgb(239,69,15);
+	}
+	.icon-instagram {
+		fill: rgb(81,127,164);
+	}
+	.icon-flickr {
+		fill: rgb(85,17,238);
+	}
+
 	.result-stats {
 		position: absolute;
 		right: 10px;
@@ -21,7 +40,17 @@
 		display: inline-block;
 	}
 
+	.result-stats .icon {
+		margin: 0 0 0 10px;
+		fill: $lightgray;
+
+		&.icon-retweet {
+			top: 2px;
+		}
+	}
+
 	.result-stats .number {
+		color: $lightgray;
 		@include font-size(11);
 	}
 
