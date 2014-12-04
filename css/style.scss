@@ -1,0 +1,26 @@
+// Website's atmosphere
+@import "partials/config";
+
+// Sass mixins
+@import "partials/mixins";
+
+// Normalize
+@import "partials/normalize";
+
+// Library Documentation
+@import "partials/library";
+
+// Site-wide atoms
+@import "partials/atoms";
+
+// Molecules build with atoms
+@import "partials/molecules";
+
+// Organisms are made of molecules
+@import "partials/organisms";
+
+// Page scoped styles
+@import "partials/pages";
+
+// CSS3 animations
+@import "partials/animation";

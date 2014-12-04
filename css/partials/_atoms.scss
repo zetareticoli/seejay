@@ -1,0 +1,211 @@
+/* ==========================================================================
+   ATOMS
+   ========================================================================== */
+
+/* ==========================================================================
+  Global Styles
+  ========================================================================== */
+
+html {
+	background : white;
+	margin-top: 0 !important;
+	font-size: 16px;
+	-webkit-overflow-scrolling : touch;
+	-webkit-tap-highlight-color : $red;
+	-webkit-text-size-adjust : 100%;
+	-ms-text-size-adjust : 100%; 
+}
+
+body {
+	color: $textcolor;
+}
+
+* {
+	@include border-box;
+}
+
+img {
+	max-width : 100%;
+	border-width : 0;
+	vertical-align : middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+  	resize: vertical;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html,body {
+ 	font-family: $basefontfamily;
+	font-weight: $textfontweight;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	line-height: $baselineheight;
+}
+
+h1, h2, h3, h5 {
+	font-weight: $baseheadingfontweight;
+}
+
+h1 {
+	@include font-size($basefontsize * 1.75);
+	margin: 0px 0px 28px 0px;
+}
+
+h2 {
+	@include font-size($basefontsize * 1.5);
+	margin: 0px 0px 28px 0px;
+}
+
+h3 {
+	@include font-size($basefontsize * 1.25);
+	margin: 0px 0px 28px 0px;
+}
+
+h4 {
+	font-weight: 400;
+	font-style: normal;
+	@include font-size($basefontsize * 1.125);
+	margin: 0px 0px 28px 0px;
+}
+
+
+h5 {
+	font-size: 14px;
+	margin: 0px 0px 28px 0px;
+	text-transform: uppercase;
+}
+
+p,
+ol,
+ul,
+dl,
+address {
+	margin-bottom : $baselineheight;
+	@include font-size($basefontsize);
+	line-height : $baselineheight;
+	list-style-position: inside;
+}
+
+small {
+	@include font-size($smallfontsize);
+}
+
+strong {
+	font-weight: 400;
+}
+
+time {
+	@include font-size($smallerfontsize);
+	text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   Colours
+   ========================================================================== */
+
+a,
+a:visited,
+a:focus {
+	color: $red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $darkred;
+	@include transition(color .15s ease);
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/* ==========================================================================
+   Images & Textures
+   ========================================================================== */
+
+// avatar
+
+.avatar {
+	display: inline-block;
+}
+
+.avatar-sm {
+	width: 30px;
+	height: 30px;
+}
+
+.profile-avatar {
+	border: 5px solid $charcoal;
+	float: left;
+	@include rounded(100px);
+	width: auto;
+}
+
+// icons
+
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	color: #000000;
+	fill: currentColor;
+}
+
+.icon {
+	margin: 0 4px;
+	position: relative;
+}
+
+.icon-xs {
+	height: 12px;
+	width: 12px;
+}
+
+.icon-sm {
+	height: 16px;
+	top: 3px;
+	width: 16px;
+}
+
+.icon-lg {
+	height: 24px;
+	top: 5px;
+	width: 24px;
+}
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+// global styles ================================================
+
+@import "partials/atoms/form";
+
+// buttons ================================================
+
+@import "partials/atoms/buttons";
+
+
+
+
+
+
+

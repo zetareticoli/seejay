@@ -1,0 +1,102 @@
+<!-- $title Components -->
+<!-- $jumbotron-title Components -->
+<!-- $jumbotron-intro Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more..  -->
+
+<!-- @include _header -->
+
+<!-- Load bootstrap navbar to navigate the entire library -->
+<!-- @include _library-navbar -->
+
+<!-- @include _library-jumbotron -->
+
+<div class="library-page">
+
+	<section class="library-section section-alerts">
+		<h2 class="section-subtitle">Alert messages</h2>
+		<p>Alert messages are used to provide action-based feedback messages or to convey informational and/or critical information to the user.</p>
+		<!-- Alerts -->
+		<div class="alert alert-success" role="alert">
+			<svg class="icon icon-lg icon-tick-circle"><use xlink:href="#icon-tick-circle"></use></svg>
+			<p>Well done! You successfully read this important alert message.</p>
+		</div>
+		<br>
+		<div class="alert alert-info" role="alert">
+			<svg class="icon icon-lg icon-info-circle"><use xlink:href="#icon-info-circle"></use></svg>
+			<p>Heads up! This alert needs your attention, but it's not super important.</p>
+		</div>
+		<br>
+		<div class="alert alert-warning" role="alert">
+			<svg class="icon icon-lg icon-help-circle"><use xlink:href="#icon-help-circle"></use></svg>
+			<p>Warning! Better check yourself, you're not looking too good.</p>
+		</div>
+		<br>
+
+		<div class="alert alert-danger" role="alert">
+			<svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
+			<p>Oh snap! Change a few things up and try submitting again.</p>
+		</div>
+	</section>
+
+	<section class="library-section section-tabs">
+		<h2 class="section-subtitle">Nav Tabs</h2>
+		<p>Default tabs are used inside Promote modal window to switch between different notification systems. When managing a template you can use simple tabs to select the sorting order of elements.</p>
+
+		<h3 class="section-fieldtitle">Default tabs</h3>
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="tab1" role="tab" data-toggle="tab">Tab One</a></li>
+			<li role="presentation"><a href="tab2" role="tab" data-toggle="tab">Tab Two</a></li>
+			<li role="presentation"><a href="tab3" role="tab" data-toggle="tab">Tab Three</a></li>
+		</ul>
+		<h3 class="section-fieldtitle">Simple tabs</h3>
+		<ul class="nav nav-tabs simple-tabs">
+			<li role="presentation" class="active"><a href="tab1" role="tab" data-toggle="tab">Tab One</a></li>
+			<li role="presentation"><a href="tab2" role="tab" data-toggle="tab">Tab Two</a></li>
+			<li role="presentation"><a href="tab3" role="tab" data-toggle="tab">Tab Three</a></li>
+		</ul>
+		<h3 class="section-fieldtitle">Step tabs</h3>
+		<section class="masthead">
+			<ul class="nav step-tabs">
+				<li class="completed"><a href="#"><small class="step-back">back to</small><span class="step-number">1</span> <span class="step-name">Search & Curate</span></a></li>
+				<li class="active"><span class="step-number">2</span> <span class="step-name">Customize</span></li>
+				<li><span class="step-number">3</span> <span class="step-name">Publish</span></li>
+			</ul>
+		</section>
+	</section>
+
+	<section class="library-section section-results">
+		<h2 class="section-subtitle">Result Element</h2>
+		<div class="inverted-bg">
+			<article class="result-element">
+				<header class="result-head">
+					<button type="button" class="btn btn-add">
+						<svg class="icon icon-sm icon-plus"><use xlink:href="#icon-plus"></use></svg>
+						Add to your story
+					</button>
+				</header>
+				<div class="result-content">
+					<div class="author">
+						<img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm">
+						<span class="author-name">John Doe</span>
+						<span class="author-username">@doejohn</span>
+					</div>
+					<figure class="result-figure"><!-- @placeholder 220x220 --></figure>
+					<p class="result-text">Italy: Immigration centre attacked in Rome Riot police outside the centre in Tor Sapienza, east Rome. Screenshot: Fanpage/YouTube  An immigration centre in Rome has for two consecutive nights come under attack <a href="#">http://t.co/p4</a></p>
+				</div>
+				<footer class="result-foot">
+					<svg class="icon icon-sm icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+					<time datetime="2014-11-25" class="time">25 nov 2014 - 14:40</time>
+					<ul class="result-stats">
+						<li>
+							<svg class="icon icon-xs icon-star"><use xlink:href="#icon-star"></use></svg>
+							<span class="number">5</span>
+						</li>
+					</ul>
+				</footer>
+			</article>
+		</div>
+	</section>
+
+
+</div>
+
+<!-- @include _footer -->

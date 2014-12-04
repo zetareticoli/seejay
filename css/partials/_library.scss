@@ -1,0 +1,155 @@
+/* ==========================================================================
+   LIBRARY
+   ========================================================================== */
+
+/* ==========================================================================
+  Sections
+  ========================================================================== */
+
+section[class*="section-"] {
+	margin: 0 60px 60px;
+	background-color: white;
+	@include clearfix;
+
+	@include bp(xl) {
+		max-width: 1400px;
+	}
+}
+
+.section-subtitle {
+	color: $black;
+	@include font-size(32);
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.section-fieldtitle {
+	color: $charcoal;
+	@include font-size(24);
+	font-weight: 300;
+	margin: 40px 0;
+}
+
+.section-jumbotron {
+	color: $black;
+	line-height: 20px;
+	margin-bottom: 0;
+	padding-bottom: 80px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 80px;
+
+	.section-title {
+		color: $red;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1em;
+		margin-bottom: $gutterwidth;
+	}
+
+	p {
+		color: $charcoal;
+		font-size: 22px;
+		font-weight: 300;
+		margin: 0;
+	}
+
+}
+
+.inverted-bg {
+	background-color: $earlygray;
+	padding: 30px;
+	@include clearfix;
+}
+
+// icons
+
+.glyph {
+	font-size: 16px;
+	width: 20em;
+	margin-right: 1.5em;
+	margin-bottom: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+.pbs {
+	padding-bottom: .25em;
+}
+
+.mls {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-left: .25em;
+}
+
+/* ==========================================================================
+  Grid
+  ========================================================================== */
+
+.library-page .line {
+	margin-bottom: $gutterwidth;
+}
+
+.library-page .unit {
+	background-color: #b1e0ec;
+	color: white;
+	> p {
+		background-color: #46bcd2;
+		margin: 0;
+		padding: $baselineheight;
+	}
+
+	&.alignc {
+		text-align: center;
+	}
+}
+
+/* ==========================================================================
+  Navbar
+  ========================================================================== */
+
+.library-navbar {
+	background: $softgray;
+	@include clearfix;
+	width: 100%;
+
+	&.affixed {
+		position: fixed;
+		z-index: 99999;
+	}
+
+	ul {
+		@include clearfix;
+		margin: 0;
+	}
+
+	li {
+		float: left;
+		display: block;
+		@include font-size(16);
+	}
+
+	li a {
+		color: $charcoal;
+		display: block;
+		padding: 28px 25px;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	.brand {
+		color: $black;
+		float: left;
+		font-weight: 500;
+		text-align: center;
+
+		img {
+			height: 20px;
+		}	
+	}
+}
+

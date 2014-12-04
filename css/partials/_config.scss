@@ -1,0 +1,103 @@
+// Sass mixins
+@import "partials/mixins";
+
+// STEP ONE: BASICS ================================================
+
+
+// Start the ‘atmosphere’ of your design by defining the colours of your pages and text
+
+$bodycolor 							: rgb(234,231,229);
+$textcolor 							: rgb(92,82,80);
+
+// Next are two variables that will be used throughout your design;
+// $gutterwidth for horizontal spacing and $baselineheight for vertical rhythm
+
+$gutterwidth 						: 20px;
+$baselineheight 				: 1.75em;
+
+// Does your design needs a maximum width to maintain readable line lengths? 
+
+$maxwidth								: 1000px;
+
+// What is the class name that the media query mixin should use to target 
+// browsers not supporting media queries?
+
+$no-mq-classname 				: ".lt-ie9";
+
+
+// STEP TWO: TYPOGRAPHY ================================================
+
+
+// Now define your design’s typography by setting a base typeface and size
+$basefontfamily 				: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+
+$basefontsize 					: 16;
+$smallfontsize 					: $basefontsize * 0.875;
+$smallerfontsize 				: $basefontsize * 0.75;
+
+// Your headings may inherit the base typeface, or you may set a different font stack
+$baseheadingfont	 			: inherit;
+
+// Choose between normal, bold or set a font-weight number (eg: 700) for your headings
+$baseheadingfontweight 			: 300;
+
+// Your headings may inherit the $textcolor, or you may set a different colour
+$baseheadingfontcolor 			: inherit;
+
+// Text font weight
+$textfontweight 				: 400;
+
+
+
+
+// STEP THREE: COLOURS ================================================
+
+
+// Main Colours
+$red 							: rgb(239,69,15);
+$darkred						: rgb(188,48,16);
+$lightred			 			: rgb(247,162,135);
+
+
+// Neutral Colours
+$black 							: rgb(19,5,2);
+$charcoal 						: rgb(92,82,80);
+$spacegray 						: rgb(155,155,155);
+$lightgray 						: rgb(187,183,183);
+$earlygray 						: rgb(234,231,229);
+$softgray 						: rgb(247,246,245);
+
+
+// Overlays
+$darkoverlay					: rgba(51,45,44,.85);
+$overlay						: rgba(92,82,80,.85);
+$darkredoverlay					: rgba(188,48,16,.85);
+
+
+
+// STEP FOUR: SHAPES ================================================
+
+// Next set variables for your design’s borders. 
+// These will be inherited by many elements below 
+
+$defaultbordercolor    			: $earlygray;
+
+$borderstyle					: solid;
+$dottedborderstyle				: dotted;
+
+
+$borderwidth 					: 1px;
+$inputborderwidth      			: 2px;
+
+$defaultradius					: 3px;
+$elementradius 					: 6px;
+
+
+
+
+
+
+
+
+
+

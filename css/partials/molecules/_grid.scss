@@ -1,0 +1,79 @@
+.container-fixed {
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+.line {
+	@include clearfix;
+	overflow: hidden;
+	width: 100%;
+
+}
+
+.unit {
+	float: left;
+	margin-bottom: $gutterwidth * 2;
+	@include bp(l) {
+		margin-bottom: $gutterwidth;
+	}
+
+	overflow: hidden;
+	padding: 0 $gutterwidth / 2;
+}
+
+// global columns
+
+.size1of1 {
+	width: 100%;
+}
+
+.size1of2,
+.size2of4 {
+	width: 50%;
+}
+
+// tablet columns
+
+@include bp(m) {
+
+}
+
+// small desktop columns
+
+@include bp(l) {
+
+	.size1of3 {
+		width: 33.33%;
+	}
+	
+}
+
+// large desktop columns
+
+@include bp(xl) {
+
+	.size1of4 {
+		width: 25%;
+	}
+
+	.size1of6 {
+		width: 16.66%;
+	}
+
+	.size2of6 {
+		width: 33.33%;
+	}
+
+	.size4of6 {
+		width: 66.668%;
+	}
+
+	.size5of6 {
+		width: 83.33%;
+	}
+}
+
+.alignc {
+	float: none;
+	margin: auto;
+}

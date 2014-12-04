@@ -1,0 +1,245 @@
+/* ==========================================================================
+   MOLECULES
+   ========================================================================== */
+
+/* ==========================================================================
+  Components
+  ========================================================================== */
+
+// alerts ================================================
+
+.alert {
+	padding: 15px 20px;
+	width: 100%;
+
+	p {
+		display: inline-block;
+		line-height: 24px;
+		margin: 0;
+	}
+
+	.icon {
+		fill: $charcoal;
+	}
+
+	&.alert-success {
+		background-color: #d4ece6;
+	}
+	&.alert-info {
+		background-color: #ccebf3;
+	}
+	&.alert-warning {
+		background-color: #ffeebf;
+	}
+	&.alert-danger {
+		background-color: #f8d0c8;
+	}
+}
+
+// story item ================================================
+
+.story-item {
+	background: url(cover-image.png) 0 0 no-repeat;
+	background-size: cover;
+	margin: auto;
+	position: relative;
+	@include rounded(8px);
+	width: 100%;
+	max-width: 340px;
+	z-index: 1;
+
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:before {
+		background-color: $darkoverlay;
+		content: '';
+		display: block;
+		padding-top: 100%;
+		@include rounded(8px);
+		@include transition(background-color .15s ease);
+	}
+	
+	&:hover:before {
+		background-color: $darkredoverlay;
+	}
+
+	.time {
+		color: $lightgray;
+	}
+
+	.story-item-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 20px;
+		vertical-align: center;
+		color: #fff;
+	}
+
+	.story-item-foot {
+		bottom: 20px;
+		@include clearfix;
+		padding-top: 50%;
+		position: absolute;
+		width: 86.5%;
+
+		.icon {
+			fill: $earlygray;
+
+			&:hover {
+				fill: white;
+			}
+		}
+		
+		.story-contributions-counter {
+			float: left;
+			@include font-size($smallfontsize);
+			width: auto;
+		}
+
+		.story-actions {
+			float: right;
+		}
+	}
+
+	.story-settings-menu {
+		background: $black;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		bottom: 0;
+		display: none;
+		margin: 0;
+		@include nobullet;
+		padding: 20px;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+
+		&.visible {
+			display: block;
+		}
+
+		.setting-menu-option {
+			float: left;
+			@include font-size($smallerfontsize);
+			width: 50%;
+
+			.icon {
+				fill: $earlygray;
+			}
+
+			> a {
+				color: $earlygray;
+				
+				&:hover {
+					color: white;
+
+					.icon {
+						fill: white;
+					}
+				}
+			}
+		}
+
+		.btn-close {
+			position: absolute;
+			right: 22px;
+			bottom: 20px;
+		}
+	}
+}
+
+// user-panel ================================================
+
+.user-panel {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	width: 160px;
+
+	&.dropdown {
+
+		.dropdown-toggle {
+			border: 0;
+			overflow: hidden;
+			padding: 16px 20px 44px;
+			position: relative;
+			text-align: center;
+			@include transition(all .15s ease);
+			width: 100%;
+			z-index: 1;
+		}
+
+		.dropdown-menu {
+			background-color: $softgray; 
+			border: 0;
+			position: absolute;
+			top: 56px;
+			display: none;
+			@include rounded(0);
+
+			li {
+				border-bottom: 0;
+
+				&:last-child {
+					border-top: 1px solid $earlygray;
+				}
+
+				a {
+					@include font-size ($smallfontsize);
+					padding: 12px 15px;
+				}
+			}
+		}
+
+		&:hover {
+			.dropdown-toggle {
+				background-color: $softgray;
+			}
+			.dropdown-menu {
+				display: block;
+			}
+		}
+	}
+
+	.user-name {
+		color: $charcoal;
+		display: inline-block;
+		@include font-size($smallfontsize);
+		font-weight: 400;
+		padding-right: 10px;
+	}
+}
+
+/* ==========================================================================
+  Form
+  ========================================================================== */
+
+// form types ================================================
+
+@import "partials/molecules/form-types";
+
+/* ==========================================================================
+  Grid
+  ========================================================================== */
+
+@import "partials/molecules/grid";
+
+
+/* ==========================================================================
+  Navigation
+  ========================================================================== */
+
+@import "partials/molecules/navigation";
+
+/* ==========================================================================
+  Search Results
+  ========================================================================== */
+
+@import "partials/molecules/search-results";

@@ -1,0 +1,69 @@
+.result-element {
+	background: white;
+	@include rounded(6px);
+	width: 220px;
+	min-height: 262px;	
+}
+
+.result-foot {
+	padding: 12px 10px;
+	position: relative;
+
+	.result-stats {
+		position: absolute;
+		right: 10px;
+		bottom: 12px;
+		@include zero;
+		line-height: 14px;
+	}
+
+	.result-stats li {
+		display: inline-block;
+	}
+
+	.result-stats .number {
+		@include font-size(11);
+	}
+
+	.time {
+		color: $lightgray;
+		@include font-size(9);
+	}
+}
+
+.result-content {
+	border-top: 1px solid $earlygray;
+
+	.avatar {
+		float: left;
+		margin: 0 8px 0 0;
+	}
+
+	.author {
+		padding: 12px 10px;
+	}
+	
+	.author,
+	.author-name {
+		@include font-size($smallerfontsize);
+	}
+
+	.author-username {
+		color: $lightgray;
+		display: block;
+	}
+
+	.result-figure {
+		margin: 0;
+	}
+
+	.result-text {
+		display: block;
+		@include font-size($smallfontsize);
+		font-weight: 300;
+		line-height: 1.430em;
+		margin: 0;
+		padding: 12px 10px;
+	}
+
+}

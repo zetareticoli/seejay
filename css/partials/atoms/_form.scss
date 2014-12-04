@@ -1,0 +1,490 @@
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"] {
+	border: $inputborderwidth $borderstyle $earlygray;
+	color : inherit;
+	display : inline-block;
+	margin-bottom : $baselineheight / 2;
+	@include rounded($defaultradius);
+	vertical-align : middle;
+	@include transition(all .15s ease-in-out);
+
+	&:hover {
+		border-color: darken($earlygray, 8%);
+	} 
+	
+	&:focus {
+		border-color: rgb(74, 144, 226);
+		outline: 0;
+	} 
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: inline-block;
+	margin : 4px 0 0;
+	*margin-top : 0; 
+	margin-top : 1px \ 9; 
+	line-height : normal;
+}
+
+input,
+textarea {
+	@include border-box;
+	width : 100%;
+}
+
+select {
+	background-image: none;
+	-webkit-appearance: none;
+   	-moz-appearance: none;
+    appearance: none;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+select[multiple],
+select[size] {
+	height : auto; 
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+// form controls
+
+.control-group {
+	margin-bottom: $gutterwidth / 3;
+	@include clearfix; 
+
+	input,
+	textarea,
+	select {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin-bottom: 0;
+		vertical-align: middle; 
+	}
+}	
+
+// radio & checkbox
+
+.radio,
+.checkbox {
+	min-height : $baselineheight;
+	@include font-size($basefontsize); 
+}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+	float : left;
+	margin-right : $gutterwidth / 2;
+	width: auto; 
+}
+
+.controls > .radio:first-child,
+.controls > .checkbox:first-child {
+	padding-top : 5px; 
+}
+
+.radio.inline,
+.checkbox.inline {
+	display : inline-block;
+	padding-top : 5px;
+	margin-bottom : 0;
+	vertical-align : middle; 
+}
+
+.radio.inline + .radio.inline,
+.checkbox.inline + .checkbox.inline {
+	margin-left : $gutterwidth / 2; 
+}
+
+.radio label, 
+.checkbox label {
+	cursor: pointer;
+	font-weight: 400;
+	@include font-size(12);
+	line-height: 18px;
+	min-height: 20px;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+// disabled
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+	opacity : .25; 
+}
+
+// placeholder
+
+[placeholder]:focus::-webkit-input-placeholder {
+	opacity : 0;
+	transition : opacity .15s .15s ease; 
+}
+
+// custom select style
+
+.custom-select-style {
+	background: white;
+	border: $inputborderwidth $borderstyle $earlygray;
+	line-height : 20px;
+	margin-bottom: $baselineheight / 2;
+	overflow: hidden;
+	position: relative;
+	width: 200px;
+	@include rounded($defaultradius);
+
+	&:hover {
+		border-color: darken($earlygray, 8%);
+	} 
+
+	&:active {
+		border: $inputborderwidth $borderstyle rgb(74, 144, 226);
+	}
+
+	& select {
+		background: transparent;
+		border: none;
+		margin-bottom : 0;
+		padding : 13px 10px;
+		position: relative;
+		width: 130%;
+		z-index: 1;
+
+		&:active,
+		&:focus {
+			outline: 0;
+			outline : thin dotted \ 9;
+		}
+	}
+
+	.icon {
+		height: 24px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 24px;
+		z-index: 0;
+	}
+}
+
+// custom radio
+
+div:not(#foo) > input[type='radio'] {
+    opacity: 0;
+    float: left;
+    width: 1px;
+}
+
+div:not(#foo) > input[type='radio'] + label {
+    margin: 0 -4px 0 0;
+    clear: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    /*background: url(off.png) left center no-repeat;*/
+    background: white;
+    border: $inputborderwidth $borderstyle $earlygray;
+    color: $textcolor;
+    font-weight: 400;
+    @include transition(all .15s ease-in-out);
+}
+
+div:not(#foo) > input[type='radio'] + label {
+    border-top-right-radius: $defaultradius;
+	border-bottom-right-radius: $defaultradius;
+    border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+div:not(#foo) > input[type='radio']:first-child + label {
+    border-top-left-radius: $defaultradius;
+	border-bottom-left-radius: $defaultradius;
+    border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+
+}
+
+div:not(#foo) > input[type='radio'] + label .icon {
+    width: auto;
+    height: 16px;
+
+}
+
+div:not(#foo) > input[type='radio']:checked + label {
+    /*background-image: url(radio.png);*/
+    border-color: $black;
+    color: $black;
+}
+
+// ios switch
+
+.ios-ui-select{
+	background: $earlygray;
+	border: none !important;
+	cursor: pointer;
+	display: inline-block;
+	height: 36px;
+	position: relative;
+	@include rounded(18px);
+	width: 60px;
+	@include transition(all .3s ease);
+}
+
+.ios-ui-select.checked{
+	background-color: $red;
+}
+
+.ios-ui-select.checked .inner{
+	left: 27px;
+}
+
+.ios-ui-select .inner{
+	background: white;
+	height: 30px;
+	left: 3px;
+	width: 30px;
+	position: absolute;
+	@include rounded(100%);
+	top: 3px;
+	-webkit-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
+	-moz-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
+	-o-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
+	transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
+}
+
+// validation states
+
+.has-success {
+	& .control,
+	& .control:hover,
+	& .control:focus {
+		border-color: green;
+	}
+}
+
+.has-error {
+	& .control,
+	& .control:hover,
+	& .control:focus {
+		border-color: red;
+	}
+}
+
+// control sizes
+
+.control-lg {
+	padding : 13px 10px;
+	@include font-size($basefontsize);
+	line-height : 20px;
+}
+
+.control-sm {
+	padding : 10px 8px;
+	@include font-size($smallfontsize);
+	line-height : 18px;
+}
+
+.control-group-lg {
+	.control-label {
+		@include font-size($basefontsize);
+	}
+	
+	.control {
+		padding : 13px 10px;
+		@include font-size($basefontsize);
+		line-height : 20px;
+	}
+}
+
+.control-group-sm {
+	.control-label, .checkbox {
+		@include font-size($smallfontsize);
+	}
+
+	.control-label {
+		padding-top: 10px;
+	}
+	
+	.control {
+		padding : 10px 8px;
+		@include font-size($smallfontsize);
+		line-height : 18px;
+	}
+}
+
+
+// textarea advanced controls
+
+.textarea-controls {
+	background: $black;
+	background-image: -o-linear-gradient(-89deg, rgba(149,133,130,0.50) 0%, rgba(92,81,80,0.50) 100%);
+	background-image: -moz-linear-gradient(-89deg, rgba(149,133,130,0.50) 0%, rgba(92,81,80,0.50) 100%);
+	background-image: -ms-linear-gradient(-89deg, rgba(149,133,130,0.50) 0%, rgba(92,81,80,0.50) 100%);
+	background-image: linear-gradient(-179deg, rgba(149,133,130,0.50) 0%, rgba(92,81,80,0.50) 100%);
+	height: 40px;
+	@include rounded(3px);
+
+	ul {
+		@include clearfix;
+		@include nobullet;
+		padding: 8px 10px;
+	}
+
+	li {
+		float: left;
+		margin: 0 10px;
+		text-align: center;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.icon  {
+		height: 16px;
+	}
+
+	.icon .shape {
+		fill: rgba(255,255,255,.5);
+	}
+
+	.icon:hover .shape {
+		fill: rgba(255,255,255,1);
+	} 
+}
+
+// search dropdown
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-toggle {
+	background-color: white;
+	border: none;
+	border-right: 1px $borderstyle $earlygray;
+	float: left;
+	height: 48px;
+	padding: 0 15px;
+	@include transition(background .15s ease);
+
+	&:hover {
+		background-color: $softgray;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+.dropdown-menu {
+	background: white;
+	-webkit-background-clip: padding-box;
+  	background-clip: padding-box;
+	border: $inputborderwidth $borderstyle $earlygray;
+	display: none;
+	float: left;
+	list-style: none;
+	left: 0;
+	min-width: 160px;
+	margin: 3px 0 0 -2px;
+	padding: 0;
+	position: absolute;
+	@include rounded(3px);
+	text-align: left;
+	top: 100%;
+	z-index: 1000;
+}
+
+.dropdown-menu.pull-right {
+	right: 0;
+	left: auto;
+}
+
+.dropdown-menu .divider {
+	height: 1px;
+	margin: 9px 0;
+	overflow: hidden;
+	background-color: #e5e5e5;
+}
+
+.dropdown-menu > li {
+	border-bottom: 1px $borderstyle $earlygray;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.dropdown-menu > li > a {
+	clear: both;
+	color: $black;
+	display: block;
+	font-size: $smallfontsize;
+	font-weight: normal;
+	line-height: $baselineheight;
+	padding: 13px 20px;
+	white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	text-decoration: none;
+	background-color: $softgray;;
+}
+
+.open > .dropdown-menu {
+	display: block;
+}
+
+.open > a {
+	outline: 0;
+}
+
+.dropdown-menu-right {
+	left: auto;
+	right: 0;
+}
+
+.dropdown-menu-left {
+	left: 0;
+	right: auto;
+}
+
