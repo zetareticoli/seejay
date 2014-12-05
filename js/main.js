@@ -57,7 +57,7 @@ $(document).ready(function() {
 	// initialize Masonry after all images have loaded  
 	$container.imagesLoaded( function() {
 	  $container.masonry({
-	  	columnWidth: 220,
+	  	columnWidth: 200,
 	  	itemSelector: '.result-element'
 	  });
 	});
