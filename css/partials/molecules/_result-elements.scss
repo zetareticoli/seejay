@@ -1,5 +1,7 @@
 .result-element {
 	background: white;
+	float: left;
+	margin: 10px;
 	@include rounded(6px);
 	width: 220px;
 	min-height: 262px;	
@@ -8,25 +10,6 @@
 .result-foot {
 	padding: 12px 10px;
 	position: relative;
-
-	.icon-twitter {
-		fill: rgb(85,172,238);
-	}
-	.icon-facebook {
-		fill: rgb(59,89,152);
-	}
-	.icon-googleplus {
-		fill: rgb(188,48,16);
-	}
-	.icon-youtube {
-		fill: rgb(239,69,15);
-	}
-	.icon-instagram {
-		fill: rgb(81,127,164);
-	}
-	.icon-flickr {
-		fill: rgb(85,17,238);
-	}
 
 	.result-stats {
 		position: absolute;
@@ -77,13 +60,27 @@
 		@include font-size($smallerfontsize);
 	}
 
+	.author-name {
+		font-weight: 700;
+	}
+
 	.author-username {
 		color: $lightgray;
 		display: block;
 	}
 
 	.result-figure {
+		background-color: $black;
 		margin: 0;
+		width: 220px;
+		max-height: 220px;
+		position: relative;
+		text-align: center;
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
 	}
 
 	.result-text {
@@ -92,7 +89,41 @@
 		font-weight: 300;
 		line-height: 1.430em;
 		margin: 0;
+		max-height: 220px;
+		overflow: hidden;
 		padding: 12px 10px;
+		word-wrap:break-word;
+		word-break: normal;
 	}
 
+}
+
+.result-added {
+	border: 2px solid $red;
+
+	.feedback-message {
+		background: white;
+		color: $lightgray;
+		@include font-size($smallerfontsize);
+		padding: 12px 0;
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+
+		.icon {
+			fill: $lightgray;
+		}
+	}
+
+	.btn-add {
+		opacity: 0;
+		display: none;
+		z-index: 0;
+		position: relative;
+	}
 }

@@ -30,11 +30,19 @@
 			<p>Warning! Better check yourself, you're not looking too good.</p>
 		</div>
 		<br>
-
 		<div class="alert alert-danger" role="alert">
 			<svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
 			<p>Oh snap! Change a few things up and try submitting again.</p>
 		</div>
+
+		<pre class="prettyprint linenums">
+			<code data-lang="html">
+				<div class="alert alert-danger" role="alert">
+					<svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
+					<p>Oh snap! Change a few things up and try submitting again.</p>
+				</div>
+			</code>
+		</pre>
 	</section>
 
 	<section class="library-section section-tabs">
@@ -65,38 +73,22 @@
 
 	<section class="library-section section-results">
 		<h2 class="section-subtitle">Result Element</h2>
-		<div class="inverted-bg">
-			<article class="result-element">
-				<header class="result-head">
-					<button type="button" class="btn btn-add">
-						<svg class="icon icon-sm icon-plus"><use xlink:href="#icon-plus"></use></svg>
-						Add to your story
-					</button>
-				</header>
-				<div class="result-content">
-					<div class="author">
-						<img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm">
-						<span class="author-name">John Doe</span>
-						<span class="author-username">@doejohn</span>
-					</div>
-					<figure class="result-figure"><!-- @placeholder 220x220 --></figure>
-					<p class="result-text">Italy: Immigration centre attacked in Rome Riot police outside the centre in Tor Sapienza, east Rome. Screenshot: Fanpage/YouTube  An immigration centre in Rome has for two consecutive nights come under attack <a href="#">http://t.co/p4</a></p>
-				</div>
-				<footer class="result-foot">
-					<svg class="icon icon-sm icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-					<time datetime="2014-11-25" class="time">25 nov 2014 - 14:40</time>
-					<ul class="result-stats">
-						<li>
-							<svg class="icon icon-xs icon-star"><use xlink:href="#icon-star"></use></svg>
-							<span class="number">5</span>
-						</li>
-						<li>
-							<svg class="icon icon-xs icon-retweet"><use xlink:href="#icon-retweet"></use></svg>
-							<span class="number">12</span>
-						</li>
-					</ul>
-				</footer>
-			</article>
+
+		<p>Result elements are displayed in a responsive grid using the masonry jQuery plugin. Each results has a min-height value set to 262px. Content area (text) has a max-height value equal to 250px. Long text paragraphs are truncated. </p>
+		<div class="results-list inverted-bg js-masonry">
+			<!-- @include _result-twitter -->
+			<!-- @include _result-facebook -->
+			<!-- @include _result-instagram -->
+			<!-- @include _result-flickr -->
+			<!-- @include _result-googleplus -->
+			<!-- @include _result-youtube -->
+			<!-- @include _result-twitter -->
+			<!-- @include _result-facebook -->
+			<!-- @include _result-instagram -->
+			<!-- @include _result-flickr -->
+			<!-- @include _result-googleplus -->
+			<!-- @include _result-youtube -->
+			<!-- @include _result-twitter -->
 		</div>
 	</section>
 
