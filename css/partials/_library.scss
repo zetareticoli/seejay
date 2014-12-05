@@ -2,18 +2,27 @@
    LIBRARY
    ========================================================================== */
 
+/* ==========================================================================
+ Global
+ ========================================================================== */
+
+section > p {
+	@include font-size(18);
+	font-weight: 300;
+}
+
 pre {
 	font-family: Consolas, Menlo, monospace;
-	font-size: 14px;
-	background: #222;
+	background: white;
 	color: white;
 	@include rounded(5px);
 	width: 100%;
-	margin-left: 8px;
-    margin-right: 8px;
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow: auto;
+    code {
+    	font-size: 13px !important;
+    }
 }
 
 /* ==========================================================================
