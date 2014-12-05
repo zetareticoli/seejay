@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$('code').each(function(){
+	    var text=$(this).html().replace(/</g,'&lt;');
+	    var text=text.replace(/>/g,'&gt;');
+	    $(this).html(text);
+	});
+
 	$('.dropdown-toggle').dropdown();
 
 	$(".switch").iosCheckbox();
