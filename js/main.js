@@ -33,5 +33,15 @@ $(document).ready(function() {
   	            }
   		  });
 	});
+
+	var $container = $('.result-list');
+	// initialize Masonry after all images have loaded  
+	$container.imagesLoaded( function() {
+	  $container.masonry({
+	  	columnWidth: 220,
+	  	itemSelector: '.result-element'
+	  });
+	});
+	
 });
 
