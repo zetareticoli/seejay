@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	$(window).scroll(function() {    
+	    var scroll = $(window).scrollTop();
+
+	    if (scroll >= 60) {
+	        $(".masthead-steps").addClass("affixed");
+	        $(".templates").addClass("affixed");
+	    }
+	    else {
+	      	$(".masthead-steps").removeClass("affixed");
+	      	$(".templates").removeClass("affixed");
+	    }
+	});
+
 	$('code').each(function(){
 	    var text=$(this).html().replace(/</g,'&lt;');
 	    var text=text.replace(/>/g,'&gt;');
