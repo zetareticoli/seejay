@@ -227,6 +227,7 @@
 	padding: 20px;
 
 	&:hover {
+		background-color: lighten($softgray,1.75%);
 		cursor: pointer;
 	}
 
@@ -255,17 +256,28 @@
 	display: inline-block;
 	float: right;
 	right: 0;
+
+	.dropdown-toggle .icon {
+		fill: $spacegray;
+		@include transition(all .15s ease);
+	}
+
+	&.open .dropdown-toggle .icon,
+	.dropdown-toggle:hover .icon {
+		fill: $black;
+	}
 }
 
 .template-items-list {
 	list-style: none;
 	text-align: left;
 	@include zero;
+	overflow: hidden;
 
 	.template-item {
 		background-color: $earlygray;
 		display: inline-block;
-		margin: 0;
+		margin: 0 0 4px 0;
 		padding: 0 3px;
 
 		.icon {
@@ -306,6 +318,10 @@
 	background: rgba($earlygray,.5);
 	border-left: 5px solid $red;
 	cursor: default;
+
+	.counter {
+		color: $spacegray;
+	}
 
 	.template-title {
 		font-weight: 700;
