@@ -217,6 +217,41 @@
 	}
 }
 
+// template ================================================
+
+.template {
+	width: 100%;
+	padding: 20px;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	.template-title {
+		line-height: 24px;
+		margin-bottom: 5px;
+	}
+
+	.template-area {
+		border: 1px dashed $lightgray;
+		padding: 15px 0;
+		text-align: center;
+
+		.message-empty {
+			@include font-size(12);
+			line-height: 12px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	&.active {
+		background: rgba($earlygray,.5);
+		border-left: 5px solid $red;
+		cursor: default;
+	}
+}
+
 /* ==========================================================================
   Form
   ========================================================================== */
