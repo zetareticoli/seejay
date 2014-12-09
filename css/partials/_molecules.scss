@@ -178,10 +178,12 @@
 		.dropdown-menu {
 			background-color: $softgray; 
 			border: 0;
+			height: 0;
 			max-height: 0;
 			position: absolute;
-			top: 56px;
 			@include rounded(0);
+			top: 56px;
+			width: 0;
 
 			li {
 				border-bottom: 0;
@@ -205,8 +207,10 @@
 
 			.dropdown-menu {
 				opacity: 1;
+				height: auto;
 				max-height: 400px;
 				@include transition(max-height .45s linear);
+				width: auto;
 			}
 		}
 	}
