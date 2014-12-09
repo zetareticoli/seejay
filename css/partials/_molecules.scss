@@ -178,6 +178,7 @@
 		.dropdown-menu {
 			background-color: $softgray; 
 			border: 0;
+			max-height: 0;
 			position: absolute;
 			top: 56px;
 			@include rounded(0);
@@ -203,9 +204,9 @@
 			}
 
 			.dropdown-menu {
-				visibility: visible;
+				opacity: 1;
 				max-height: 400px;
-				@include transition(max-height .55s linear);
+				@include transition(max-height .45s linear);
 			}
 		}
 	}
