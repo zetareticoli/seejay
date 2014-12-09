@@ -143,3 +143,98 @@
 a.btn-write .icon {
 	margin: 26px;
 }
+
+// dropdown
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-toggle {
+	display: inline-block;
+}
+
+.dropdown-menu {
+	background: white;
+	-webkit-background-clip: padding-box;
+  	background-clip: padding-box;
+  	border: $inputborderwidth $borderstyle $earlygray;
+	float: left;
+	list-style: none;
+	left: 0;
+	min-width: 160px;
+	margin: 3px 0 0 -2px;
+	overflow: hidden;
+	padding: 0 !important;
+	position: absolute;
+	@include rounded(3px);
+	text-align: left;
+	top: 100%;
+	visibility: hidden;
+	z-index: 1000;
+	max-height: 0;
+}
+
+.dropdown-menu .divider {
+	height: 1px;
+	margin: 9px 0;
+	overflow: hidden;
+	background-color: #e5e5e5;
+}
+
+.dropdown-menu > li {
+	border-bottom: 1px $borderstyle $earlygray;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.dropdown-menu > li > a {
+	clear: both;
+	color: $black;
+	display: block;
+	font-size: $smallfontsize;
+	font-weight: normal;
+	line-height: $baselineheight;
+	padding: 8px 12px;
+	white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	text-decoration: none;
+	background-color: $softgray;;
+}
+
+.open > .dropdown-menu {
+	visibility: visible;
+	margin: 3px 0 0 -2px;
+	max-height: 400px;
+	@include transition(max-height .55s linear);
+}
+
+.open > a {
+	outline: 0;
+}
+
+.dropdown-menu-right {
+	left: auto;
+	right: 0;
+}
+
+.dropdown-menu-left {
+	left: 0;
+	right: auto;
+}
