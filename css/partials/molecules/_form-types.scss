@@ -66,6 +66,28 @@
 		width: 80%;
 	}
 
+	.dropdown-toggle {
+		background-color: white;
+		border: none;
+		border-right: 1px $borderstyle $earlygray;
+		float: left;
+		height: 48px;
+		padding: 0 15px;
+		@include transition(background .15s ease);
+
+		&:hover {
+			background-color: $softgray;
+		}
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.dropdown-menu > li > a {
+		padding: 13px 20px;
+	}
+
 	.btn-search {
 		background: url(search.svg) 0 0 no-repeat;
 		border: none;
