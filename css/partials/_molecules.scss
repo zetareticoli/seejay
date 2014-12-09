@@ -166,9 +166,8 @@
 	&.dropdown {
 
 		.dropdown-toggle {
-			border: 0;
 			overflow: hidden;
-			padding: 16px 20px 44px;
+			padding: 16px 20px 16px;
 			position: relative;
 			text-align: center;
 			@include transition(all .15s ease);
@@ -181,7 +180,6 @@
 			border: 0;
 			position: absolute;
 			top: 56px;
-			display: none;
 			@include rounded(0);
 
 			li {
@@ -199,11 +197,15 @@
 		}
 
 		&:hover {
+
 			.dropdown-toggle {
 				background-color: $softgray;
 			}
+
 			.dropdown-menu {
-				display: block;
+				visibility: visible;
+				max-height: 400px;
+				@include transition(max-height .55s linear);
 			}
 		}
 	}
@@ -226,29 +228,101 @@
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+.template-title {
+	color: $spacegray;
+	display: inline-block;
+	line-height: 24px;
+	margin: 0 5px 5px 0;
+
+	.icon {
+		fill: $spacegray;
+		margin-right: 10px;
+	}
+}
+
+.counter {
+	display: inline-block;
+	@include font-size($smallfontsize);
+	font-style: italic;
+	font-weight: 300;
+}
+
+.template-dropdown {
+	display: inline-block;
+	float: right;
+	right: 0;
+}
+
+.template-items-list {
+	list-style: none;
+	text-align: left;
+	@include zero;
+
+	.template-item {
+		background-color: $earlygray;
+		display: inline-block;
+		margin: 0;
+		padding: 0 3px;
+
+		.icon {
+			fill: $spacegray;
+			width: 14px;
+		}
+
+		&.added {
+			background-color: $red;
+
+			.icon {
+				fill: white;
+			}
+		}
+	}
+}
+
+.template-area {
+	border: 1px $borderstyle $earlygray;
+	padding: 15px;
+	text-align: center;
+
+	&.empty-area {
+		border-style: dashed;
+		border-color: darken($earlygray, 10%);
+	}
+
+	.message {
+		color: $spacegray;
+		@include font-size(12);
+		line-height: 12px;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.template.active {
+	background: rgba($earlygray,.5);
+	border-left: 5px solid $red;
+	cursor: default;
 
 	.template-title {
-		line-height: 24px;
-		margin-bottom: 5px;
+		font-weight: 700;
+	}
+
+	.template-title {
+		color: $charcoal;
+	}
+
+	.template-title .icon {
+		fill: $charcoal;
 	}
 
 	.template-area {
-		border: 1px dashed $lightgray;
-		padding: 15px 0;
-		text-align: center;
-
-		.message-empty {
-			@include font-size(12);
-			line-height: 12px;
-			margin: 0;
-			padding: 0;
-		}
+		border-color: darken($earlygray, 5%);
 	}
 
-	&.active {
-		background: rgba($earlygray,.5);
-		border-left: 5px solid $red;
-		cursor: default;
+	.template-item {
+		background-color: darken($earlygray,3%);
 	}
 }
 
