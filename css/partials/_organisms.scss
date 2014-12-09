@@ -162,3 +162,32 @@
 .stories-list {
 	@include zero;
 }
+
+// templates ================================================
+
+.templates {
+	right: 0;
+	top: 0;
+	margin-top: 120px;
+	padding-left: 0;
+	padding-right: 0;
+	position: absolute;
+	background-color: white;
+	height: 100%;
+	max-height: 100%;
+
+	&.affixed {
+		top: 60px;
+	}
+
+	.templates-title {
+		color: $lightgray;
+		margin: 20px 0 0 20px;
+	}
+
+	.btn-add-template {
+		display: block;
+		@include font-size(14);
+		margin: 20px 0 0 20px;
+	}
+}
