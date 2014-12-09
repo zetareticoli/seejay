@@ -288,14 +288,6 @@
 			fill: $spacegray;
 			width: 14px;
 		}
-
-		&.added {
-			background-color: $red;
-
-			.icon {
-				fill: white;
-			}
-		}
 	}
 }
 
@@ -345,6 +337,14 @@
 
 	.template-item {
 		background-color: darken($earlygray,3%);
+		
+		&.added {
+			background-color: $red;
+
+			.icon {
+				fill: white;
+			}
+		}
 	}
 }
 
