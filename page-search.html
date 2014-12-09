@@ -41,6 +41,14 @@
 			<div class="template timeline-template">
 				<div class="template-head">
 					<h4 class="template-title"><svg class="icon icon-sm icon-template-timeline"><use xlink:href="#icon-template-timeline"></use></svg>Timeline</h4>
+					<div id="dropdown-menu-1" class="dropdown template-dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="icon icon-xs icon-cog"><use xlink:href="#icon-cog"></use></svg></a>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="dropdown-item"><a href="#">Manage</a></li>
+							<li class="dropdown-item"><a href="#">Duplicate</a></li>
+							<li class="dropdown-item"><a href="#">Delete</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="template-area empty-area">
 					<span class="message"><strong>Template is empty</strong>, add some elements</span>
@@ -49,18 +57,17 @@
 
 			<div class="template brick-template active">
 				<div class="template-head">
-					<h4 class="template-title"><svg class="icon icon-xs icon-template-brick"><use xlink:href="#icon-template-brick"></use></svg>Brick</h4>
+					<h4 class="template-title"><svg class="icon icon-sm icon-template-brick"><use xlink:href="#icon-template-brick"></use></svg>Brick</h4>
 					<span class="counter">3 elements</span>
-					<div class="dropdown template-dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="icon icon-sm icon-cog"><use xlink:href="#icon-cog"></use></svg></a>
-						<ul class="dropdown-menu dropdown-menu-right">
+					<div id="dropdown-menu-2" class="dropdown template-dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="icon icon-xs icon-cog"><use xlink:href="#icon-cog"></use></svg></a>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
 							<li class="dropdown-item"><a href="#">Manage</a></li>
 							<li class="dropdown-item"><a href="#">Duplicate</a></li>
 							<li class="dropdown-item"><a href="#">Delete</a></li>
 						</ul>
 					</div>
 				</div>
-
 				<div class="template-area">
 					<ul class="template-items-list">
 						<li class="template-item"><svg class="icon icon-sm icon-file"><use xlink:href="#icon-file"></use></svg></li>
@@ -71,9 +78,30 @@
 			</div>
 
 			<div class="template gallery-template">
+			<div class="template-head">
 				<h4 class="template-title"><svg class="icon icon-sm icon-template-gallery"><use xlink:href="#icon-template-gallery"></use></svg>Gallery</h4>
+				<span class="counter">16 elements</span>
+				<div id="dropdown-menu-3" class="dropdown template-dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="icon icon-xs icon-cog"><use xlink:href="#icon-cog"></use></svg></a>
+					<ul class="dropdown-menu dropdown-menu-right" role="menu">
+						<li class="dropdown-item"><a href="#">Manage</a></li>
+						<li class="dropdown-item"><a href="#">Duplicate</a></li>
+						<li class="dropdown-item"><a href="#">Delete</a></li>
+					</ul>
+				</div>
+			</div>
 				<div class="template-area">
 					<ul class="template-items-list">
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
+						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
 						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
 						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
 						<li class="template-item"><svg class="icon icon-sm icon-image"><use xlink:href="#icon-image"></use></svg></li>
@@ -83,7 +111,26 @@
 					</ul>
 				</div>
 			</div>
-			<a href="#" class="btn btn-link btn-add-template"><svg class="icon icon-xs icon-plus"><use xlink:href="#icon-plus"></use></svg>Add new template to story</a>
+			<div id="new-template-dropdown" class="dropdown new-template-dropdown">
+				<a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><svg class="icon icon-xs icon-plus"><use xlink:href="#icon-plus"></use></svg>Add new template to story</a>
+				<ul class="dropdown-menu dropdown-menu-left" role="menu">
+					<li class="dropdown-item">
+						<a href="#"><svg class="icon icon-sm icon-template-single"><use xlink:href="#icon-template-single"></use></svg>Single</a>
+					</li>
+					<li class="dropdown-item">
+						<a href="#"><svg class="icon icon-sm icon-template-brick"><use xlink:href="#icon-template-brick"></use></svg>Brick</a>
+					</li>
+					<li class="dropdown-item">
+						<a href="#"><svg class="icon icon-sm icon-template-gallery"><use xlink:href="#icon-template-gallery"></use></svg>Gallery</a>
+					</li>
+					<li class="dropdown-item">
+						<a href="#"><svg class="icon icon-sm icon-template-timeline"><use xlink:href="#icon-template-timeline"></use></svg>Timeline</a>
+					</li>
+					<li class="dropdown-item">
+						<a href="#"><svg class="icon icon-sm icon-template-map"><use xlink:href="#icon-emplate-map"></use></svg>Map</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 	</div><!-- end of main -->	
