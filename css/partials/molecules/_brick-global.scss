@@ -2,11 +2,12 @@
 
 .brick {
 	background: white;
+	border: 1px solid $earlygray;
 	@include rounded(6px);
 }
 
 .brick-author {
-	
+
 	.avatar {
 		float: left;
 		margin: 0 8px 0 0;
