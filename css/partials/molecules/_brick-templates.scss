@@ -27,6 +27,29 @@
 	}
 }
 
+// template gallery ================================================
+
+.template-gallery {
+	background-color: rgb(44,40,41);
+
+	.gallery-slider {
+		width: auto;
+	}
+
+	.rsSlide .rsImg {
+		width: 400px;
+		height: 400px;
+	    opacity: 0.2;
+	    -webkit-transition: all 0.3s ease-out;
+	    -moz-transition: all 0.3s ease-out;
+	    transition: all 0.3s ease-out;
+	}
+
+	.rsActiveSlide .rsImg  {
+	    opacity: 1;
+	}
+}
+
 // template single ================================================
 
 .template-single {

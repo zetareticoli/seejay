@@ -57,6 +57,32 @@ $(document).ready(function() {
   		  });
 	});
 
+	// Royal Slider
+
+	var sliderJQ = $(".royalSlider").royalSlider({
+	    addActiveClass: true,
+	    arrowsNav: true,
+	    arrowsNavAutoHide: false,
+	    controlNavigation: 'none',
+	    autoScaleSlider: true,
+	    imageScaleMode: "none",
+	    imageAlignCenter: true,
+	    slidesSpacing: 0,
+	    loop: true,
+	    fadeinLoadedSlide: false,
+	    globalCaption: true,
+	    keyboardNavEnabled: true,
+	    globalCaptionInside: false,
+	    visibleNearby: {
+	       enabled: true,
+	       centerArea: 0.6,
+	       center: true,
+	       breakpoint: 800,
+	       breakpointCenterArea: 0.8,
+	       navigateByCenterClick: true
+	    }
+	}); 
+
 	var $container = $('.result-list');
 	// initialize Masonry after all images have loaded  
 	$container.imagesLoaded( function() {
