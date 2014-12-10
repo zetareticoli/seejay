@@ -187,7 +187,7 @@ a.btn-write .icon {
 	opacity: 0;
 	width: 0;
 	z-index: 1000;
-	@include transition(all .15s ease);
+	@include transition(all .25s ease);
 }
 
 .dropdown-menu .divider {
