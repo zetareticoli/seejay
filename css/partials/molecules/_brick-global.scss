@@ -1,0 +1,85 @@
+// global brick styles ================================================
+
+.brick {
+	background: white;
+	@include rounded(6px);
+}
+
+.brick-author {
+	
+	.avatar {
+		float: left;
+		margin: 0 8px 0 0;
+	}
+
+	.author-name,
+	.author-username {
+		@include font-size($smallerfontsize);
+	}
+
+	.author-name {
+		font-weight: 700;
+	}
+
+	.author-username {
+		color: $lightgray;
+		display: block;
+	}
+}
+
+.brick-media {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+.brick-text {
+	display: block;
+	@include font-size($smallfontsize);
+	font-weight: 300;
+	line-height: 1.430em;
+	margin: 0;
+	overflow: hidden;
+	padding: 20px;
+	word-wrap: break-word;
+	word-break: normal;
+}
+
+.brick-foot {
+	position: relative;
+
+	.brick-stats {
+		position: absolute;
+		@include zero;
+		line-height: 14px;
+	}
+
+	.brick-stats li {
+		display: inline-block;
+	}
+
+	.brick-stats .icon {
+		margin: 0 0 0 10px;
+		fill: $lightgray;
+
+		&.icon-retweet {
+			top: 2px;
+		}
+	}
+
+	.brick-stats .number {
+		color: $lightgray;
+		@include font-size(11);
+	}
+
+	.time {
+		color: $lightgray;
+		@include font-size(9);
+	}
+}
