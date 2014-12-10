@@ -23,6 +23,10 @@ $(document).ready(function() {
 
 	$(".switch").iosCheckbox();
 
+	$(".story-status").click(function(event){
+		$(this).toggleClass("private");
+	});
+
 	$('#button-open').click(function(event){
 	  event.stopPropagation();
 	  event.preventDefault();

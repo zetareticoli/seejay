@@ -99,11 +99,36 @@
 		.story-contributions-counter {
 			float: left;
 			@include font-size($smallfontsize);
+			@include no-selection;
 			width: auto;
 		}
 
 		.story-actions {
 			float: right;
+
+			.action {
+				display: inline-block;
+				@include no-selection;
+			}
+		}
+	}
+
+	.story-status {
+
+		.icon-lock {
+			display: none;
+		}
+		.icon-unlocked {
+			display: block;
+		}
+
+		&.private {
+			.icon-unlocked {
+				display: none;
+			}
+			.icon-lock {
+				display: block;
+			}
 		}
 	}
 
