@@ -1,7 +1,8 @@
+// template brick ================================================
 
-.template-brick {
+.template-brick,
+.template-single {
 	border: 1px solid $earlygray;
-	float: left;
 
 	.brick-head,
 	.brick-foot {
@@ -26,8 +27,59 @@
 	}
 }
 
+// template single ================================================
+
+.template-single {
+	@include clearfix;
+
+	.brick-author {
+		height: 60px;
+	}
+
+	.brick-media {
+		margin-right: 40px;
+		@include bp(l) {
+			float: left;
+			max-width: 500px;
+		}
+
+		img {
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			width: 100%;
+			@include bp(l) {
+				border-bottom-left-radius: 6px;
+				border-top-right-radius: 0;
+			}
+		}
+	}
+
+	.brick-stats .number {
+		@include font-size($smallerfontsize);
+	}
+
+	.time {
+		@include font-size($smallerfontsize);
+	}
+
+	@include bp(l) {
+
+		.brick-text {
+			@include font-size(24);
+			padding-left: 0;
+		}
+
+		.brick-foot .icon-xs {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+// template result ================================================
 
 .result-brick {
+	border: none;
 	float: left;
 	margin: 10px;
 	width: 200px;
