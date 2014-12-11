@@ -18,7 +18,7 @@
 	}
 
 	.author-name {
-		@include font-size($basefontsize);
+		@include font-size($smallfontsize);
 	}
 
 	.brick-stats {
@@ -30,15 +30,23 @@
 // template gallery ================================================
 
 .template-gallery {
-	background-color: rgb(44,40,41);
+	background-color: $black;
+	width: 100%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 
-	.gallery-slider {
-		width: auto;
+	.royalSlider {
+		width: 100%;
+	}
+
+	.royalSlider,
+	.rsVisibleNearbyWrap {
+		min-height: 320px;
 	}
 
 	.rsSlide .rsImg {
-		width: 400px;
-		height: 400px;
+		display: block;
+		margin: 0 auto;
 	    opacity: 0.2;
 	    -webkit-transition: all 0.3s ease-out;
 	    -moz-transition: all 0.3s ease-out;
@@ -47,6 +55,100 @@
 
 	.rsActiveSlide .rsImg  {
 	    opacity: 1;
+	}
+
+	.rsGCaption {
+		margin-top: -1px;
+		text-align: left;
+	}
+
+	.rsCaption {
+		background-color: rgb(44,40,41);
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		opacity: 1;
+		padding: 2%;
+
+		.brick-head {
+			@include clearfix;
+		}
+
+		.author-name,
+		.brick-text {
+			color: white;
+		}
+
+		.author-name,
+		.author-username {
+			display: inline;
+		}
+
+		.brick-text {
+			font-weight: 400;
+			padding: 10px 0;
+		}
+
+		.brick-foot .icon {
+			fill: white;
+		}
+
+		.brick-stats {
+			bottom: 0;
+			right: 0;
+		}
+
+		.time,
+		.number {
+			@include font-size(11);
+		}
+
+		@include bp(l) {
+			.brick-head,
+			.brick-content {
+				float: left;
+			}
+			.brick-head {
+				width: 25%;
+			}
+			.brick-content {
+				width: 50%;
+			}
+			.brick-foot {
+				clear: left;
+			}
+		};
+	}
+
+	.rsActiveSlide .slide-caption {
+		opacity: 1;
+	}
+
+	.rsArrowIcn {
+		height: 24px;
+		width: 24px;
+		opacity: .75;
+		position: absolute;
+		top: 50%;
+		@include transition(opacity .15s ease);
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&:active {
+			opacity: 1;
+			top: 50.2%;
+		}
+	}
+
+	.rsArrowLeft .rsArrowIcn {
+		background: url(icon-arrow-left-white.svg) 0 0 no-repeat;
+		left: 6%;
+	}
+
+	.rsArrowRight .rsArrowIcn {
+		background: url(icon-arrow-right-white.svg) 0 0 no-repeat;
+		right: 6%;
 	}
 }
 

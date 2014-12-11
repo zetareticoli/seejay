@@ -63,24 +63,26 @@ $(document).ready(function() {
 	    addActiveClass: true,
 	    arrowsNav: true,
 	    arrowsNavAutoHide: false,
-	    controlNavigation: 'none',
 	    autoScaleSlider: true,
-	    imageScaleMode: "none",
-	    imageAlignCenter: true,
+	    controlNavigation: 'none',
+	    imageAlignCenter: false,
+	    imageScaleMode: "fill",
 	    slidesSpacing: 0,
+	    sliderDrag: true,
+	    sliderTouch: true,
 	    loop: true,
 	    fadeinLoadedSlide: false,
 	    globalCaption: true,
 	    keyboardNavEnabled: true,
 	    globalCaptionInside: false,
-	    visibleNearby: {
-	       enabled: true,
-	       centerArea: 0.6,
-	       center: true,
-	       breakpoint: 800,
-	       breakpointCenterArea: 0.8,
-	       navigateByCenterClick: true
-	    }
+	        visibleNearby: {
+	            enabled: true,
+	            centerArea: 0.5,
+	            center: true,
+	            breakpoint: 650,
+	            breakpointCenterArea: 1,
+	            navigateByCenterClick: true
+	        }
 	}); 
 
 	var $container = $('.result-list');
