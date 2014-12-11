@@ -79,7 +79,7 @@ $(document).ready(function() {
 	            enabled: true,
 	            centerArea: 0.5,
 	            center: true,
-	            breakpoint: 650,
+	            breakpoint: 620,
 	            breakpointCenterArea: 1,
 	            navigateByCenterClick: true
 	        }
