@@ -84,14 +84,21 @@
 			@include clearfix;
 		}
 
+
 		.author-name,
 		.brick-text {
 			color: white;
 		}
 
+		.avatar,
 		.author-name,
 		.author-username {
-			display: inline;
+			display: inline-block;
+			margin-right: 5px;
+		}
+
+		.avatar {
+			float: none;
 		}
 
 		.brick-text {
