@@ -145,16 +145,20 @@
 		}
 
 		@include bp(l) {
+
 			.brick-head,
 			.brick-content {
 				float: left;
 			}
+
 			.brick-head {
 				width: 25%;
 			}
+
 			.brick-content {
 				width: 50%;
 			}
+
 			.brick-foot {
 				clear: left;
 			}
