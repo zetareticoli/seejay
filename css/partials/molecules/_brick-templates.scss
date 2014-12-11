@@ -218,16 +218,15 @@
 .template-single {
 	@include clearfix;
 
+	.brick-head {
+		padding-bottom: 0;
+	}
+
 	.brick-author {
 		height: 60px;
 	}
 
 	.brick-media {
-		margin-right: 40px;
-		@include bp(l) {
-			float: left;
-			max-width: 500px;
-		}
 
 		img {
 			border-top-left-radius: 6px;
@@ -237,6 +236,12 @@
 				border-bottom-left-radius: 6px;
 				border-top-right-radius: 0;
 			}
+		}
+
+		@include bp(l) {
+			float: left;
+			margin-right: 40px;
+			max-width: 500px;
 		}
 	}
 
@@ -251,7 +256,7 @@
 	@include bp(l) {
 
 		.brick-text {
-			@include font-size(24);
+			@include font-size(18);
 			padding-left: 0;
 		}
 
@@ -259,6 +264,11 @@
 			width: 16px;
 			height: 16px;
 		}
+	}
+
+	@include max-bp(l) {
+		max-width: 500px;
+		margin: 0 auto;	
 	}
 }
 
