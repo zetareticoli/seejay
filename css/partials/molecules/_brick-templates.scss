@@ -48,9 +48,16 @@
 		display: block;
 		margin: 0 auto;
 	    opacity: 0.2;
+	    border-top-right-radius: 6px;
+	    border-top-left-radius: 6px;
 	    -webkit-transition: all 0.3s ease-out;
 	    -moz-transition: all 0.3s ease-out;
 	    transition: all 0.3s ease-out;
+
+	    @include bp(m) {
+	    	border-top-right-radius: 0;
+	    	border-top-left-radius: 0;
+	    }
 	}
 
 	.rsActiveSlide .rsImg  {
