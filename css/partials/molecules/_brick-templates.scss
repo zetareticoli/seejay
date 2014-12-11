@@ -74,7 +74,11 @@
 		border-bottom-left-radius: 6px;
 		border-bottom-right-radius: 6px;
 		opacity: 1;
-		padding: 2%;
+		padding: 4%;
+
+		@include bp(m) {
+			padding: 2%;
+		}
 
 		.brick-head {
 			@include clearfix;
