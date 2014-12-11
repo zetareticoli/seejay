@@ -45,6 +45,32 @@ color : $color; }
     @media (min-width: 20em) { @content; }
   }
 }
+@mixin max-bp($point) {
+  // xlarge desktop => 1300px
+  @if $point == xxl {
+    @media (max-width: 81.250em) { @content; }
+  }
+  // large desktop => 1140px
+  @if $point == xl {
+    @media (max-width: 71.250em) { @content; }
+  }
+  //desktop => 990px
+  @if $point == l {
+    @media (max-width: 61.875em) { @content; }
+  }
+  //tablet => 600px
+  @else if $point == m {
+    @media (max-width: 37.500em) { @content; }
+  }
+  // landscape smartphone and phablet => 480px
+  @else if $point == s {
+    @media (max-width: 30em) { @content; }
+  }
+  // smartphone => 320px
+  @else if $point == xs {
+    @media (max-width: 20em) { @content; }
+  }
+}
 
 // chromeframe
 
