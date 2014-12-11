@@ -162,12 +162,24 @@
 	}
 
 	.rsArrowIcn {
-		height: 24px;
-		width: 24px;
+		background: $black;
+		height: 32px;
+		width: 32px;
 		opacity: .75;
+		@include rounded(6px);
+		padding: 10px;
 		position: absolute;
 		top: 50%;
 		@include transition(opacity .15s ease);
+		z-index: 999;
+
+		@include bp(m) {
+			height: 24px;
+			padding: 0;
+			top: 50%;
+			width: 24px;
+			@include rounded(0);
+		}
 
 		&:hover {
 			opacity: 1;
@@ -180,13 +192,20 @@
 	}
 
 	.rsArrowLeft .rsArrowIcn {
-		background: url(icon-arrow-left-white.svg) 0 0 no-repeat;
+		background: $black url(icon-arrow-left-white.svg) 48% 48% no-repeat;
 		left: 6%;
+
+		@include bp(m) {
+			background-color: transparent;
+		}
 	}
 
 	.rsArrowRight .rsArrowIcn {
-		background: url(icon-arrow-right-white.svg) 0 0 no-repeat;
+		background: $black url(icon-arrow-right-white.svg) 48% 48% no-repeat;
 		right: 6%;
+		@include bp(m) {
+			background-color: transparent;
+		}
 	}
 }
 
