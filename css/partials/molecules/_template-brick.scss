@@ -1,0 +1,99 @@
+// brick template ================================================
+
+.template-brick,
+.template-single {
+	border: 1px solid $earlygray;
+
+	.brick-head,
+	.brick-foot {
+		padding: 20px;
+	}
+
+	.brick-text {
+		padding: 20px 20px 0;
+	}
+
+	.brick-text {
+		@include font-size(18);
+	}
+
+	.author-name {
+		@include font-size($smallfontsize);
+	}
+
+	.brick-stats {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+// brick result ================================================
+/* result brick is displayed in the search & curate screen */
+
+.result-brick {
+	border: none;
+	float: left;
+	margin: 10px;
+	width: 200px;
+	min-height: 262px;
+	@include transition(all .15s ease);
+
+	&:hover {
+		background: darken(white,2.5%);
+		cursor: pointer;
+		@include box-shadow(inset 0 -2px 0 $lightgray);
+	}
+
+	.brick-author,
+	.brick-foot {
+		padding: 12px 10px;
+	}
+
+	.brick-content {
+		border-top: 1px solid $earlygray;
+
+		.brick-media {
+			background-color: $black;
+		}
+
+		.brick-text {
+			@include font-size($smallfontsize);
+			max-height: 220px;
+			padding: 12px 10px;
+		}
+	}	
+	.brick-stats {
+		right: 10px;
+		bottom: 12px;
+	}
+}
+
+.result-added {
+	border: 2px solid $red;
+
+	.feedback-message {
+		background: white;
+		color: $lightgray;
+		@include font-size($smallerfontsize);
+		padding: 12px 0;
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+
+		.icon {
+			fill: $lightgray;
+		}
+	}
+
+	.btn-add {
+		opacity: 0;
+		display: none;
+		z-index: 0;
+		position: relative;
+	}
+}

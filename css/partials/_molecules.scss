@@ -413,5 +413,10 @@
   Templates
   ========================================================================== */
 
-@import "partials/molecules/brick-global";
-@import "partials/molecules/brick-templates";
+@import "partials/molecules/template-brick-global";
+@import "partials/molecules/template-brick";
+@import "partials/molecules/template-single";
+@import "partials/molecules/template-gallery";
+@import "partials/molecules/template-timeline";
+@import "partials/molecules/template-map";
+
