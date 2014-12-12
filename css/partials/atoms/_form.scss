@@ -377,3 +377,20 @@ div:not(#foo) > input[type='radio']:checked + label {
 		fill: rgba(255,255,255,1);
 	} 
 }
+
+// control light
+
+input[type="text"].control-light {
+	border: none;
+
+	&.control-lg {
+		line-height: 48px;
+		font-family: KlavikaWebBasicBold;
+		@include font-size(48);
+	}
+
+	&.control-sm {
+		line-height: 24px;
+		@include font-size(24);
+	}
+}
