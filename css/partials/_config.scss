@@ -6,18 +6,18 @@
 
 // Start the ‘atmosphere’ of your design by defining the colours of your pages and text
 
-$bodycolor 							: rgb(234,231,229);
-$textcolor 							: rgb(92,82,80);
+$bodycolor 						: rgb(234,231,229);
+$textcolor 						: rgb(92,82,80);
 
 // Next are two variables that will be used throughout your design;
 // $gutterwidth for horizontal spacing and $baselineheight for vertical rhythm
 
-$gutterwidth 						: 20px;
+$gutterwidth 					: 20px;
 $baselineheight 				: 1.75em;
 
 // Does your design needs a maximum width to maintain readable line lengths? 
 
-$maxwidth								: 1000px;
+$maxwidth						: 1000px;
 
 // What is the class name that the media query mixin should use to target 
 // browsers not supporting media queries?
