@@ -123,9 +123,11 @@
 	@include clearfix;
 
 	.cd-date {
+		color: $black;
 		display: inline-block;
-		@include font-size(13px);
-		float: left;
+		@include font-size($smallfontsize);
+		font-weight: 300;
+		text-transform: uppercase;
 		padding: .8em 0;
 		opacity: .7;
 
@@ -140,7 +142,11 @@
 			width: 100%;
 			left: 122%;
 			top: 6px;
-			@include font-size(16px);
+			@include font-size($basefontsize);
+
+			.time {
+				display: block;
+			}
 		}
 
 		.cd-timeline-block:nth-child(even) & {
