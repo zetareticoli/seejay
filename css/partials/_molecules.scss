@@ -129,14 +129,17 @@
 		.icon-lock {
 			display: none;
 		}
+
 		.icon-unlocked {
 			display: block;
 		}
 
 		&.private {
+		
 			.icon-unlocked {
 				display: none;
 			}
+		
 			.icon-lock {
 				display: block;
 			}
