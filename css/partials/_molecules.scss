@@ -36,6 +36,17 @@
 	}
 }
 
+// profiles ================================================
+
+.profiles-list {
+	@include zero;
+	@include nobullet;
+
+	li {
+		display: inline-block;
+	}
+}
+
 // story item ================================================
 
 .story-item {
