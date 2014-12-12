@@ -27,9 +27,11 @@
 .size1of2,
 .size2of4,
 .size1of3,
+.size1of4,
 .size1of6,
 .size2of6,
-.size4of6 {
+.size4of6,
+.size5of6 {
 	width: 100%;
 }
 
@@ -55,8 +57,9 @@
 		width: 66.668%;
 	}
 
+	.size1of6,
 	.size5of6 {
-		width: 83.33%;
+		width: 100%;
 	}
 
 }
