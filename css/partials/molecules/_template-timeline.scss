@@ -72,14 +72,15 @@
 .timeline-dot {
 	background-color: $red;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 10px;
+	left: 10px;
 	width: 20px;
 	height: 20px;
 	@include rounded(50%);
 	box-shadow: 0 0 0 4px $earlygray, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
 
 	@include bp(l) {
+		top: 0;
 		left: 50%;
 		margin-top: 20px;
 		margin-left: -10px;
