@@ -154,10 +154,73 @@
  	text-align: center;
  }
 
+ /* ==========================================================================
+   Story
+   ========================================================================== */
+
+.story-head {
+	margin-bottom: 40px;
+
+	&:after {
+		background-color: $lightgray;
+		content: '';
+		display: block;
+		height: 1px;
+		width: 40px;
+	}
+}
 
  /* ==========================================================================
    Sections
    ========================================================================== */
+
+// customize menu ================================================
+
+.customize-menu {
+	right: 0;
+	top: 0;
+	margin-top: 120px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 20px;
+	position: absolute;
+	height: 100%;
+	max-height: 100%;
+	background-color: lighten($earlygray, 5%);
+
+	h3, h5, .form-actions {
+		margin-left: 30px;
+	}
+
+	h3,h5 {
+		margin-bottom: 5px;
+	}
+
+	h3 {
+		color: $lightgray;
+	}
+
+	h5 {
+		color: $spacegray;
+	}
+
+	.control-label {
+		padding-top: 12px;
+		width: 110px;
+	}
+
+	.controls {
+		display: inline-block;
+		width: 120px;
+		margin-left: 0;
+	}
+
+	.group-switch {
+		.control-label {
+			padding-top: 8px;
+		}
+	}
+}
 
 // masthead steps ================================================
 
@@ -170,11 +233,101 @@
 	}
 }
 
+// metadata ================================================
+
+.metadata {
+	@include font-size($smallerfontsize);
+	margin: 20px 0 40px 0;
+	@include clearfix;
+
+	> * {
+		float: left;
+	}
+
+	.author {
+		border-right: 1px solid $lightgray;
+		width: 200px;
+
+		.avatar {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.author-name,
+		.date {
+			display: block;
+		}
+
+		.author-name {
+			color: $red;
+			font-weight: 700;
+		}
+
+		.date {
+			color: $lightgray;
+		}
+	}
+
+	.counter {
+		margin: 0 10px;
+
+		.number,
+		.label {
+			display: block;
+			@include font-size($smallerfontsize);
+		}
+
+		.number {
+			@include font-size(18);
+			font-weight: 700;
+			line-height: 1em;
+		}
+
+		.label {
+			color: $lightgray;
+			text-transform: uppercase;
+		}
+	}
+
+	.profiles-list {
+		margin-top: 0;
+	}
+}
+
 // stories list ================================================
 
 .stories-list {
 	list-style: none;
 	@include zero;
+}
+
+// story preview ================================================
+
+.story-preview {
+	background-color: white;
+	left: 0;
+	top: 0;
+	padding: 60px;
+	height: 100%;
+	max-height: 100%;
+
+	.inner {
+		max-width: 1400px;
+	}
+
+
+}
+
+.story-masonry {
+	@include clearfix;
+	clear: both;
+	margin-top: 40px;
+}
+
+.story-masonry .brick {
+	float: left;
+	width: 320px;
+	margin: 10px;
 }
 
 // templates ================================================
