@@ -110,7 +110,7 @@ $(document).ready(function() {
 	$container.imagesLoaded( function() {
 	  $container.masonry({
 	  	columnWidth: 200,
-	  	itemSelector: '.result-element'
+	  	itemSelector: '.result-brick'
 	  });
 	});
 	
