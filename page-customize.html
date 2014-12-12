@@ -1,0 +1,161 @@
+<!-- $title Seejay - Customize -->
+<!-- $page-class page-customize -->
+
+<!-- @include _header -->
+
+<!-- Svg reference for icons -->
+<!-- @include _svgdefs -->
+
+<div class="page <!-- $page-class -->">
+	
+	<!-- @include _head -->
+
+	<section class="masthead masthead-steps">
+		<ul class="nav step-tabs">
+			<li class="completed"><a href="<!-- @path page-search.html -->"><small class="step-back">back to</small><span class="step-number">1</span> <span class="step-name">Search & Curate</span></a></li>
+			<li class="active"><span class="step-number">2</span> <span class="step-name">Customize</span></li>
+			<li><span class="step-number">3</span> <span class="step-name">Publish</span></li>
+		</ul>
+	</section>
+
+	<div class="main line">
+		
+		<section class="unit size5of6 story-preview">
+			<div class="inner">
+
+				<h1 style="font-family: KlavikaBold-Bold;, Roboto; font-size: 48px; color: #BBB7B7; ">Enter a title</h1>
+				<h2 style="color: #BBB7B7; margin-top: -40px">Enter a description</h2>
+
+				<!-- @include _gallery-brick -->
+				<br>
+				<section class="js-masonry story-masonry">
+					<!-- @include _brick-text -->
+					<!-- @include _brick-media -->
+					<!-- @include _brick-text -->
+					<!-- @include _brick-media -->
+					<!-- @include _brick-text -->
+					<!-- @include _brick-media -->
+					<!-- @include _brick-text -->
+					<!-- @include _brick-media -->
+					<!-- @include _brick-text -->
+					<!-- @include _brick-media -->
+
+				</section>
+
+			</div>
+
+		</section>
+
+		<section class="unit size1of6 customize-menu">	
+			<div class="form-horizontal">
+				<h3>Edit</h3>
+
+				<div class="control-group control-group-sm group-switch">
+					<label class="control-label">Insert text</label>
+					<input type="checkbox" class="switch" />
+				</div>
+				<div class="control-group control-group-sm group-switch">
+					<label class="control-label">Drag mode</label>
+					<input type="checkbox" class="switch" />
+				</div>
+
+				<h3>Options</h3>
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Title</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div>
+				</div><!-- controls -->
+
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Description</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div>
+				</div><!-- controls -->
+
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Metadata</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div>
+				</div><!-- controls -->
+
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Contribute</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div>
+				</div><!-- controls -->
+
+				<h3>Styles</h3>
+
+				<div class="control-group control-group-sm">
+					<label class="control-label" >Title Font</label>
+					<div class="custom-select-style controls">
+						<select class="control">
+						  <option>Klavika</option>
+						  <option>Helvetica Neue</option>
+						  <option>Georgia</option>
+						</select>
+					</div>
+				</div><!-- control-group -->
+
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="font">Text Font</label>
+					<div class="custom-select-style controls">
+						<select class="control">
+							<option>Roboto</option>
+							<option>Helvetica Neue</option>
+							<option>Georgia</option>
+						</select>
+					</div>
+				</div><!-- control-group -->
+
+				<h5>Colors</h5>
+
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Title</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div><!-- controls -->
+				</div><!-- control-group -->
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Text</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div><!-- controls -->
+				</div><!-- control-group -->
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Background</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div><!-- controls -->
+				</div><!-- control-group -->
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Element</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div><!-- controls -->
+				</div><!-- control-group -->
+				<div class="control-group control-group-sm">
+					<label class="control-label" for="text">Element border</label>
+					<div class="controls">
+						<input type="text" id="text" name="text" placeholder="#HEX code" class="control control-lg">
+					</div><!-- controls -->
+				</div><!-- control-group -->
+
+				<div class="control-group form-actions">
+					<div class="controls">
+						<button class="btn btn-primary btn-sm">Save</button>
+					</div><!-- controls -->
+				</div><!-- control-group -->
+			</div>
+		</section>
+
+	</div><!-- end of main -->	
+
+	<!-- @include _foot -->
+</div>
+
+<!-- @include _footer -->
