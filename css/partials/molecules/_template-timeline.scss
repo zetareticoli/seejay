@@ -1,7 +1,7 @@
 
 .cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: 90%;
-	max-width: 1000px; // breakpoints inside partials > _layout.scss
+	max-width: 1400px; // breakpoints inside partials > _layout.scss
 	margin: 0 auto;
 
 	&::after { /* clearfix */
@@ -27,7 +27,7 @@
 		left: 18px;
 		height: 100%;
 		width: 4px;
-		background: darken($black, 5%);
+		background: $earlygray;
 	}
 
 	@include bp(l) {
@@ -81,7 +81,8 @@
 
 	@include bp(l) {
 		left: 50%;
-		margin-left: -30px;
+		margin-top: 20px;
+		margin-left: -10px;
 
 		/* Force Hardware Acceleration in WebKit */
 		-webkit-transform: translateZ(0);
@@ -117,42 +118,12 @@
 .cd-timeline-content {
 	position: relative;
 	margin-left: 60px;
-	background: $charcoal;
 	@include rounded(6px);
-	padding: 1em;
-	box-shadow: 0 3px 0 darken($earlygray, 5%);
 	@include clearfix;
 
-	h2 {
-		color: $charcoal;
-	}
-
-	p, .cd-read-more, .cd-date {
-		@include font-size(13px);
-	}
-
-	.cd-read-more, .cd-date {
-		display: inline-block;
-	}
-
-	p {
-		margin: 1em 0;
-		line-height: 1.6;
-	}
-
-	.cd-read-more {
-		float: right;
-		padding: .8em 1em;
-		background: $red;
-		color: white;
-		@include rounded(6px);
-
-		.no-touch &:hover {
-			background-color: lighten($red, 5%);
-		}
-	}
-
 	.cd-date {
+		display: inline-block;
+		@include font-size(13px);
 		float: left;
 		padding: .8em 0;
 		opacity: .7;
@@ -166,33 +137,18 @@
 		height: 0;
 		width: 0;
 		border: 7px solid transparent;
-		border-right: 7px solid $red;
-	}
-
-	@include bp(m) {
-		h2 {
-			@include font-size(20px);
-		}
-
-		p {
-			@include font-size(16px);
-		}
-
-		.cd-read-more, .cd-date {
-			@include font-size(14px);
-		}
+		border-right: 7px solid $lightgray;
 	}
 
 	@include bp(l) {
 		margin-left: 0;
-		padding: 1.6em;
 		width: 45%;
 
 		&::before {
 			top: 24px;
 			left: 100%;
 			border-color: transparent;
-			border-left-color: $red;
+			border-left-color: $lightgray;
 		}
 
 		.cd-read-more {
@@ -211,15 +167,11 @@
 			float: right;
 
 			&::before {
-				top: 24px;
+				top: 20px;
 				left: auto;
 				right: 100%;
 				border-color: transparent;
 				border-right-color: $red;
-			}
-
-			.cd-read-more {
-				float: right;
 			}
 
 			.cd-date {
