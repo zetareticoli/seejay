@@ -209,3 +209,26 @@
 	}
 }
 
+.load-more {
+	padding-left: 60px;
+	position: relative;
+	z-index: 100;
+
+	@include bp(l) {
+		bottom: 0;
+		left: 50%;
+		margin-left: -15%;
+		padding-left: 0;
+		position: absolute;
+		width: 30%;
+	}
+
+	.btn {
+		background-color: white;
+		width: 100%;
+	}
+}
+
+.btn-load-more {
+
+}
