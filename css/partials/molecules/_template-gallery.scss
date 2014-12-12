@@ -5,6 +5,7 @@
 	width: 100%;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
+	@include clearfix;
 
 	.royalSlider {
 		width: 100%;
