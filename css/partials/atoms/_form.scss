@@ -15,6 +15,7 @@ input[type="tel"] {
 	border: $inputborderwidth $borderstyle $earlygray;
 	color : inherit;
 	display : inline-block;
+	font-family: $basefontfamily;
 	margin-bottom : $baselineheight / 2;
 	@include rounded($defaultradius);
 	vertical-align : middle;
@@ -382,11 +383,19 @@ div:not(#foo) > input[type='radio']:checked + label {
 
 input[type="text"].control-light {
 	border: none;
+	display: block;
+	margin-bottom: $gutterwidth / 3;
+	padding: 0;
+	width: auto;
+
+	&:focus {
+		width: 100%;
+	}
 
 	&.control-lg {
-		line-height: 48px;
 		font-family: KlavikaWebBasicBold;
 		@include font-size(48);
+		line-height: 48px;
 	}
 
 	&.control-sm {
