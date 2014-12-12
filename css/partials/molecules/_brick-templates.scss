@@ -213,65 +213,6 @@
 	}
 }
 
-// template single ================================================
-
-.template-single {
-	@include clearfix;
-
-	.brick-head {
-		padding-bottom: 0;
-	}
-
-	.brick-author {
-		height: 60px;
-	}
-
-	.brick-media {
-
-		img {
-			border-top-left-radius: 6px;
-			border-top-right-radius: 6px;
-			width: 100%;
-			@include bp(l) {
-				border-bottom-left-radius: 6px;
-				border-top-right-radius: 0;
-			}
-		}
-
-		@include bp(l) {
-			float: left;
-			margin-right: 40px;
-			max-width: 500px;
-		}
-	}
-
-	.brick-stats .number {
-		@include font-size($smallerfontsize);
-	}
-
-	.time {
-		@include font-size($smallerfontsize);
-	}
-
-	@include bp(l) {
-
-		.brick-text {
-			@include font-size(18);
-			padding-left: 0;
-		}
-
-		.brick-foot .icon-xs {
-			width: 16px;
-			height: 16px;
-		}
-	}
-
-	@include max-bp(l) {
-		max-width: 500px;
-		margin: 0 auto;	
-	}
-}
-
 // template result ================================================
 
 .result-brick {
@@ -341,3 +282,64 @@
 		position: relative;
 	}
 }
+
+// template single ================================================
+
+.template-single {
+	@include clearfix;
+
+	.brick-head {
+		padding-bottom: 0;
+	}
+
+	.brick-author {
+		height: 60px;
+	}
+
+	.brick-media {
+
+		img {
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			width: 100%;
+			@include bp(l) {
+				border-bottom-left-radius: 6px;
+				border-top-right-radius: 0;
+			}
+		}
+
+		@include bp(l) {
+			float: left;
+			margin-right: 40px;
+			max-width: 500px;
+		}
+	}
+
+	.brick-stats .number {
+		@include font-size($smallerfontsize);
+	}
+
+	.time {
+		@include font-size($smallerfontsize);
+	}
+
+	@include bp(l) {
+
+		.brick-text {
+			@include font-size(18);
+			padding-left: 0;
+		}
+
+		.brick-foot .icon-xs {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	@include max-bp(l) {
+		max-width: 500px;
+		margin: 0 auto;	
+	}
+}
+
+// template timeline ================================================
