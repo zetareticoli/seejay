@@ -283,3 +283,21 @@ a.btn-write .icon {
 .active .alignment-style .icon {
 	fill: $red;
 }
+
+// button drag
+
+.btn-drag {
+	background-color: $lightgray;
+	cursor: move;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	@include rounded(0);
+	top: 0;
+	z-index: 1000;
+
+	.icon-drag {
+		fill: white;
+		top: 45%;
+	}
+}
