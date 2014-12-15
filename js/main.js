@@ -23,10 +23,17 @@ $(document).ready(function() {
 
 	$('.dropdown-toggle').dropdown();
 
-	$(".switch").iosCheckbox();
 
 	$(".story-status").click(function(event){
 		$(this).toggleClass("private");
+	});
+
+	// Toggles
+
+	$(".toggle-switch").iosCheckbox();
+
+	$(".toggle-visibility").click(function(event){
+		$(this).toggleClass("hide");
 	});
 
 	$('#button-open').click(function(event){
