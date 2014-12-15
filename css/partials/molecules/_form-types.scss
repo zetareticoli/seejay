@@ -53,17 +53,28 @@
 // form search
 
 .form-search {
-
-	.group-searchbox {
-		background: white;
-		border: 2px solid $earlygray;
-		position: relative;
-		@include rounded(3px);
-	}
+	@include clearfix;
+	margin: 20px 10px 0;
 
 	input[type="search"] {
 		border: none;
-		width: 80%;
+		width: 60%;
+	}
+
+	.group-social {
+		float: left;
+		width: 35%;
+	}
+
+	.group-searchbox {
+		background: white;
+		border-width: 2px;
+		border-style: solid;
+		border-color: darken($earlygray, 10%);
+		float: left;
+		position: relative;
+		@include rounded(3px);
+		width: 40%;
 	}
 
 	.dropdown-toggle {
