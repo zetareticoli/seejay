@@ -47,6 +47,54 @@
 	}
 }
 
+// search options ================================================
+
+.search-options {
+	@include clearfix;
+	margin: 0 10px;
+	position: relative;
+
+	.related-tags {
+		float: left;
+
+		.label,
+		ul,
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			width: auto;
+		}
+
+		li > a {
+			color: $spacegray;
+			@include font-size($smallfontsize);
+			font-weight: 300;
+		}
+
+		.label {
+			background-color: $softgray;
+			@include font-size($smallerfontsize - 2);
+			padding: 2px 3px;
+			@include rounded(3px);
+			text-transform: uppercase;
+		}
+	}
+
+	.sort-dropdown {
+		float: right;
+
+		.icon {
+			fill: $spacegray;
+		}
+
+		&:hover {
+			.icon {
+				fill: $black;
+			}
+		}
+	}
+}
+
 // story item ================================================
 
 .story-item {
