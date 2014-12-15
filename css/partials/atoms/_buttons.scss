@@ -263,3 +263,23 @@ a.btn-write .icon {
 	left: 0;
 	right: auto;
 }
+
+// alignment style
+
+.alignment-style {
+	padding: 5px;
+
+	&:hover {
+		background-color: $earlygray;
+		@include rounded(3px);
+	}
+
+	.icon {
+		fill: $lightgray;
+		top: 2px;
+	}
+}
+
+.active .alignment-style .icon {
+	fill: $red;
+}
