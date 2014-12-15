@@ -177,47 +177,124 @@
 // customize menu ================================================
 
 .customize-menu {
-	right: 0;
-	top: 0;
-	margin-top: 120px;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 20px;
-	position: absolute;
+	background-color: lighten($earlygray, 5%);
 	height: 100%;
 	max-height: 100%;
-	background-color: lighten($earlygray, 5%);
+	right: 0;
+	margin-top: 120px;
+	padding: 10px 15px 0;
+	position: absolute;
+	top: 0;
+	min-width: 240px;
 
-	h3, h5, .form-actions {
-		margin-left: 30px;
+	@include bp(xxl) {
+		padding: 20px 15px 0;
 	}
 
-	h3,h5 {
+	&.affixed {
+		margin-top: 60px;
+
+		@include height-bp(m) {
+			position: absolute;
+			height: 100%;
+		}
+	}
+
+	.fieldset-title, .fieldset-subtitle {
 		margin-bottom: 5px;
 	}
 
-	h3 {
+	.fieldset-subtitle {
 		color: $lightgray;
 	}
 
-	h5 {
+	.fieldset-title {
 		color: $spacegray;
 	}
 
 	.control-label {
+		text-align: left;
 		padding-top: 12px;
-		width: 110px;
+		width: 100px;
+	}
+
+	.control-group {
+		width: 100%;
+
+		@include bp(xxl) {
+			width: 100%;
+		}
+	}
+
+	.control {
+		padding: 8px;
 	}
 
 	.controls {
 		display: inline-block;
-		width: 120px;
 		margin-left: 0;
+		width: 100px;
+
+		@include bp(l) {
+			width: 110px;
+		}
+
+		@include bp(xxl) {
+			width: 52%;
+		}
 	}
 
 	.group-switch {
 		.control-label {
-			padding-top: 8px;
+			padding-top: 3px;
+		}
+	}
+
+	.group-options {
+		.control-label,
+		.controls {
+			padding-top: 2px;
+		}
+	}
+
+	.form-actions .controls,
+	.form-actions .btn {
+		width: 100%;
+	}
+
+	.form-actions .controls {
+		margin-bottom: 10px;
+	}
+
+	.toggle-visibility {
+		cursor: pointer;
+		padding-top: 10px;
+
+		.icon-eye {
+			fill: $red;
+		}
+
+		.icon-eye-blocked {
+			fill: $lightgray;
+		}
+
+		.icon-eye {
+			display: block;
+		}
+
+		.icon-eye-blocked {
+			display: none;
+		}
+
+		&.hide {
+
+			.icon-eye {
+				display: none;
+			}
+
+			.icon-eye-blocked {
+				display: block;
+			}
 		}
 	}
 }
