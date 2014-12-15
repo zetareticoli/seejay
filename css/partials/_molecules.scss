@@ -56,18 +56,23 @@
 
 	.related-tags {
 		float: left;
+		width: 80%;
 
 		.label,
 		ul,
 		li {
 			display: inline-block;
-			margin-right: 10px;
 			width: auto;
+		}
+
+		.label,
+		li {
+			margin-right: 10px;
 		}
 
 		li > a {
 			color: $spacegray;
-			@include font-size($smallfontsize);
+			@include font-size($smallerfontsize);
 			font-weight: 300;
 		}
 
