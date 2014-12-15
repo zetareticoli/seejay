@@ -15,14 +15,11 @@ $(document).ready(function() {
 	    }
 	});
 
-	$('code').each(function(){
-	    var text=$(this).html().replace(/</g,'&lt;');
-	    var text=text.replace(/>/g,'&gt;');
-	    $(this).html(text);
-	});
+	// Enable all dropdowns
 
 	$('.dropdown-toggle').dropdown();
 
+	// Public/Private switch
 
 	$(".story-status").click(function(event){
 		$(this).toggleClass("private");
