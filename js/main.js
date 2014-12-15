@@ -28,6 +28,16 @@ $(document).ready(function() {
 		$(this).toggleClass("private");
 	});
 
+	// Activate social buttons
+
+	var $socialButton = $('.group-social').children();
+
+	$socialButton.click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$(this).toggleClass('active');
+	});
+
 	// Toggles
 
 	$(".toggle-switch").iosCheckbox();
