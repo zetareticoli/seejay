@@ -346,27 +346,33 @@ a.btn-write .icon {
 				}
 
 				&.btn-facebook {
-					background: rgb(59,89,152);
+					background: $facebook;
+					border-color: $facebook;
 				}
 				
 				&.btn-twitter {
-					background: rgb(85,172,238);
+					background: $twitter;
+					border-color: $twitter;
 				}
 				
 				&.btn-googleplus {
-					background: rgb(188,48,16);
+					background: $googleplus;
+					border-color: $googleplus;
 				}
 				
 				&.btn-instagram {
-					background: rgb(81,127,164);
+					background: $instagram;
+					border-color: $instagram;
 				}
 				
 				&.btn-youtube {
-					background: rgb(239,69,15);
+					background: $youtube;
+					border-color: $youtube;
 				}
 				
 				&.btn-flickr {
-					background: rgb(255,0,132);
+					background: $flickr;
+					border-color: $flickr;
 				}
 			}
 		}
