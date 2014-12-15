@@ -335,9 +335,9 @@ a.btn-write .icon {
 		}
 
 		.btn {
-			border: none;
+			border: 2px solid darken($earlygray,5%);
 			@include no-selection;
-			@include transition(background .15s ease-in);
+			@include transition(all .15s ease-in);
 
 			&.active {
 
