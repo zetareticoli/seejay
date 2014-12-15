@@ -116,7 +116,7 @@ $(document).ready(function() {
 
 	var $container = $('.result-list');
 	// initialize Masonry after all images have loaded  
-	$container.imagesLoaded( function() {
+	$container.imagesLoaded(function(){
 	  $container.masonry({
 	  	columnWidth: 200,
 	  	itemSelector: '.result-brick'
