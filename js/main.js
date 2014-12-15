@@ -127,7 +127,7 @@ $(document).ready(function() {
 	// initialize Masonry after all images have loaded  
 	$container.imagesLoaded(function(){
 	  $container.masonry({
-	  	columnWidth: 320,
+	  	columnWidth: 300,
 	  	itemSelector: '.brick'
 	  });
 	});
