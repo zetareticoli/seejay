@@ -122,6 +122,15 @@ $(document).ready(function() {
 	  	itemSelector: '.result-brick'
 	  });
 	});
+
+	var $container = $('.section-masonry');
+	// initialize Masonry after all images have loaded  
+	$container.imagesLoaded(function(){
+	  $container.masonry({
+	  	columnWidth: 320,
+	  	itemSelector: '.brick'
+	  });
+	});
 	
 });
 
