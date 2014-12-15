@@ -25,6 +25,8 @@ $(document).ready(function() {
 
 	$('.dropdown-toggle').dropdown();
 
+	$('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+
 	// Public/Private switch
 
 	$(".story-status").click(function(event){
