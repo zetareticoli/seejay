@@ -301,3 +301,24 @@ a.btn-write .icon {
 		top: 45%;
 	}
 }
+
+// button group
+
+.button-group.group-social {
+	background: transparent;
+	display: inline-block;
+
+	.btn {
+		height: 50px;
+		padding: 13px 7px;
+	}
+
+	.icon {
+		top: 0;
+	}
+
+	input[type="checkbox"] {
+		display: none;
+	}
+}
+
