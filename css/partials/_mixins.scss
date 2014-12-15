@@ -45,6 +45,15 @@ color : $color; }
     @media (min-width: 20em) { @content; }
   }
 }
+
+@mixin height-bp($point) {
+  // notebook => 768px
+  @if $point == m {
+    @media (max-height: 770px) { @content; }
+  }
+  // large desktop => 1140px
+}
+
 @mixin max-bp($point) {
   // xlarge desktop => 1300px
   @if $point == xxl {
