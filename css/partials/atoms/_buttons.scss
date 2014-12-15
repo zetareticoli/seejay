@@ -320,21 +320,56 @@ a.btn-write .icon {
 
 // button group
 
-.button-group.group-social {
+.button-group {
+
+	&.group-social {
 	background: transparent;
 	display: inline-block;
 
-	.btn {
-		height: 50px;
-		padding: 13px 7px;
-	}
+		input[type="checkbox"] {
+			display: none;
+		}
 
-	.icon {
-		top: 0;
-	}
+		.icon {
+			fill: $lightgray;
+		}
 
-	input[type="checkbox"] {
-		display: none;
+		.btn {
+			border: none;
+			@include no-selection;
+			@include transition(background .15s ease-in);
+
+			&.active {
+
+				.icon {
+					fill: white;
+				}
+
+				&.btn-facebook {
+					background: rgb(59,89,152);
+				}
+				
+				&.btn-twitter {
+					background: rgb(85,172,238);
+				}
+				
+				&.btn-googleplus {
+					background: rgb(188,48,16);
+				}
+				
+				&.btn-instagram {
+					background: rgb(81,127,164);
+				}
+				
+				&.btn-youtube {
+					background: rgb(239,69,15);
+				}
+				
+				&.btn-flickr {
+					background: rgb(255,0,132);
+				}
+			}
+		}
 	}
 }
 
