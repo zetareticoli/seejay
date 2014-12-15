@@ -391,17 +391,14 @@
 	.inner {
 		max-width: 1400px;
 	}
-
-
 }
 
-.story-masonry {
+.section-masonry {
 	@include clearfix;
 	clear: both;
-	margin-top: 40px;
 }
 
-.story-masonry .brick {
+.section-masonry .brick {
 	float: left;
 	width: 320px;
 	margin: 10px;
