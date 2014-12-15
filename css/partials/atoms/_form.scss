@@ -394,11 +394,11 @@ input[type="text"].control-light {
 	&.control-lg {
 		font-family: KlavikaWebBasicBold;
 		@include font-size(48);
-		line-height: 48px;
+		line-height: 1.5em;
 	}
 
 	&.control-sm {
-		line-height: 24px;
+		line-height: 1.5em;
 		@include font-size(24);
 	}
 }
