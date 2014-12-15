@@ -63,7 +63,11 @@
 
 	.group-social {
 		float: left;
-		width: 35%;
+		width: 100%;
+
+		@include bp(l) {
+			width: 340px;
+		}
 	}
 
 	.group-searchbox {
@@ -74,7 +78,11 @@
 		float: left;
 		position: relative;
 		@include rounded(3px);
-		width: 40%;
+		width: 100%; 
+
+		@include bp(l) {
+			width: 40%;
+		}
 	}
 
 	.dropdown-toggle {
