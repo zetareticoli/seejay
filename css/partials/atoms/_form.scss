@@ -70,6 +70,42 @@ label {
 	font-weight: 700;
 }
 
+// disabled
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+	opacity : .25; 
+}
+
+// placeholder
+
+[placeholder]:focus::-webkit-input-placeholder {
+	opacity : 0;
+	transition : opacity .15s .15s ease; 
+}
+
+// validation states
+
+.has-success {
+	& .control,
+	& .control:hover,
+	& .control:focus {
+		border-color: green;
+	}
+}
+
+.has-error {
+	& .control,
+	& .control:hover,
+	& .control:focus {
+		border-color: red;
+	}
+}
+
 // form controls
 
 .control-group {
@@ -86,6 +122,48 @@ label {
 		vertical-align: middle; 
 	}
 }	
+
+// control sizes
+
+.control-lg {
+	padding : 13px 10px;
+	@include font-size($basefontsize);
+	line-height : 20px;
+}
+
+.control-sm {
+	padding : 10px 8px;
+	@include font-size($smallfontsize);
+	line-height : 18px;
+}
+
+.control-group-lg {
+	.control-label {
+		@include font-size($basefontsize);
+	}
+	
+	.control {
+		padding : 13px 10px;
+		@include font-size($basefontsize);
+		line-height : 20px;
+	}
+}
+
+.control-group-sm {
+	.control-label, .checkbox {
+		@include font-size($smallfontsize);
+	}
+
+	.control-label {
+		padding-top: 10px;
+	}
+	
+	.control {
+		padding : 10px 8px;
+		@include font-size($smallfontsize);
+		line-height : 18px;
+	}
+}
 
 // radio & checkbox
 
@@ -129,24 +207,6 @@ label {
 	min-height: 20px;
 	margin-bottom: 0;
 	padding-left: 0;
-}
-
-// disabled
-
-input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] {
-	opacity : .25; 
-}
-
-// placeholder
-
-[placeholder]:focus::-webkit-input-placeholder {
-	opacity : 0;
-	transition : opacity .15s .15s ease; 
 }
 
 // custom select style
@@ -242,7 +302,7 @@ div:not(#foo) > input[type='radio']:checked + label {
     color: $black;
 }
 
-// ios switch
+// toggle ios switch
 
 .ios-ui-select{
 	background: $earlygray;
@@ -276,66 +336,6 @@ div:not(#foo) > input[type='radio']:checked + label {
 	-moz-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
 	-o-transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
 	transition: all 350ms cubic-bezier(0, 0.89, 0.44, 1);
-}
-
-// validation states
-
-.has-success {
-	& .control,
-	& .control:hover,
-	& .control:focus {
-		border-color: green;
-	}
-}
-
-.has-error {
-	& .control,
-	& .control:hover,
-	& .control:focus {
-		border-color: red;
-	}
-}
-
-// control sizes
-
-.control-lg {
-	padding : 13px 10px;
-	@include font-size($basefontsize);
-	line-height : 20px;
-}
-
-.control-sm {
-	padding : 10px 8px;
-	@include font-size($smallfontsize);
-	line-height : 18px;
-}
-
-.control-group-lg {
-	.control-label {
-		@include font-size($basefontsize);
-	}
-	
-	.control {
-		padding : 13px 10px;
-		@include font-size($basefontsize);
-		line-height : 20px;
-	}
-}
-
-.control-group-sm {
-	.control-label, .checkbox {
-		@include font-size($smallfontsize);
-	}
-
-	.control-label {
-		padding-top: 10px;
-	}
-	
-	.control {
-		padding : 10px 8px;
-		@include font-size($smallfontsize);
-		line-height : 18px;
-	}
 }
 
 // textarea advanced controls
@@ -419,4 +419,3 @@ input[type="text"].control-light {
 		border-color: darken($lightgray, 15%);
 	}
 }
-
