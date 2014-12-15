@@ -402,3 +402,21 @@ input[type="text"].control-light {
 		@include font-size(24);
 	}
 }
+
+// insert text 
+
+.insert-text {
+	border: 2px dashed $lightgray;
+	cursor: pointer;
+	margin: 20px 0;
+	@include rounded(6px);
+	padding: 10px 8px;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	user-select: none;
+
+	&:hover {
+		border-color: darken($lightgray, 15%);
+	}
+}
+
