@@ -11,20 +11,6 @@ section > p {
 	font-weight: 300;
 }
 
-pre {
-	font-family: Consolas, Menlo, monospace;
-	background: white;
-	color: white;
-	@include rounded(5px);
-	width: 100%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow: auto;
-    code {
-    	font-size: 13px !important;
-    }
-}
-
 .library-code {
 	color: $red;
 	font-family: Consolas, monospace;
@@ -217,4 +203,153 @@ section[class*="section-"] {
 .glyph .icon {
 	width: 24px;
 	height: 24px;
+}
+
+/* ==========================================================================
+  Prettyprint Theme
+  ========================================================================== */
+
+/* Tomorrow Night Eighties Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+.prettyprint {
+  background: #2d2d2d;
+  padding: 10px;
+  @include rounded(6px);
+
+  code {
+  	font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+  	font-size: 12px !important;
+  	line-height: 1em;
+  }
+}
+
+.pln {
+  color: #cccccc;
+}
+
+@media screen {
+  .str {
+    color: #99cc99;
+  }
+
+  .kwd {
+    color: #cc99cc;
+  }
+
+  .com {
+    color: #999999;
+  }
+
+  .typ {
+    color: #6699cc;
+  }
+
+  .lit {
+    color: #f99157;
+  }
+
+  .pun {
+    color: #cccccc;
+  }
+
+  .opn {
+    color: #cccccc;
+  }
+
+  .clo {
+    color: #cccccc;
+  }
+
+  .tag {
+    color: #f2777a;
+  }
+
+  .atn {
+    color: #f99157;
+  }
+
+  .atv {
+    color: #66cccc;
+  }
+
+  .dec {
+    color: #f99157;
+  }
+
+  .var {
+    color: #f2777a;
+  }
+
+  .fun {
+    color: #6699cc;
+  }
+}
+@media print, projection {
+  .str {
+    color: #006600;
+  }
+
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+
+  .lit {
+    color: #004444;
+  }
+
+  .pun, .opn, .clo {
+    color: #444400;
+  }
+
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+
+  .atn {
+    color: #440044;
+  }
+
+  .atv {
+    color: #006600;
+  }
+}
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  /* */
+}
+
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  /* */
 }
