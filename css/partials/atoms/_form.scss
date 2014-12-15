@@ -408,7 +408,7 @@ input[type="text"].control-light {
 .insert-text {
 	border: 2px dashed $lightgray;
 	cursor: pointer;
-	margin: 20px 0;
+	margin: 40px 0;
 	@include rounded(6px);
 	padding: 10px 8px;
 	-moz-user-select: -moz-none;
@@ -417,5 +417,11 @@ input[type="text"].control-light {
 
 	&:hover {
 		border-color: darken($lightgray, 15%);
+	}
+
+	&.active {
+		border: none;
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
