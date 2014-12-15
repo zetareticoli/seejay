@@ -19,21 +19,81 @@
 	</section>
 
 	<div class="main line">
+
+		<section class="unit size4of6">
+
+			<!-- Search box -->
+
+			<form class="form-search" role="form">
+
+				<div class="control-group button-group group-social">
+					<label class="btn btn-default active" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title="" data-original-title="Includi Twitter, cerca per #hashtag o @utente">
+						<svg class="icon icon-lg icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                        <input type="checkbox" class="selectSourceButton" data-id_fonte="2" data-source="TW" checked="checked"> <i class="fa fa-TW"></i>
+                    </label>
+                    <label class="btn btn-default active" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title="" data-original-title="Includi Twitter, cerca per #hashtag o @utente">
+						<svg class="icon icon-lg icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                        <input type="checkbox" class="selectSourceButton" data-id_fonte="2" data-source="TW" checked="checked"> <i class="fa fa-TW"></i>
+                    </label>
+                    <label class="btn btn-default active" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title="" data-original-title="Includi Twitter, cerca per #hashtag o @utente">
+						<svg class="icon icon-lg icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+                        <input type="checkbox" class="selectSourceButton" data-id_fonte="2" data-source="TW" checked="checked"> <i class="fa fa-TW"></i>
+                    </label>
+                    <label class="btn btn-default active" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title="" data-original-title="Includi Twitter, cerca per #hashtag o @utente">
+						<svg class="icon icon-lg icon-googleplus"><use xlink:href="#icon-googleplus"></use></svg>
+                        <input type="checkbox" class="selectSourceButton" data-id_fonte="2" data-source="TW" checked="checked"> <i class="fa fa-TW"></i>
+                    </label>
+                    <label class="btn btn-default active" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title="" data-original-title="Includi Twitter, cerca per #hashtag o @utente">
+						<svg class="icon icon-lg icon-flickr"><use xlink:href="#icon-flickr"></use></svg>
+                        <input type="checkbox" class="selectSourceButton" data-id_fonte="2" data-source="TW" checked="checked"> <i class="fa fa-TW"></i>
+                    </label>
+                    <label class="btn btn-default active" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title="" data-original-title="Includi Twitter, cerca per #hashtag o @utente">
+						<svg class="icon icon-lg icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+                        <input type="checkbox" class="selectSourceButton" data-id_fonte="2" data-source="TW" checked="checked"> <i class="fa fa-TW"></i>
+                    </label>
+
+				</div>
+
+				<div class="control-group group-searchbox">
+					<div class="input-group-btn">
+			          <button type="button" id="prequery" class="dropdown-toggle selection" data-toggle="dropdown">
+				          <span>#</span>
+			              <span class="caret"></span>
+			          </button>
+			          <ul class="dropdown-menu" role="menu" aria-labelledby="searchtTool">
+			              <li><a href="javascript:void(0)"><span>#</span> Parola chiave/Hashtag</a></li>
+			              <li><a href="javascript:void(0)"><span>@</span> Utente/Pagina</a></li>
+			          </ul>
+			      	</div>
+					<div class="controls">
+						<input type="search" id="search" name="search" placeholder="Search a text" class="control control-lg">
+						<button class="btn-search">Submit</button>
+					</div><!-- controls -->
+				</div><!-- control-group -->
+
+			</form><!-- form-horizontal -->
+
+			<!-- Results list -->
+			<div class="results-list js-masonry">
+				<!-- @include _result-twitter -->
+				<!-- @include _result-facebook -->
+				<!-- @include _result-instagram -->
+				<!-- @include _result-flickr -->
+				<!-- @include _result-googleplus -->
+				<!-- @include _result-youtube -->
+				<!-- @include _result-twitter -->
+				<!-- @include _result-facebook -->
+				<!-- @include _result-instagram -->
+				<!-- @include _result-flickr -->
+				<!-- @include _result-googleplus -->
+				<!-- @include _result-youtube -->
+				<!-- @include _result-twitter -->
+			</div>
+			
+		</section>
 		
 		<section class="unit size4of6 results-list js-masonry">
-			<!-- @include _result-twitter -->
-			<!-- @include _result-facebook -->
-			<!-- @include _result-instagram -->
-			<!-- @include _result-flickr -->
-			<!-- @include _result-googleplus -->
-			<!-- @include _result-youtube -->
-			<!-- @include _result-twitter -->
-			<!-- @include _result-facebook -->
-			<!-- @include _result-instagram -->
-			<!-- @include _result-flickr -->
-			<!-- @include _result-googleplus -->
-			<!-- @include _result-youtube -->
-			<!-- @include _result-twitter -->
+
 		</section>
 
 		<section class="unit size2of6 templates">	
