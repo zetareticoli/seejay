@@ -96,6 +96,22 @@ a.btn-link {
 	}
 }
 
+.btn-iconized,
+a.btn-iconized {
+
+	&.btn-lg {
+		padding: 10px 8px;
+
+		.icon {
+			top: 2px;
+		}
+	}
+
+	&.btn-sm {
+		padding: 6px;
+	}
+}
+
 .btn-add,
 a.btn-add {
 	background: white;
