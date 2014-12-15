@@ -439,7 +439,8 @@
 		@include no-selection;
 	}
 
-	.brick-media {
+	// fix image auto-height in the single template
+	.template-single  >.brick-media {
 		height: 500px;
 	}
 }
