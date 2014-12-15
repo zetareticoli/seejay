@@ -1,0 +1,63 @@
+<div class="story">
+
+	<!-- Story Head -->
+	<div class="story-head">
+
+		<!-- Title & Description -->
+		<input type="text" class="control control-lg control-light" placeholder="Enter a title" />
+		<input type="text" class="control control-sm control-light" placeholder="Enter a description" />
+
+		<!-- Metadata -->
+		<div class="metadata">
+			<div class="author">
+				<img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm">
+				<span class="author-name">John Doe</span>
+				<span class="date">14 nov 2014</span>
+			</div>
+			<div class="counter">
+				<span class="number">200</span>
+				<small class="label">contributions</small>
+			</div>
+			<ul class="profiles-list">
+				<li><img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm"></li>
+				<li><img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm"></li>
+				<li><img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm"></li>
+				<li><img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm"></li>
+				<li><img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm"></li>
+				<li><img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-sm"></li>
+			</ul>
+		</div>						
+	</header>
+
+	<!-- Story Content -->
+	<div class="story-content">
+
+		<div class="content-section">
+			<!-- @include _template-gallery -->
+		</div>
+		<div class="insert-text">
+			<svg class="icon icon-sm icon-write"><use xlink:href="#icon-write"></use></svg>
+			<span>Enter a text</span>
+		</div>
+		<div class="content-section section-masonry js-masonry">
+			<!-- @include _template-brick-text -->
+			<!-- @include _template-brick-media -->
+			<!-- @include _template-brick-text -->
+			<!-- @include _template-brick-media -->
+			<!-- @include _template-brick-text -->
+			<!-- @include _template-brick-media -->
+			<!-- @include _template-brick-text -->
+			<!-- @include _template-brick-media -->
+			<!-- @include _template-brick-text -->
+			<!-- @include _template-brick-media -->
+		</div>
+
+		<div class="content-section">
+			<!-- @include _template-timeline -->
+		</div>
+
+		<div class="content-section">
+			<!-- @include _template-single -->
+		</div>
+	</div>
+</div>
