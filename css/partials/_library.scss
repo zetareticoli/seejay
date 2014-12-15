@@ -20,7 +20,7 @@ section > p {
   Sections
   ========================================================================== */
 
-section[class*="section-"] {
+section[class*="library-"] {
 	margin: 0 60px 60px;
 	background-color: white;
 	@include clearfix;
@@ -30,21 +30,21 @@ section[class*="section-"] {
 	}
 }
 
-.section-subtitle {
+.library-subtitle {
 	color: $black;
 	@include font-size(32);
 	font-weight: 300;
 	margin-bottom: 40px;
 }
 
-.section-fieldtitle {
+.library-fieldtitle {
 	color: $charcoal;
 	@include font-size(24);
 	font-weight: 300;
 	margin: 40px 0;
 }
 
-.section-jumbotron {
+.library-jumbotron {
 	color: $black;
 	line-height: 20px;
 	margin-bottom: 0;
@@ -53,7 +53,7 @@ section[class*="section-"] {
 	padding-right: 60px;
 	padding-top: 80px;
 
-	.section-title {
+	.library-title {
 		color: $red;
 		font-size: 48px;
 		font-weight: 700;
