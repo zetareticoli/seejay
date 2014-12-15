@@ -119,6 +119,14 @@ time {
 	text-transform: uppercase;
 }
 
+.unstyled {
+	@include nobullet;
+	@include zero;
+
+	li {
+		display: inline-block;
+	}
+}
 
 /* ==========================================================================
    Global Colours
