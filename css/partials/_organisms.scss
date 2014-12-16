@@ -427,16 +427,32 @@
 	position: relative;
 	z-index: 999;
 
+	> * {
+		@include no-selection;
+	}
+
 	&:hover {
 		border-color: darken($lightgray, 15%);
 
-		.btn-drag {
+		.btn-drag,
+		.btn-remove {
 			background-color: darken($lightgray, 15%);
 		}
 	}
 
-	> * {
-		@include no-selection;
+	.btn-remove {
+		background-color: $lightgray;
+		cursor: pointer;
+		padding: 2px 3px 5px;
+		position: absolute;
+		@include rounded(0);
+		top: 0;
+		right: 0;
+		z-index: 1000;
+
+		.icon {
+			fill: white;
+		}
 	}
 
 	// fix image auto-height in the single template
