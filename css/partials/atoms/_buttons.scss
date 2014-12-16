@@ -96,22 +96,6 @@ a.btn-link {
 	}
 }
 
-.btn-iconized,
-a.btn-iconized {
-
-	&.btn-lg {
-		padding: 10px 8px;
-
-		.icon {
-			top: 2px;
-		}
-	}
-
-	&.btn-sm {
-		padding: 6px;
-	}
-}
-
 .btn-add,
 a.btn-add {
 	background: white;
@@ -332,12 +316,19 @@ a.btn-write .icon {
 
 		.icon {
 			fill: $lightgray;
+			top: 2px;
 		}
 
 		.btn {
 			border: 2px solid darken($earlygray,5%);
+			padding: 10px 8px;
+
 			@include no-selection;
 			@include transition(all .15s ease-in);
+
+			&:hover {
+				background-color: darken($earlygray,5%);
+			}
 
 			&.active {
 
