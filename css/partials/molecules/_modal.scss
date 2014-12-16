@@ -123,4 +123,89 @@
 	overflow: scroll;
 }
 
+// templates
+
+.modal-promote {
+
+	.modal-header {
+		padding-bottom: 0;
+		text-align: center;
+	}
+
+	.modal-body {
+
+		> form {
+			width: 100%;
+		}
+
+		> form .control-group:first-child {
+			width: 494px;
+		}
+	}
+
+	.nav-tabs {
+		margin-top: 40px;
+	}
+
+	.avatars-list {
+		margin-bottom: 30px;
+	}
+
+	.chrs-counter {
+		color: $lightgray;
+		display: block;
+		float: left;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.btn-primary {
+		float: left;
+	}
+}
+
+.modal-contribute {
+
+	.group-message {
+		padding-top: 25px;
+		width: 440px;
+
+		.btn-iconized .icon {
+			fill: $spacegray;
+			@include transition(fill .15s linear);
+		}
+
+		.btn-iconized:hover .icon {
+			fill: $black;
+		}
+
+		.btn-iconized.active .icon {
+			fill: $red;
+		}
+	}
+
+	.location {
+		display: none;
+		position: relative; 
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -30px;
+			left: 130px;
+			height: 0;
+			width: 0;
+			border: 15px solid transparent;
+			border-bottom: 15px solid white;
+		}
+
+		&.active {
+			display: block;
+			padding: 15px 40px 40px;
+		}
+	}
+
+	.avatar {
+		display: inline-block;
+	}
 }
