@@ -63,7 +63,7 @@
 
 	.group-social {
 		float: left;
-		width: 100%;
+		width: 60%;
 
 		@include bp(l) {
 			width: 340px;
@@ -80,9 +80,13 @@
 		@include rounded(3px);
 		width: 100%; 
 
-		@include bp(l) {
+		@include bp(xxl) {
 			width: 40%;
 		}
+	}
+
+	.group-buzz-switch {
+		float: right;
 	}
 
 	.dropdown-toggle {
