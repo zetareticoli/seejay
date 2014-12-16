@@ -53,6 +53,18 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 	});
 
+	// Activate contribute location
+
+	var $insertLocation = $('.btn-locate');
+	var $locationMap = $('.location');
+
+	$insertLocation.click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$locationMap.toggleClass('active').toggleClass('pullDown');
+	});
+
 	// Toggles
 
 	$(".toggle-switch").iosCheckbox();
