@@ -67,11 +67,12 @@
     </section>
   </section>
 
+  <!-- Tooltips -->
   <section class="library-section section-tooltips">
     <h2 class="library-subtitle">Tooltips</h2>
     <div class="line">
       <div class="unit size1of2">
-        <br><br>
+        <h3 class="library-fieldtitle">Example</h3>
         <button class="btn btn-lg btn-default" data-toggle="tooltip" title="This is a beautiful tooltip">Hover me to see tooltip in action</button>
       </div>
       <div class="unit size1of2">
@@ -91,6 +92,52 @@
     </div>
   </section>
 
+  <!-- Modal -->
+  <section class="library-section section-modal">
+    <h2 class="library-subtitle">Modal</h2>
+    <div class="line">
+      <div class="unit size1of1">
+        <h3 class="library-fieldtitle">Example</h3>
+        <div class="library-overlay">
+          <!-- @include _modal -->
+        </div>
+      </div>
+    </div>
+
+    <div class="line">
+      <div class="unit size1of2">
+      <pre class="prettyprint">
+      <code data-lang="html">
+      <div class="modal fade">
+        <button type="button" class="btn btn-iconized btn-close" data-dismiss="modal">
+          <svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
+        </button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-lg btn-link" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-lg btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </code>
+      </pre>
+      </div>
+      <div class="unit size1of2">
+        <h3 class="library-fieldtitle">Notes</h3>
+        <p>Default modal template is divided in three sections: header, body and footer. Close button in located outside of modal wrapper.
+        If you want a custom position for actions buttons, remove the entire block <span class="library-code">&lt;div class="modal-footer" &gt;</span> and move them inside the <br>  <span class="library-code">&lt;div class="modal-body" &gt;</span>
+        </p>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Result Elements -->
