@@ -302,6 +302,34 @@ div:not(#foo) > input[type='radio']:checked + label {
     color: $black;
 }
 
+// label switch
+
+.bootstrap-switch {
+	border: 2px solid darken($earlygray, 10%);
+	margin: 5px 0 0 5px;
+	height: 40px;
+
+	.bootstrap-switch-handle-on,
+	.bootstrap-switch-handle-off,
+	.bootstrap-switch-label {
+		height: 40px;
+	}
+
+	.bootstrap-switch-handle-on {
+		background: $earlygray;
+	}
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, 
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
+.bootstrap-switch {
+	background: #F3F1F0;
+	color: $charcoal;
+}
+
+.bootstrap-switch .bootstrap-switch-label {
+	width: 40px !important;
+}
 // toggle ios switch
 
 .ios-ui-select{
