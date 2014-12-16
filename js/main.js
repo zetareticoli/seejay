@@ -67,6 +67,9 @@ $(document).ready(function() {
 
 	// Toggles
 
+	$('.buzz-switch').bootstrapSwitch('onText','Curation');
+	$('.buzz-switch').bootstrapSwitch('offText','Buzz');
+
 	$(".toggle-switch").iosCheckbox();
 
 	$(".toggle-visibility").click(function(event){
