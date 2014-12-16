@@ -11,6 +11,7 @@
 	z-index: 1040;
 	-webkit-overflow-scrolling: touch;
 	outline: 0;
+	width: 700px;
 
   &.in {
 	display: block;
@@ -47,6 +48,11 @@
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	outline: 0;
+
+	p {
+		@include font-size($smallfontsize);
+		margin-bottom: 10px;
+	}
 }
 .modal-backdrop {
 	position: absolute;
@@ -65,7 +71,7 @@
 }
 .modal-header {
 	padding: 40px 15px;
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid $earlygray;
 	min-height: 16.42857143px;
 }
 .modal .btn-close {
@@ -82,15 +88,21 @@
 	text-align: center;
 }
 .modal-body {
-	background-color: $earlygray;
-	position: relative;
-	padding: 15px 40px;
-}
-.modal-footer {
-	background-color: $earlygray;
+	background-color: lighten($earlygray, 5%);
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
-	padding: 40px;
+	position: relative;
+	padding: 15px 40px 40px;
+
+	form {
+		width: 100%;
+	}
+}
+.modal-footer {
+	background-color: lighten($earlygray, 5%);
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 0 40px 40px;
 	text-align: right;
 }
 .modal-footer .btn + .btn {
@@ -109,4 +121,6 @@
 	width: 50px;
 	height: 50px;
 	overflow: scroll;
+}
+
 }
