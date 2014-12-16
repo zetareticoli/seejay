@@ -264,6 +264,17 @@ a.btn-write .icon {
 	right: auto;
 }
 
+.dropup .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
+.dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
 // alignment style
 
 .alignment-style {
