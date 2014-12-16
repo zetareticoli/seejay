@@ -33,6 +33,16 @@ $(document).ready(function() {
 		$(this).toggleClass("private");
 	});
 
+	// Selectable users
+
+	var $selectableUser = $('.avatar-item');
+
+	$selectableUser.click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$(this).toggleClass('selected').toggleClass('pulse');
+	});
+
 	// Activate social buttons
 
 	var $socialButton = $('.group-social').children();
