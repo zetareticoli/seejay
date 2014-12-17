@@ -170,6 +170,18 @@
 	}
 }
 
+.story-title {
+	color: $red;
+	font-family: KlavikaWebBasicBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include font-size(48);
+	line-height: $baselineheight / 2;
+	margin-bottom: $gutterwidth / 2;
+}
+
+.story-description {
+	color: $charcoal;
+}
+
  /* ==========================================================================
    Sections
    ========================================================================== */
