@@ -571,6 +571,59 @@
 	}
 }
 
+.share-horizontal-list {
+	text-align: right;
+
+	li {
+		color: $lightgray;
+		@include font-size($smallerfontsize);
+		vertical-align: middle;
+
+		&.label {
+			margin-left: 20px;
+		}
+
+		&.circle {
+			border: 1px solid $lightgray;
+			height: 32px;
+			width: 32px;
+			@include rounded(50%);
+
+			&:hover {
+				border-color: $black;
+
+				.icon {
+					fill: $black;
+				}
+			}
+
+			.icon {
+				top: 2px;
+				left: -1px;
+			}
+		}
+	}
+
+	.icon {
+		fill: $lightgray;
+
+		&:hover {
+			&.icon-facebook-circle {
+				fill: $facebook;
+			}
+			&.icon-twitter-circle {
+				fill: $twitter;
+			}
+			&.icon-googleplus-circle {
+				fill: $googleplus;
+			}
+			&.icon-mail-circle {
+				fill: $black;
+			}
+		}
+	}
+}
+
 /* ==========================================================================
   Modal
   ========================================================================== */
