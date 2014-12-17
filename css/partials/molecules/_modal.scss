@@ -11,7 +11,6 @@
 	z-index: 1040;
 	-webkit-overflow-scrolling: touch;
 	outline: 0;
-	width: 700px;
 
   &.in {
 	display: block;
@@ -44,10 +43,12 @@
 .modal-content {
 	position: relative;
 	background-color: white;
+	margin: 40px auto;
 	@include rounded(6px);
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	outline: 0;
+	width: 700px;
 
 	p {
 		@include font-size($smallfontsize);
