@@ -218,30 +218,57 @@
 
 .menu {
 	background-color: lighten($earlygray, 5%);
-	height: 100%;
-	max-height: 100%;
-	right: 0;
-	margin-top: 120px;
-	padding: 10px 15px 0;
-	position: absolute;
-	top: 0;
-	min-width: 240px;
+	float: left;
+	height: 160px;
+	position: relative;
+
+	@include max-bp(l) {
+		width: 100%;
+	}
+
+	@include bp(l) {
+		float: none;
+		height: 100%;
+		max-height: 100%;
+		margin-top: 120px;
+		right: 0;
+		padding: 10px 15px 0;
+		position: absolute;
+		top: 0;
+
+		// affixed works only on desktop
+		&.affixed {
+			margin-top: 60px;
+
+			@include height-bp(m) {
+				position: absolute;
+				height: 100%;
+			}
+		}
+	}
 
 	@include bp(xxl) {
 		padding: 20px 15px 0;
 	}
 
-	&.affixed {
-		margin-top: 60px;
+	.fieldset {
+		float: left;
 
-		@include height-bp(m) {
-			position: absolute;
-			height: 100%;
+		@include max-bp(l) {
+			padding: 10px;
 		}
 	}
 
 	.fieldset-title, .fieldset-subtitle {
 		margin-bottom: 5px;
+	}
+
+	.fieldset-title {
+		@include font-size(18);
+
+		@include bp(l) {
+			@include font-size($basefontsize * 1.25);
+		} 
 	}
 
 	.fieldset-subtitle {
@@ -354,6 +381,14 @@
 
 .publish-menu {
 
+	.fieldset {
+		width: 33%;
+
+		@include bp(l){
+			width: 100%;
+		}
+	}
+
 	.control-group {
 		margin-bottom: $gutterwidth;
 	}
@@ -362,6 +397,7 @@
 		color: $spacegray;
 		@include font-size($smallerfontsize);
 		line-height: 1.35em;
+		height: 80px;
 		padding: 8px;
 	}
 
