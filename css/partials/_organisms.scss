@@ -174,9 +174,9 @@
    Sections
    ========================================================================== */
 
-// customize menu ================================================
+// menu ================================================
 
-.customize-menu {
+.menu {
 	background-color: lighten($earlygray, 5%);
 	height: 100%;
 	max-height: 100%;
@@ -211,6 +211,11 @@
 	.fieldset-title {
 		color: $spacegray;
 	}
+}
+
+// customize menu
+
+.customize-menu {
 
 	.control-label {
 		text-align: left;
@@ -302,6 +307,28 @@
 				display: block;
 			}
 		}
+	}
+}
+
+// publish menu
+
+.publish-menu {
+
+	.control-group {
+		margin-bottom: $gutterwidth;
+	}
+
+	.control-embed-code {
+		color: $spacegray;
+		@include font-size($smallerfontsize);
+		line-height: 1.35em;
+		padding: 8px;
+	}
+
+	.btn-clipboard {
+		float: right;
+		@include font-size($smallerfontsize);
+		text-align: left;
 	}
 }
 
