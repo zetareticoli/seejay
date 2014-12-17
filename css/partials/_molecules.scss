@@ -543,7 +543,13 @@
 
 	> li {
 		@include font-size($smallfontsize);
-		width: 100%;
+		float: left;
+		margin-bottom: 10px;
+		width: 50%;
+
+		@include bp(l) {
+			width: 100%;
+		}
 	}
 
 	> li a {
@@ -556,6 +562,12 @@
 
 	.icon {
 		margin-right: 10px;
+
+		@include max-bp(l) {
+			width: 20px;
+			height: 20px;
+			top: 4px;
+		};
 	}
 }
 
