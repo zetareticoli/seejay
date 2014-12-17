@@ -4,17 +4,17 @@ $(document).ready(function() {
 	    var scroll = $(window).scrollTop();
 	    var $masthead = $(".masthead-steps");
 	    var $templates = $(".templates");
-	    var $menu = $(".menu");
+	    var $aside = $(".menu");
 
 	    if (scroll >= 60) {
 	        $masthead.addClass("affixed");
 	        $templates.addClass("affixed");
-	        $menu.addClass("affixed");
+	        $aside.addClass("affixed");
 	    }
 	    else {
 	      	$masthead.removeClass("affixed");
 	      	$templates.removeClass("affixed");
-	      	$menu.removeClass("affixed");
+	      	$aside.removeClass("affixed");
 	    }
 	});
 
