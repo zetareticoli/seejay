@@ -43,7 +43,7 @@
 
  	.logo {
  		float: left;
- 		margin-top: 5px;
+ 		margin-top: 8px;
  	}
  }
 
@@ -52,6 +52,9 @@
 .head-public {
 	background-color: $earlygray;
 	padding-right: 10px;
+	position: fixed;
+	z-index: 9999;
+	@include transition(all .3s);
 
 	.logo-svg {
 		fill: $spacegray;
@@ -64,15 +67,57 @@
 
 		.btn {
 			margin: 0 10px;
-			border-color: $red;
+		}
+	}
+
+	.story-excerpt,
+	.share-horizontal-list {
+		float: left;
+		opacity: 0;
+		@include transition(opacity .3s);
+	}
+
+	.story-excerpt {
+		border-left: 1px solid $earlygray;
+		margin-left: 20px;
+		padding-left: 20px;
+		width: auto;
+
+		.avatar {
+			margin-right: 10px;
+		}
+
+		.avatar,
+		.story-title {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+
+		.story-title {
 			color: $red;
+			font-family: $altfontfamily;
+			@include font-size(20);
+			line-height: $baselineheight;
+		}
+	}
 
-			@include transition(background-color .15s linear);
+	.share-horizontal-list {
+		margin-left: 40px;
+	}
 
-			&:hover {
-				background-color: $red;
-				color: white;
-			}
+	&.affixed {
+		background-color: rgba(255,255,255,.97);
+		border-bottom: 1px solid $earlygray;
+		padding: 10px 10px;
+
+		.logo-svg {
+			@include transition(all .3s);
+			width: 75px;
+		}
+
+		.story-excerpt,
+		.share-horizontal-list {
+			opacity: 1;
 		}
 	}
 }
