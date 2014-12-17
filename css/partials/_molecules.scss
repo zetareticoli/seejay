@@ -36,17 +36,6 @@
 	}
 }
 
-// profiles ================================================
-
-.profiles-list {
-	@include zero;
-	@include nobullet;
-
-	li {
-		display: inline-block;
-	}
-}
-
 // search options ================================================
 
 .search-options {
