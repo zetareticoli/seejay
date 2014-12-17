@@ -131,6 +131,27 @@ a.btn-add {
 	}
 }
 
+.btn-primary.btn-light {
+	border-color: $red;
+	color: $red;
+	font-weight: 700;
+	@include transition(background-color .15s linear);
+
+	.icon {
+		fill: $red;
+	}
+
+	&:hover {
+		background-color: $red;
+		border-color: $red;
+		color: white;
+
+		.icon {
+			fill: white;
+		}
+	}
+}
+
 // button with icons
 
 .btn-close,
