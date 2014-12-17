@@ -227,6 +227,36 @@ a:hover {
 	width: 100px;
 	height: 25px;
 }
+
+// social icons ================================================
+
+.icon-facebook,
+.icon-facebook-circle {
+	fill: $facebook;
+}
+
+.icon-twitter,
+.icon-twitter-circle {
+	fill: $twitter;
+}
+
+.icon-googleplus,
+.icon-googleplus-circle {
+	fill: $googleplus;
+}
+
+.icon-instagram {
+	fill: $instagram;
+}
+
+.icon-flickr{
+	fill: $flickr;
+}
+
+.icon-youtube{
+	fill: $youtube;
+}
+
 /* ==========================================================================
    Buttons
    ========================================================================== */
