@@ -2,16 +2,19 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
+	    var $masthead = $(".masthead-steps");
+	    var $templates = $(".templates");
+	    var $menu = $(".menu");
 
 	    if (scroll >= 60) {
-	        $(".masthead-steps").addClass("affixed");
-	        $(".templates").addClass("affixed");
-	        $(".customize-menu").addClass("affixed");
+	        $masthead.addClass("affixed");
+	        $templates.addClass("affixed");
+	        $menu.addClass("affixed");
 	    }
 	    else {
-	      	$(".masthead-steps").removeClass("affixed");
-	      	$(".templates").removeClass("affixed");
-	      	$(".customize-menu").removeClass("affixed");
+	      	$masthead.removeClass("affixed");
+	      	$templates.removeClass("affixed");
+	      	$menu.removeClass("affixed");
 	    }
 	});
 
