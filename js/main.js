@@ -5,6 +5,7 @@ $(document).ready(function() {
 	    var $masthead = $(".masthead-steps");
 	    var $templates = $(".templates");
 	    var $aside = $(".menu");
+	    var $editStyle = $(".btn-toggle-menu");
 
 	    if (scroll >= 60) {
 	        $masthead.addClass("affixed");
@@ -15,6 +16,13 @@ $(document).ready(function() {
 	      	$masthead.removeClass("affixed");
 	      	$templates.removeClass("affixed");
 	      	$aside.removeClass("affixed");
+	    }
+
+	    if (scroll >= 180) {
+	        $editStyle.addClass("affixed");
+	    }
+	    else {
+	      	$editStyle.removeClass("affixed");
 	    }
 	});
 
@@ -66,6 +74,14 @@ $(document).ready(function() {
 		event.preventDefault();
 		$(this).toggleClass('active');
 		$locationMap.toggleClass('active').toggleClass('pullDown');
+	});
+
+	// Toggle Customize Menu on mobile
+
+	$('.btn-toggle-menu').click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$('.menu').toggleClass('open');
 	});
 
 	// Toggles

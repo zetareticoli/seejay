@@ -258,6 +258,7 @@
 
 	.fieldset {
 		float: left;
+		width: 100%;
 
 		@include max-bp(l) {
 			padding: 10px;
@@ -317,12 +318,12 @@
 		}
 	}
 
-	input[type="text"].control {
+	input[type="control"].control {
 		padding: 8px;
 	}
 
 	select.control {
-		padding: 9px 8px;
+		padding: 10px 8px;
 	}
 
 	.group-switch {
@@ -418,8 +419,12 @@
 			margin-bottom: 6px;
 		}
 
-		.custom-select-style {
-			margin-bottom: -4px;
+		.half-fieldset .group-style-alignment {
+			margin-bottom: 15px;
+		}
+
+		select.control {
+		    padding: 8px 8px;
 		}
 
 		.group-style-alignment .btn-group {
@@ -429,13 +434,64 @@
 		.form-actions .controls {
 			float: right;
 			margin-right: 10px;
-			width: 30%;
+			width: 35%;
 		}
 	}
 }
 
-.page-customize .menu {
-	height: auto;
+.btn.btn-toggle-menu {
+	background-color: lighten($earlygray, 5%);
+	color: $charcoal;
+	display: none;
+	font-weight: 300;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+
+	.icon {
+		margin-right: 10px;
+	}
+
+	&:hover {
+		color: $red;
+
+		.icon {
+			fill: $red;
+		}
+	}
+}
+
+@include max-bp(l) {
+
+	.btn.btn-toggle-menu {
+		display: block;
+
+		&.affixed {
+			position: fixed;
+			margin-top: -120px;
+		}
+	}
+
+	.page-customize .menu {
+		height: 0;
+		opacity: 0;
+		@include transition(height .35s ease, opacity .35s linear);
+		
+		&.affixed {
+			position: fixed;
+			margin-top: -60px;
+		}
+	}
+
+	.page-customize .menu.open {
+		height: 400px;
+		max-height: 100%;
+		opacity: 1;
+		z-index: 5;
+	}
+
 }
 
 // publish menu
