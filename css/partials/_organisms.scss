@@ -303,10 +303,6 @@
 		}
 	}
 
-	.control {
-		padding: 8px;
-	}
-
 	.controls {
 		display: inline-block;
 		margin-left: 0;
@@ -319,6 +315,14 @@
 		@include bp(xxl) {
 			width: 52%;
 		}
+	}
+
+	input[type="text"].control {
+		padding: 8px;
+	}
+
+	select.control {
+		padding: 9px 8px;
 	}
 
 	.group-switch {
@@ -380,6 +384,58 @@
 			}
 		}
 	}
+
+	@include max-bp(l) {
+
+		.fieldset {
+			width: 25%;
+		}
+
+		.fieldset.fieldset-lg {
+			width: 50%;
+		}
+
+		.fieldset.fieldset-xl {
+			width: 100%;
+		}
+
+		.half-fieldset {
+			float: left;
+			margin-bottom: 10px;
+			width: 50%;
+		}
+
+		.half-fieldset .control-label,
+		.half-fieldset .controls {
+			width: 95%;
+		}
+
+		.half-fieldset .control-label {
+			padding-top: 0;
+		}
+
+		.half-fieldset .control-group {
+			margin-bottom: 6px;
+		}
+
+		.custom-select-style {
+			margin-bottom: -4px;
+		}
+
+		.group-style-alignment .btn-group {
+		    margin-top: 6px;
+		}
+
+		.form-actions .controls {
+			float: right;
+			margin-right: 10px;
+			width: 30%;
+		}
+	}
+}
+
+.page-customize .menu {
+	height: auto;
 }
 
 // publish menu
