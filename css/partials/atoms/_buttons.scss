@@ -8,6 +8,10 @@ a.btn {
 	@include rounded(3px);
 	font-weight: 700;
 	@include transition(all .15s ease);
+
+	&:focus {
+		outline: none;
+	}
 }
 
 // sizes
