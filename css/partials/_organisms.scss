@@ -161,10 +161,14 @@
 .story {
 	left: 0;
 	top: 0;
-	padding: 20px;
+	padding: 40px 20px;
 	height: 100%;
 	max-height: 100%;
 	max-width: 1400px;
+
+	@include bp(l) {
+		padding: 40px;
+	}
 
 	// sections
 
@@ -202,12 +206,13 @@
 	color: $red;
 	font-family: KlavikaWebBasicBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include font-size(48);
-	line-height: $baselineheight / 2;
-	margin-bottom: $gutterwidth / 2;
+	line-height: $baselineheight / 1.75;
+	margin-bottom: $gutterwidth;
 }
 
 .story-description {
 	color: $charcoal;
+	line-height: $baselineheight / 1.25;
 }
 
  /* ==========================================================================
