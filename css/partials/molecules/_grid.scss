@@ -12,7 +12,8 @@
 
 .unit {
 	float: left;
-	margin-bottom: $gutterwidth * 2;
+	margin-bottom: $gutterwidth / 2;
+
 	@include bp(l) {
 		margin-bottom: $gutterwidth;
 	}
@@ -45,20 +46,12 @@
 		width: 50%;
 	}
 
-	.size1of6 {
-		width: 16.66%;
-	}
-
 	.size2of6 {
 		width: 33.33%;
 	}
 
 	.size4of6 {
 		width: 66.668%;
-	}
-
-	.size5of6 {
-		width: 83.33%;
 	}
 
 }
@@ -71,6 +64,15 @@
 		width: 33.33%;
 	}
 
+	.size1of6 {
+		min-width: 240px;
+		width: 16.66%;
+	}
+
+	.size5of6 {
+		width: 76.56%;
+	}
+
 }
 
 // large desktop columns
@@ -79,6 +81,16 @@
 
 	.size1of4 {
 		width: 25%;
+	}
+
+}
+
+// xlarge desktop columns
+
+@include bp(xxl) {
+
+	.size5of6 {
+		width: 81.53%;
 	}
 
 }
