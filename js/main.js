@@ -6,6 +6,7 @@ $(document).ready(function() {
 	    var $templates = $(".templates");
 	    var $aside = $(".menu");
 	    var $editStyle = $(".btn-toggle-menu");
+	    var $head = $(".head-public");
 
 	    if (scroll >= 60) {
 	        $masthead.addClass("affixed");
@@ -20,9 +21,11 @@ $(document).ready(function() {
 
 	    if (scroll >= 180) {
 	        $editStyle.addClass("affixed");
+	        $head.addClass("affixed");
 	    }
 	    else {
 	      	$editStyle.removeClass("affixed");
+	      	$head.removeClass("affixed");
 	    }
 	});
 
