@@ -120,6 +120,7 @@ time {
 }
 
 .unstyled {
+	line-height: 1em;
 	@include nobullet;
 	@include zero;
 
@@ -216,7 +217,6 @@ a:hover {
 
 .icon-xl {
 	height: 32px;
-	top: 10px;
 	width: 32px;
 }
 
