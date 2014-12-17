@@ -261,76 +261,6 @@
 	}
 }
 
-// user-panel ================================================
-
-.user-panel {
-	position: absolute;
-	right: 0;
-	top: 0;
-	text-align: center;
-	width: 160px;
-
-	&.dropdown {
-
-		.dropdown-toggle {
-			overflow: hidden;
-			padding: 16px 20px 16px;
-			position: relative;
-			text-align: center;
-			@include transition(all .15s ease);
-			width: 100%;
-			z-index: 1;
-		}
-
-		.dropdown-menu {
-			background-color: $softgray; 
-			border: 0;
-			height: 0;
-			max-height: 0;
-			position: absolute;
-			@include rounded(0);
-			top: 56px;
-			width: 0;
-
-			li {
-				border-bottom: 0;
-
-				&:last-child {
-					border-top: 1px solid $earlygray;
-				}
-
-				a {
-					@include font-size ($smallfontsize);
-					padding: 12px 15px;
-				}
-			}
-		}
-
-		&:hover {
-
-			.dropdown-toggle {
-				background-color: $softgray;
-			}
-
-			.dropdown-menu {
-				opacity: 1;
-				height: auto;
-				max-height: 400px;
-				@include transition(max-height .45s linear);
-				width: auto;
-			}
-		}
-	}
-
-	.user-name {
-		color: $charcoal;
-		display: inline-block;
-		@include font-size($smallfontsize);
-		font-weight: 400;
-		padding-right: 10px;
-	}
-}
-
 // template ================================================
 
 .template {
@@ -452,6 +382,76 @@
 				fill: white;
 			}
 		}
+	}
+}
+
+// user-panel ================================================
+
+.user-panel {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	width: 160px;
+
+	&.dropdown {
+
+		.dropdown-toggle {
+			overflow: hidden;
+			padding: 16px 20px 16px;
+			position: relative;
+			text-align: center;
+			@include transition(all .15s ease);
+			width: 100%;
+			z-index: 1;
+		}
+
+		.dropdown-menu {
+			background-color: $softgray; 
+			border: 0;
+			height: 0;
+			max-height: 0;
+			position: absolute;
+			@include rounded(0);
+			top: 56px;
+			width: 0;
+
+			li {
+				border-bottom: 0;
+
+				&:last-child {
+					border-top: 1px solid $earlygray;
+				}
+
+				a {
+					@include font-size ($smallfontsize);
+					padding: 12px 15px;
+				}
+			}
+		}
+
+		&:hover {
+
+			.dropdown-toggle {
+				background-color: $softgray;
+			}
+
+			.dropdown-menu {
+				opacity: 1;
+				height: auto;
+				max-height: 400px;
+				@include transition(max-height .45s linear);
+				width: auto;
+			}
+		}
+	}
+
+	.user-name {
+		color: $charcoal;
+		display: inline-block;
+		@include font-size($smallfontsize);
+		font-weight: 400;
+		padding-right: 10px;
 	}
 }
 
