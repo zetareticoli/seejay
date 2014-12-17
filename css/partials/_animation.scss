@@ -6,9 +6,11 @@
  Affixed
  ========================================================================== */
 
-.affixed {
-  position: fixed;
-  margin-top: 0px;
+@include bp(l) {
+  .affixed {
+    position: fixed;
+    margin-top: 0px;
+  }
 }
 
 /*
