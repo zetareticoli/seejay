@@ -3,15 +3,19 @@
    ========================================================================== */
 
 .page-dashboard {
-	
 	.masthead {
 		height: 80px;
 	}
-
 }
 
 .page-customize,
 .page-publish,
 .page-story {
 	background: white;
+}
+
+// page story ================================================
+
+.page-story .story {
+	margin: 0 auto;
 }
