@@ -387,7 +387,7 @@
 
 		.dropdown-toggle {
 			overflow: hidden;
-			padding: 16px 20px 16px;
+			padding: 15px 20px 15px;
 			position: relative;
 			text-align: center;
 			@include transition(all .15s ease);
@@ -396,10 +396,11 @@
 		}
 
 		.dropdown-menu {
-			background-color: $softgray; 
+			background-color: darken($softgray,8%); 
 			border: 0;
 			height: 0;
 			max-height: 0;
+			opacity: 0;
 			position: absolute;
 			@include rounded(0);
 			top: 56px;
@@ -422,14 +423,14 @@
 		&:hover {
 
 			.dropdown-toggle {
-				background-color: $softgray;
+				background-color: darken($softgray,8%); 
 			}
 
 			.dropdown-menu {
 				opacity: 1;
 				height: auto;
 				max-height: 400px;
-				@include transition(max-height .45s linear);
+				@include transition(max-height .55s linear);
 				width: auto;
 			}
 		}
