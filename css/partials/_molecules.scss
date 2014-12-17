@@ -538,6 +538,26 @@
 	}
 }
 
+.share-vertical-list {
+
+	> li {
+		@include font-size($smallfontsize);
+		width: 100%;
+	}
+
+	> li a {
+		color: $charcoal;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	.icon {
+		margin-right: 10px;
+	}
+}
+
 /* ==========================================================================
   Modal
   ========================================================================== */
