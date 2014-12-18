@@ -674,6 +674,74 @@
 	}
 }
 
+// profile ================================================
+
+// profile name
+
+.profile-name {
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+// profile settings
+
+.profile-settings {
+	margin-bottom: $gutterwidth * 2;
+
+	.inner {
+		background-color: white;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+	}
+
+	.fieldset {
+		padding: 20px 80px;
+	}
+
+	.fieldset-password {
+		display: none;
+	}
+
+	.fieldset-password.visible {
+		display: block;
+	}
+
+	.fieldset-picture {
+		background-color: $charcoal;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+
+		.controls {
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			width: 50%;
+		}
+
+		.btn-link {
+			color: white;
+			display: block;
+			margin: 10px 0 0; 
+
+			&:hover {
+				text-decoration: underline;
+
+				.icon {
+					fill: white;
+				}
+			}
+		}
+
+		.icon {
+			fill: white;
+		}
+	}
+} 
+
 // story contribute ================================================
 
 .story-contribute {
