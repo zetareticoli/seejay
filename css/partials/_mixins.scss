@@ -34,7 +34,7 @@ color : $color; }
 	}
   //tablet => 600px
   @else if $point == m {
-    @media (min-width: 37.500em) { @content; }
+    @media (min-width: 48em) { @content; }
   }
   // landscape smartphone and phablet => 480px
 	@else if $point == s {
