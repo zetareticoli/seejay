@@ -577,6 +577,8 @@
 	li {
 		color: $lightgray;
 		@include font-size($smallerfontsize);
+		margin-top: 10px;
+		margin-bottom: 10px;
 		vertical-align: middle;
 
 		&.label {
