@@ -25,6 +25,8 @@
 	margin: 0 auto;
 }
 
-.page-story .main {
-	padding-top: 68px;
+@include bp(m) {
+	.page-story .main {
+		padding-top: 68px;
+	}
 }
