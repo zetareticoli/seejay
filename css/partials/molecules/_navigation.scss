@@ -49,6 +49,7 @@
 	border-bottom: 1px $borderstyle $earlygray;
 	width: 100%;
 	@include zero;
+	margin-bottom: $gutterwidth;
 
 	&.simple-tabs {
 		border-bottom: 0;
