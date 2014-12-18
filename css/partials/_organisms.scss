@@ -596,6 +596,49 @@
 	}
 }
 
+
+// manage ================================================
+
+.manage-template {
+	background-color: $darkeroverlay;
+	height: 100%;
+	padding-top: $gutterwidth;
+	padding-bottom: $gutterwidth;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+
+	.manage-title,
+	.manage-intro {
+		color: white;
+	}
+
+	.manage-title {
+		margin-bottom: $gutterwidth / 2;
+	}
+
+	.nav-tabs > li {
+		@include font-size($smallfontsize);
+	}
+
+	.nav-tabs > li > a {
+		color: $red;
+	}
+
+	.nav-tabs > li.active {
+		border-color: white;
+	}
+
+	.nav-tabs > li.active > a {
+		color: white;
+	}
+
+	.actions {
+		float: right;
+		margin-top: 20px;
+	}
+}
+
 // masthead steps ================================================
 
 .masthead-steps {
