@@ -14,14 +14,24 @@
 	
 	<a id="button-open" class="btn btn-primary btn-write btn-write-link"><svg class="icon icon-lg icon-write"><use xlink:href="#icon-write"></use></svg></a>
 
-	<form class="form-inline form-write animation-slideleft" role="form">
+	<form class="form-inline form-write" role="form">
 		<div class="control-group">
-			<label class="control-label" for="hashtag">Create a story about &nbsp;<span class="hashtag-symbol">#</span></label>
+			<label class="control-label" for="hashtag">Create a story about
 		</div>
-		<div class="control-group">
-			<div class="controls">
-				<input type="text" id="hashtag" name="hashtag" placeholder="hashtag" class="control control-lg">
-			</div><!-- controls -->
+		<div class="control-group group-searchbox">
+		  <div class="controls">
+		    <button type="button" id="prequery" class="dropdown-toggle selection" data-toggle="dropdown">
+			    <svg class="icon icon-sm icon-dropdown"><use xlink:href="#icon-dropdown"></use></svg>
+				<span class="symbol">#</span>
+		    </button>
+		    <ul class="dropdown-menu" role="menu" aria-labelledby="searchtTool">
+		      <li><a href="#"><span>#</span> Parola chiave/Hashtag</a></li>
+		      <li><a href="#"><span>@</span> Utente/Pagina</a></li>
+		    </ul>
+		  </div>
+		  <div class="controls">
+		    <input type="search" id="search" name="search" placeholder="type an hashtag" class="control control-lg">
+		  </div><!-- controls -->
 		</div><!-- control-group -->
 		<div class="control-group">
 			<div class="controls">

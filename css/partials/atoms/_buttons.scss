@@ -213,6 +213,10 @@ a.btn-write .icon {
 
 .dropdown-toggle {
 	display: inline-block;
+	
+	&:focus {
+		outline: none;
+	}
 }
 
 .dropdown-menu {
