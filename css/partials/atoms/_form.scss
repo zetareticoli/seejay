@@ -125,7 +125,8 @@ textarea[readonly] {
 
 	input,
 	textarea,
-	select {
+	select,
+	.custom-select-style {
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
@@ -226,6 +227,7 @@ textarea[readonly] {
 	background: white;
 	border: $inputborderwidth $borderstyle $earlygray;
 	line-height : 20px;
+	margin-bottom : $baselineheight / 2;
 	overflow: hidden;
 	position: relative;
 	width: 200px;
@@ -256,11 +258,9 @@ textarea[readonly] {
 	}
 
 	.icon {
-		height: 24px;
 		position: absolute;
 		right: 10px;
-		top: 10px;
-		width: 24px;
+		top: 15px;
 		z-index: 0;
 	}
 }
