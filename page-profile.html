@@ -1,0 +1,156 @@
+<!-- $title Seejay - Profile -->
+<!-- $page-class page-profile -->
+
+<!-- @include _header -->
+
+<div class="page <!-- $page-class -->">
+  
+  <!-- @include _head -->
+
+  <div class="main">
+
+    <section class="profile-name">
+      <div class="line">
+        <div class="unit size1of1">
+          <h1><a href="<!-- @path page-dashboard -->">Francesco Improta</a> / Edit Profile</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-settings">
+      <div class="line">
+        <div class="unit size2of4 alignc">
+          <div class="inner">
+            <form class="form-horizontal" role="form">
+              <fieldset class="fieldset fieldset-picture">
+                <div class="control-group">
+                  <div class="controls">
+                    <img src="<!-- @path avatar.png -->" alt="Avatar" title="Profile Avatar" class="avatar avatar-lg">
+                    <a href="#" class="btn btn-link">
+                      <svg class="icon icon-lg icon-camera"><use xlink:href="#icon-camera"></use></svg>
+                      <span>Change profile picture</span>
+                    </a>
+                    <input class="control control-picture" type="file" value="picture" name="picture"></input>
+
+                  </div>
+                </div>
+
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <div class="control-group">
+                  <label class="control-label" for="name">Nome e Cognome</label>
+                  <div class="controls">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="email">Email</label>
+                  <div class="controls">
+                    <input type="text" id="email" name="email" placeholder="Enter your email" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="username">Username</label>
+                  <div class="controls">
+                    <input type="text" id="username" name="username" placeholder="Enter your username" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="city">City</label>
+                  <div class="controls">
+                    <input type="text" id="city" name="city" placeholder="The city you live in" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="city">Profile</label>
+                  <div class="controls">
+                    <div class="custom-select-style">
+                      <svg class="icon icon-sm icon-dropdown"><use xlink:href="#icon-dropdown"></use></svg>
+                      <select class="control">
+                        <option>Select a profile</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="optionsRadios">Gender</label>
+                  <div class="controls">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">
+                    <label class="radio gender-radio" for="optionsRadios1">
+                    <svg class="icon icon-sm icon-male"><use xlink:href="#icon-male"></use></svg>
+                      Male
+                    </label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    <label class="radio gender-radio" for="optionsRadios2">
+                      <svg class="icon icon-sm icon-female"><use xlink:href="#icon-female"></use></svg>
+                        Female
+                    </label>
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <div class="controls">
+                    <a href="#" class="btn btn-sm btn-link fieldset-link toggle-show">Change Password</a>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset fieldset-password">
+                <h3 class="fieldset-title">Change Password</h3>
+
+                <div class="control-group">
+                  <label class="control-label" for="password">Current Password</label>
+                  <div class="controls">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="new-password">News Password</label>
+                  <div class="controls">
+                    <input type="password" id="new-password" name="new-password" placeholder="Enter your password" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+
+                <div class="control-group">
+                  <label class="control-label" for="new-password">Confirm Password</label>
+                  <div class="controls">
+                    <input type="password" id="new-password" name="new-password" placeholder="Enter your password" class="control control-lg">
+                  </div><!-- controls -->
+                </div><!-- control-group -->
+                <div class="control-group">
+                  <div class="controls">
+                    <a href="#" class="btn btn-sm btn-link fieldset-link toggle-hide">Ooops, I don’t want to change my password</a>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="control-group form-actions actions-stacked">
+                <div class="controls">
+                  <button class="btn btn-lg btn-link">Cancel</button>
+                  <button class="btn btn-lg btn-primary">Submit</button>
+                </div><!-- controls -->
+              </div><!-- control-group -->
+
+            </form><!-- form-horizontal -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end of main -->  
+
+  <!-- @include _foot -->
+</div>
+
+<!-- @include _footer -->
