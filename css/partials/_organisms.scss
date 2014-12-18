@@ -53,34 +53,54 @@
 
 .head-public {
 	background-color: $earlygray;
-	padding-right: 10px;
-	position: fixed;
+	padding: 8px;
+	position: relative;
 	z-index: 9999;
 	@include transition(all .3s);
 
+	@include bp(m) {
+		padding: 15px 10px;
+		position: fixed;
+	}
+
 	.logo-svg {
 		fill: $spacegray;
+		height: 20px;
+
+		@include bp(m) {
+			height: 25px;
+		}
 	}
 
 	.promo {
 		color: $spacegray;
+		display: none;
 		float: right;
 		@include font-size($smallfontsize);
 
+		@include bp(l) {
+			display: block;
+		}
+
 		.btn {
 			margin: 0 10px;
+			&.btn-sm {
+				padding-top: 6px;
+				padding-bottom: 6px;
+			}
 		}
 	}
 
 	.story-excerpt,
 	.share-horizontal-list {
-		float: left;
+		display: none;
 		opacity: 0;
 		@include transition(opacity .3s .3s);
 	}
 
 	.story-excerpt {
 		border-left: 1px solid $earlygray;
+		float: left;
 		margin-left: 20px;
 		padding-left: 20px;
 		width: auto;
@@ -103,23 +123,42 @@
 		}
 	}
 
-	.share-horizontal-list {
-		margin-left: 40px;
+	@include bp(m) {
+		&.affixed {
+			background-color: rgba(255,255,255,.97);
+			border-bottom: 1px solid $earlygray;
+			padding: 10px 10px;
+
+			.logo-svg {
+				@include transition(all .3s);
+				width: 75px;
+			}
+
+			.promo {
+				display: none;
+				opacity: 0;
+			}
+
+			.story-excerpt,
+			.share-horizontal-list {
+				display: block;
+				opacity: 1;
+
+				> li {
+					margin: 0;
+				}
+			}
+
+			.share-horizontal-list {
+
+			}
+		}
 	}
 
-	&.affixed {
-		background-color: rgba(255,255,255,.97);
-		border-bottom: 1px solid $earlygray;
-		padding: 10px 10px;
-
-		.logo-svg {
-			@include transition(all .3s);
-			width: 75px;
-		}
-
-		.story-excerpt,
+	@include bp(l) {
 		.share-horizontal-list {
-			opacity: 1;
+			float: right;
+			margin-left: 40px;
 		}
 	}
 }
