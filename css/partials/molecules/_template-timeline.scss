@@ -123,6 +123,14 @@
 	@include rounded(6px);
 	@include clearfix;
 
+	.brick-text {
+		@include font-size($smallfontsize);
+
+		@include bp(l) {
+			@include font-size($basefontsize);
+		}
+	}
+
 	.cd-date {
 		color: $black;
 		display: inline-block;
