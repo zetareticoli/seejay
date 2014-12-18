@@ -89,11 +89,14 @@ a.btn-link {
 	background: transparent;
 	color: $red;
 	font-weight: 400;
+
 	.icon {
 		fill: $red;
 	}
+
 	&:hover{
 		text-decoration: underline;
+		
 		.icon {
 			fill: $darkred;
 		}
