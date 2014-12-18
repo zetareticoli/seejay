@@ -279,13 +279,40 @@
 .story {
 	left: 0;
 	top: 0;
-	padding: 40px 20px;
+	padding: 40px 0;
 	height: 100%;
 	max-height: 100%;
-	max-width: 1400px;
+	max-width: 300px;
+	@include transition(all .3s);
+
+	@include bp(m) {
+		padding: 30px;
+		max-width: 1400px;
+	}
 
 	@include bp(l) {
 		padding: 40px;
+	}
+
+	.story-share .share-horizontal-list {
+		text-align: left;
+
+		@include bp(m) {
+			text-align: right;
+		}
+
+		.label {
+			margin-left: 0;
+		}
+	}
+
+	// metadata
+
+	.metadata {
+		.author,
+		.counter {
+			margin-bottom: 20px;
+		}
 	}
 
 	// sections
@@ -303,8 +330,17 @@
 
 	.section-masonry .brick {
 		float: left;
-		width: 300px;
-		margin: 10px;
+		margin-bottom: 20px;
+		width: 100%;
+
+		@include bp(m) {
+			margin: 10px;
+			width: 320px;
+		}
+
+		@include bp(l) {
+			width: 300px;
+		}
 	}
 }
 
@@ -318,20 +354,55 @@
 		height: 1px;
 		width: 40px;
 	}
+
+	.story-share {
+		display: none;
+
+		@include bp(m) {
+			display: block;
+		}
+	}
 }
 
 .story-title {
 	color: $red;
 	font-family: KlavikaWebBasicBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	@include font-size(48);
+	@include font-size(40);
 	line-height: $baselineheight / 1.75;
 	margin-bottom: $gutterwidth;
+
+	@include bp(l) {
+		@include font-size(48);
+	}
 }
 
 .story-description {
 	color: $charcoal;
+	@include font-size(18);
 	line-height: $baselineheight / 1.25;
+
+	@include bp(l) {
+		@include font-size(24);
+	}
 }
+
+@include bp(m) {
+	.story-content {
+		.cd-timeline-block {
+			max-width: 400px;
+		}
+	}
+}
+
+@include bp(l) {
+	.story-content {
+		.cd-timeline-block {
+			max-width: none;
+		}
+	}
+}
+
+
 
  /* ==========================================================================
    Sections
