@@ -149,15 +149,10 @@ textarea[readonly] {
 	line-height : 18px;
 }
 
-.control-group-lg {
-	.control-label {
-		@include font-size($basefontsize);
-	}
-	
-	.control {
-		padding : 13px 10px;
-		@include font-size($basefontsize);
-		line-height : 20px;
+.control-group {
+
+	.custom-select-style .icon {
+		top: 15px;
 	}
 }
 
@@ -174,6 +169,10 @@ textarea[readonly] {
 		padding : 10px 8px;
 		@include font-size($smallfontsize);
 		line-height : 18px;
+	}
+
+	.custom-select-style .icon {
+		top: 10px;
 	}
 }
 
@@ -260,7 +259,6 @@ textarea[readonly] {
 	.icon {
 		position: absolute;
 		right: 10px;
-		top: 15px;
 		z-index: 0;
 	}
 }
