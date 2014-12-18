@@ -367,6 +367,10 @@
 
 .customize-menu {
 
+	.fieldset-title {
+		margin-left: 0;
+	}
+
 	.control-label {
 		text-align: left;
 		padding-top: 12px;
@@ -500,12 +504,8 @@
 			margin-bottom: 15px;
 		}
 
-		select.control {
-		    padding: 8px 8px;
-		}
-
 		.group-style-alignment .btn-group {
-		    margin-top: 6px;
+		    margin: 6px 0 10px;
 		}
 
 		.form-actions .controls {
@@ -516,7 +516,7 @@
 	}
 }
 
-.btn.btn-toggle-menu {
+.toggle-menu {
 	background-color: lighten($earlygray, 5%);
 	color: $charcoal;
 	display: none;
@@ -527,22 +527,15 @@
 	width: 100%;
 	z-index: 10;
 
-	.icon {
-		margin-right: 10px;
-	}
-
-	&:hover {
-		color: $red;
-
-		.icon {
-			fill: $red;
-		}
+	> span {
+		display: inline-block;
+		line-height: 8px;
 	}
 }
 
 @include max-bp(l) {
 
-	.btn.btn-toggle-menu {
+	.toggle-menu {
 		display: block;
 
 		&.affixed {

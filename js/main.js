@@ -5,7 +5,7 @@ $(document).ready(function() {
 	    var $masthead = $(".masthead-steps");
 	    var $templates = $(".templates");
 	    var $aside = $(".menu");
-	    var $editStyle = $(".btn-toggle-menu");
+	    var $toggleMenu = $(".toggle-menu");
 	    var $head = $(".head-public");
 
 	    if (scroll >= 60) {
@@ -20,11 +20,11 @@ $(document).ready(function() {
 	    }
 
 	    if (scroll >= 180) {
-	        $editStyle.addClass("affixed");
+	        $toggleMenu.addClass("affixed");
 	        $head.addClass("affixed");
 	    }
 	    else {
-	      	$editStyle.removeClass("affixed");
+	      	$toggleMenu.removeClass("affixed");
 	      	$head.removeClass("affixed");
 	    }
 	});
@@ -100,9 +100,8 @@ $(document).ready(function() {
 
 	// Toggle Customize Menu on mobile
 
-	$('.btn-toggle-menu').click(function(event){
-		event.stopPropagation();
-		event.preventDefault();
+	$('.btn-open-close').click(function(event){
+		$('.icon-open-close').toggleClass('open');
 		$('.menu').toggleClass('open');
 	});
 

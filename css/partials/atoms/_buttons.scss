@@ -341,6 +341,61 @@ a.btn-write .icon {
 	}
 }
 
+// button open/close
+
+.btn-open-close {
+	cursor: pointer;
+	width: auto;
+}
+
+.icon-open-close {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+	border: 2px solid $lightgray;
+	font-size: 3em;
+	border-radius: 50%;
+	vertical-align: top;
+	position: relative;
+	@include transition(0.5s);
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $lightgray;
+    width: 80%;
+    height: 6%;;
+    left: 10%;
+    top: 47%;
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $lightgray;
+    width: 10%;
+    height: 80%;
+    left: 46%;
+    top: 10%;
+  }
+  
+  &.open {
+  	background-color: $lightgray;
+
+    &:after {
+    	background-color: lighten($earlygray, 5%);
+    }
+
+    &:before {
+    	background-color: lighten($earlygray, 5%);
+    }
+    @include rotate(225deg);  
+  }  
+}
+
 // button group
 
 .button-group {
