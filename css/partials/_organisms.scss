@@ -765,7 +765,7 @@
 
 .metadata {
 	@include font-size($smallerfontsize);
-	margin: 20px 0 40px 0;
+	margin: 20px 0 20px 0;
 	@include clearfix;
 
 	> * {
@@ -773,8 +773,13 @@
 	}
 
 	.author {
-		border-right: 1px solid $lightgray;
-		width: 200px;
+		width: 80%;
+
+		@include bp(m) {
+			border-right: 1px solid $lightgray;
+			display: block;
+			width: 200px;
+		}
 
 		.avatar {
 			float: left;
@@ -793,6 +798,23 @@
 
 		.date {
 			color: $lightgray;
+		}
+	}
+
+	.btn-share {
+		text-align: right;
+
+		@include bp(m) {
+			display: none;
+		}
+	}
+
+	.counter,
+	.avatars-list {
+		display: none;
+
+		@include bp(m) {
+			display: inline-block;
 		}
 	}
 
@@ -817,7 +839,7 @@
 		}
 	}
 
-	.profiles-list {
+	.avatars-list {
 		margin-top: 0;
 	}
 }
