@@ -1,13 +1,13 @@
 # Seejay Front-end Style Guide
 
-The Seejay Front-end Style Guide is a library of UI patterns and guidelins to use for the Seejay application.
+The Seejay Front-end Style Guide is a library of UI patterns, guidelines and components for faster application development.
 
 ## Quick start
 
 Two start options are available: 
 
 * Download the latest release
-* Clone the repo:	git clone https://github.com/twbs/bootstrap.git
+* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
 
 ## What's included
 
