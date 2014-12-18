@@ -105,6 +105,24 @@ $(document).ready(function() {
 		$('.menu').toggleClass('open');
 	});
 
+	// Toggle share story on mobile
+
+	var $showShare = $('.btn-share');
+	var $hideShare = $('.btn-back');
+
+	$showShare.click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$('.mobile-share').addClass('visible').addClass('slideDown');
+	});
+
+	$hideShare.click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$('.mobile-share').removeClass('visible').removeClass('slideDown');
+	});
+
+
 	// Toggles
 
 	$('.buzz-switch').bootstrapSwitch('onText','Curation');
