@@ -712,6 +712,107 @@
 	}
 }
 
+// mobile share ================================================
+
+.mobile-share {
+	background: rgba(255,255,255,.96);
+	display: none;
+	height: 100%;
+	padding: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+
+	&.visible {
+		display: block;
+		overflow-y:scroll;
+		position: fixed;
+	}
+
+	> h1 {
+		color: $red;
+		font-family: $altfontfamily;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.share-horizontal-list {
+		@include clearfix;
+		margin: 0 auto;
+		width: 100%;
+
+		> li {
+			float: left;
+			@include font-size($smallfontsize);
+			text-align: center;
+			width: 32%;
+
+			> a {
+				color: $charcoal;
+			}
+
+			.icon {
+				display: block;
+				height: 48px;
+				margin: 0 auto 10px;
+				width: 48px;
+			}
+		}
+	}
+
+	.send-email {
+		margin: 0 auto;
+		text-align: center;
+		width: 30%;
+
+		> a {
+			color: $charcoal;
+			@include font-size($smallfontsize);
+		}
+
+		.icon {
+			display: block;
+			fill: $lightgray;
+			height: 48px;
+			margin: 0 auto;
+			width: 48px;
+		}
+
+		> a:active .icon {
+			fill: $charcoal;
+		}
+	}
+
+	.paragraph-divider {
+		border-top: 1px solid $earlygray;
+		margin: 2em auto;
+		position: relative;
+		width: 80%; 
+
+		> span {
+			background-color: rgba(255,255,255,.96);
+			color: $lightgray;
+			@include font-size($smallerfontsize);
+			left: 45%;
+			text-transform: uppercase;
+			position: absolute;
+			top: -15px; 
+			padding: 0 5px; 
+		}
+	}
+
+	.btn-back {
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+}
+
 // profile ================================================
 
 // profile name
