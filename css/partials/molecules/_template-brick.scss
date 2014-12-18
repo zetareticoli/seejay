@@ -97,3 +97,21 @@
 		position: relative;
 	}
 }
+
+// manage brick styles ================================================
+
+.manage-brick {
+	max-height: 260px;
+	overflow: hidden;
+
+	.brick-head {
+		cursor: default;
+		background-color: $earlygray;
+		@include clearfix;
+		padding: 8px 10px;
+
+		a + a {
+			float: right;
+		}
+	}
+}
