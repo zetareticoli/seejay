@@ -79,6 +79,25 @@ $(document).ready(function() {
 		$locationMap.toggleClass('active').toggleClass('pullDown');
 	});
 
+	// Change Password
+
+	var $toggleFieldset = $('.toggle-show')
+	var $fieldsetPassword = $('.fieldset-password')
+
+	$toggleFieldset.click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$fieldsetPassword.addClass('visible').addClass('pullDown');
+		$(this).hide();
+	});
+
+	$('.toggle-hide').click(function(event){
+		event.stopPropagation();
+		event.preventDefault();
+		$fieldsetPassword.removeClass('visible').removeClass('pullDown');
+		$toggleFieldset.show();
+	});
+
 	// Toggle Customize Menu on mobile
 
 	$('.btn-toggle-menu').click(function(event){
