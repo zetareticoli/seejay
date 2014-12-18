@@ -41,9 +41,12 @@
 @include bp(m) {
 
 	.size1of2,
-	.size1of4,
-	.size2of4 {
+	.size1of4 {
 		width: 50%;
+	}
+
+	.size2of4 {
+		width: 80%;
 	}
 
 	.size2of6 {
@@ -62,6 +65,11 @@
 
 	.size1of4 {
 		width: 33.33%;
+	}
+
+	.size2of4 {
+		width: 60%;
+		max-width: 700px;
 	}
 
 	.size1of6 {
@@ -92,7 +100,6 @@
 	.size5of6 {
 		width: 81.53%;
 	}
-
 }
 
 .alignc {
