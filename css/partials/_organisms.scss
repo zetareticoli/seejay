@@ -36,6 +36,7 @@
 
  .head {
  	background: white;
+ 	max-height: 60px;
  	@include clearfix;
  	padding: 15px 0 15px 10px;
  	position: relative;
@@ -43,7 +44,7 @@
 
  	.logo {
  		float: left;
- 		margin-top: 8px;
+ 		margin-top: 5px;
  	}
  }
 
