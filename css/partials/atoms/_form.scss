@@ -268,46 +268,44 @@ textarea[readonly] {
 // custom radio
 
 div:not(#foo) > input[type='radio'] {
+	display: none;
     opacity: 0;
     float: left;
-    width: 1px;
+    width: 0;
 }
 
-div:not(#foo) > input[type='radio'] + label {
+div:not(#foo) > input[type='radio'] + .gender-radio {
     margin: 0 -4px 0 0;
     clear: none;
     padding: 12px 20px;
     cursor: pointer;
-    /*background: url(off.png) left center no-repeat;*/
     background: white;
     border: $inputborderwidth $borderstyle $earlygray;
     color: $textcolor;
     font-weight: 400;
+    text-align: center;
     @include transition(all .15s ease-in-out);
+    width: 49%;
+
+    @include bp(l) {
+    }
 }
 
-div:not(#foo) > input[type='radio'] + label {
+div:not(#foo) > input[type='radio'] + .gender-radio {
     border-top-right-radius: $defaultradius;
 	border-bottom-right-radius: $defaultradius;
     border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
 
-div:not(#foo) > input[type='radio']:first-child + label {
+div:not(#foo) > input[type='radio']:first-child + .gender-radio {
     border-top-left-radius: $defaultradius;
 	border-bottom-left-radius: $defaultradius;
     border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-
 }
 
-div:not(#foo) > input[type='radio'] + label .icon {
-    width: auto;
-    height: 16px;
-
-}
-
-div:not(#foo) > input[type='radio']:checked + label {
+div:not(#foo) > input[type='radio']:checked + .gender-radio {
     /*background-image: url(radio.png);*/
     border-color: $black;
     color: $black;
