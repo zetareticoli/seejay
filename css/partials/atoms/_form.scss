@@ -462,3 +462,20 @@ input[type="text"].control-light {
 		padding-left: 0;
 	}
 }
+
+// form actions
+
+.form-actions {
+
+	&.actions-stacked {
+		background-color: lighten($earlygray, 8%);
+		border-top: 1px solid $earlygray;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		padding: 30px;
+
+		.controls {
+			float: right;
+		}
+	}
+}
