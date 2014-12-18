@@ -6,7 +6,7 @@
  Global
  ========================================================================== */
 
-section > p {
+.library-section > p {
 	@include font-size(18);
 	font-weight: 300;
 }
