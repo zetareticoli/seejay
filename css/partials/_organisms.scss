@@ -75,7 +75,7 @@
 	.share-horizontal-list {
 		float: left;
 		opacity: 0;
-		@include transition(opacity .3s);
+		@include transition(opacity .3s .3s);
 	}
 
 	.story-excerpt {
