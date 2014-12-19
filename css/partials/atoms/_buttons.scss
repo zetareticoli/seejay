@@ -7,8 +7,7 @@ a.btn {
 	*display : inline;
 	*zoom : 1;
 	@include rounded($inputradius);
-	font-weight: 700;
-	@include transition(all .15s ease);
+	@include transition(all .25s);
 
 	&:focus {
 		outline: none;
@@ -56,10 +55,12 @@ a.btn-xs {
 a.btn-default {
 	background: $earlygray;
 	border: $inputborderwidth $borderstyle $earlygray;
-	color: $black;
+	color: $charcoal;
+	font-weight: 700;
 	&:hover {
 		background: darken($earlygray, 5%);
 		border-color: darken($earlygray, 5%);
+		color: $black;
 	}
 }
 
@@ -68,6 +69,7 @@ a.btn-primary {
 	background: $red;
 	border: $inputborderwidth $borderstyle $red;
 	color: white;
+	font-weight: 700;
 	&:hover {
 		background: darken($red, 5%);
 		border-color: darken($red, 5%);
@@ -106,9 +108,13 @@ a.btn-link {
 
 .btn-icon {
 
+	.icon {
+		margin: 0;
+		vertical-align: text-top; 
+	}
+
 	&.btn-xs {
 		.icon {
-			vertical-align: text-top; 
 			top: 0; 
 		} 
 	}
