@@ -8,6 +8,14 @@
 
 .brick-author {
 
+	> a {
+		.author-name {color: $charcoal;}
+	}
+
+	> a:hover {
+		.author-name {text-decoration: underline;}
+	}
+
 	.avatar {
 		float: left;
 		margin: 0 8px 0 0;
