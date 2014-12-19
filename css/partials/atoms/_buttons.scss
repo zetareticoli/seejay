@@ -112,6 +112,8 @@ a.btn-link {
 		vertical-align: text-top; 
 	}
 
+	&.btn-sm,
+	&.btn-lg,
 	&.btn-xs {
 		.icon {
 			top: 0; 
@@ -444,6 +446,7 @@ a.btn-write .icon {
 
 		.icon {
 			fill: $lightgray;
+			margin: 0 4px;
 			top: 2px;
 		}
 
