@@ -33,7 +33,7 @@ a.btn-lg .btn-icon  {
 a.btn-sm {
 	@include font-size($smallfontsize);
 	line-height: 18px;
-	padding: 8px 12px;
+	padding: 10px 12px 8px;
 }
 
 .btn-sm .btn-icon,
