@@ -6,6 +6,7 @@
     <div class="line">
 
       <div class="unit size4of6">
+
         <!-- Title & Description -->
         <h1 class="story-title">A beautiful story</h1>
         <h2 class="story-description">Social tweet wall from the awesome conference about technology and internet.</h2>
@@ -35,6 +36,7 @@
         </div>  
       </div>
 
+      <!-- Share -->
       <div class="unit size2of6 story-share">
         <ul class="unstyled share-horizontal-list">
           <li class="label">Share:</li>
@@ -50,9 +52,11 @@
           <li>
             <a href="#"><svg class="icon icon-xl icon-mail-circle"><use xlink:href="#icon-mail-circle"></use></svg></a>
           </li>
-          <li class="label">Embed:</li>
-          <li class="circle">
-            <a href="#"><svg class="icon icon-lg icon-code"><use xlink:href="#icon-code"></use></svg></a>
+          <li>
+            <a href="#" class="btn btn-xs btn-icon  btn-light btn-embed">
+              <svg class="icon icon-sm icon-code"><use xlink:href="#icon-code"></use></svg>
+              <span>Embed</span>
+            </a>
           </li>        
         </ul>
       </div>
@@ -89,7 +93,8 @@
       <!-- @include _template-single -->
     </div>
   </div>
-
+  
+  <!-- Story Contribute -->
   <div class="story-contribute">
     <h4>Want to contribute to this story?</h4>
     <a href="#" class="btn btn-lg btn-primary btn-light "><svg class="icon icon-sm icon-contribute"><use xlink:href="#icon-contribute"></use></svg>Send your contribution</a>
