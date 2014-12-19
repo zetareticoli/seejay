@@ -400,17 +400,16 @@ div:not(#foo) > input[type='radio']:checked + .gender-radio {
 		}
 	}
 
-	.icon  {
-		height: 16px;
-	}
+	.btn {
+		.icon  {
+			fill: $spacegray;
+			top: 0;
+		}
 
-	.icon .shape {
-		fill: rgba(255,255,255,.5);
+		&:hover .icon {
+			fill: white;
+		}
 	}
-
-	.icon:hover .shape {
-		fill: rgba(255,255,255,1);
-	} 
 }
 
 // control light
