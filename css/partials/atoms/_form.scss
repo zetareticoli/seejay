@@ -17,7 +17,7 @@ input[type="tel"] {
 	display : inline-block;
 	font-family: $basefontfamily;
 	margin-bottom : $baselineheight / 2;
-	@include rounded($defaultradius);
+	@include rounded($inputradius);
 	vertical-align : middle;
 	@include transition(all .15s ease-in-out);
 
@@ -230,7 +230,7 @@ textarea[readonly] {
 	overflow: hidden;
 	position: relative;
 	width: 200px;
-	@include rounded($defaultradius);
+	@include rounded($inputradius);
 
 	&:hover {
 		border-color: darken($earlygray, 8%);
@@ -290,15 +290,15 @@ div:not(#foo) > input[type='radio'] + .gender-radio {
 }
 
 div:not(#foo) > input[type='radio'] + .gender-radio {
-    border-top-right-radius: $defaultradius;
-	border-bottom-right-radius: $defaultradius;
+    border-top-right-radius: $inputradius;
+	border-bottom-right-radius: $inputradius;
     border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
 
 div:not(#foo) > input[type='radio']:first-child + .gender-radio {
-    border-top-left-radius: $defaultradius;
-	border-bottom-left-radius: $defaultradius;
+    border-top-left-radius: $inputradius;
+	border-bottom-left-radius: $inputradius;
     border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
@@ -382,7 +382,7 @@ div:not(#foo) > input[type='radio']:checked + .gender-radio {
 	background-image: -ms-linear-gradient(-89deg, rgba(149,133,130,0.50) 0%, rgba(92,81,80,0.50) 100%);
 	background-image: linear-gradient(-179deg, rgba(149,133,130,0.50) 0%, rgba(92,81,80,0.50) 100%);
 	height: 40px;
-	@include rounded(3px);
+	@include rounded($inputradius);
 
 	ul {
 		@include clearfix;

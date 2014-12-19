@@ -87,7 +87,7 @@
 		border-color: darken($earlygray, 10%);
 		float: left;
 		position: relative;
-		@include rounded(3px);
+		@include rounded($inputradius);
 		width: 100%; 
 
 		@include bp(xxl) {
