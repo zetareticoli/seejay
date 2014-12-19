@@ -84,6 +84,7 @@ a.btn-light {
 	font-weight: 400;
 	&:hover {
 		border-color: darken($lightgray, 8%);
+		color: $black;
 	}
 }
 
@@ -125,6 +126,17 @@ a.btn-link {
 		.icon {
 			margin: 0;
 		} 
+	}
+}
+
+.btn-default,
+.btn-link {
+	.icon {
+		fill: $charcoal;
+		@include transition(fill .25s);
+	}
+	&:hover .icon {
+		fill: $black;
 	}
 }
 
