@@ -148,7 +148,7 @@
 		position: absolute;
 		top: 50%;
 		@include transition(opacity .15s ease);
-		z-index: 999;
+		z-index: 50;
 
 		@include bp(m) {
 			height: 24px;
