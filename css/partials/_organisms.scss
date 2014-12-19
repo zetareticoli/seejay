@@ -167,7 +167,7 @@
    Masthead
    ========================================================================== */
 
- .masthead {
+.masthead {
 	background-color: $charcoal;
 	height: 60px;
 	position: relative;
@@ -177,11 +177,25 @@
 		opacity: 0;
 		@include transition(opacity .25s ease 1s);
 	}
- }
+}
 
- .profile-head {
- 	@include clearfix;
- 	position: relative;
+.masthead-steps {
+	position: relative;
+
+	.btn-group {
+		position: absolute;
+		right: 0;
+		top:0;
+	}
+
+	.btn {
+		@include rounded(0);
+	}
+}
+
+.profile-head {
+	@include clearfix;
+	position: relative;
 	margin: 0 auto;
 	width: 100%;
 
@@ -265,12 +279,12 @@
 			}
 		}
 	}
- }
 
- .profile-name {
- 	margin: 20px 0 0;
- 	text-align: center;
- }
+	.profile-name {
+		margin: 20px 0 0;
+		text-align: center;
+	}
+}
 
  /* ==========================================================================
    Story
