@@ -101,9 +101,9 @@ ul,
 dl,
 address {
 	margin-top: 0;
-	margin-bottom : $baselineheight;
+	margin-bottom: $baselineheight;
 	@include font-size($basefontsize);
-	line-height : $baselineheight;
+	line-height: $baselineheight;
 	list-style-position: inside;
 }
 
