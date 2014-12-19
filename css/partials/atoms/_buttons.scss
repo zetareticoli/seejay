@@ -127,6 +127,12 @@ a.btn-link {
 			margin: 0;
 		} 
 	}
+
+	&.btn-xl {
+		.icon {
+			vertical-align: middle;
+		}
+	}
 }
 
 .btn .icon {
