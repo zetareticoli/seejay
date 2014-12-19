@@ -711,12 +711,17 @@
 
 .manage-template {
 	background-color: $darkeroverlay;
+	display: none;
 	height: 100%;
 	padding-top: $gutterwidth;
 	padding-bottom: $gutterwidth;
 	position: absolute;
 	top: 0;
 	z-index: 100;
+
+	&.visible {
+		display: block;
+	}
 
 	.manage-title,
 	.manage-intro {
