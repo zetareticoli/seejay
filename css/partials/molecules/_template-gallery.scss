@@ -3,9 +3,8 @@
 .template-gallery {
 	background-color: $black;
 	border: none;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
 	@include clearfix;
+	@include rounded($elementradius);
 	width: 100%;
 
 	.royalSlider {
@@ -37,17 +36,14 @@
 	    opacity: 1;
 	}
 
-	.rsGCaption {
-		margin-top: -1px;
-		text-align: left;
-	}
-
 	.rsCaption {
 		background-color: rgb(44,40,41);
-		border-bottom-left-radius: 6px;
-		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: $elementradius;
+		border-bottom-right-radius: $elementradius;
+		margin-top: -1px;
 		opacity: 1;
 		padding: 4%;
+		text-align: left;
 
 		@include bp(m) {
 			padding: 2%;
