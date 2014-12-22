@@ -9,8 +9,13 @@
 // alerts ================================================
 
 .alert {
-	padding: 15px 20px;
+	left: 0;
+	opacity: .98;
+	padding: 28px;
+	position: absolute;
+	top: 0;
 	width: 100%;
+	z-index: 9999;
 
 	p {
 		display: inline-block;
@@ -18,22 +23,41 @@
 		margin: 0;
 	}
 
-	.icon {
+	> .icon {
 		fill: $charcoal;
 		vertical-align: text-top;
 	}
 
 	&.alert-success {
-		background-color: #d4ece6;
+		background-color: #acecb6;
 	}
+
 	&.alert-info {
-		background-color: #ccebf3;
+		background-color: #a5eaf3;
 	}
+
 	&.alert-warning {
 		background-color: #ffeebf;
 	}
+
 	&.alert-danger {
-		background-color: #f8d0c8;
+		background-color: #f8bdaf;
+	}
+
+	.btn-close {
+		position: absolute;
+		right: 28px;
+
+		.icon {
+			fill: $spacegray;
+			@include transition(fill .3s);
+		}
+
+		&:hover {
+			.icon {
+				fill: $charcoal;
+			}
+		}
 	}
 }
 
