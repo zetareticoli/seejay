@@ -181,15 +181,25 @@
 
 .masthead-steps {
 	position: relative;
+	width: 100%;
 
 	.btn-group {
 		position: absolute;
 		right: 0;
-		top:0;
+		top: 0;
 	}
 
 	.btn {
+		float: left;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 20px;
 		@include rounded(0);
+	}
+
+	&.affixed {
+		top: 0;
+		z-index: 999;
 	}
 }
 
@@ -332,7 +342,11 @@
 	// sections
 
 	.content-section {
-		margin: 40px 0;
+		margin-bottom: $gutterwidth * 2;
+
+		@include bp(l) {
+			margin-bottom: $gutterwidth * 4;
+		}
 	}
 
 	// section masonry
@@ -765,17 +779,6 @@
 	.actions {
 		float: right;
 		margin-top: 20px;
-	}
-}
-
-// masthead steps ================================================
-
-.masthead-steps {
-	width: 100%;
-
-	&.affixed {
-		top: 0;
-		z-index: 999;
 	}
 }
 
