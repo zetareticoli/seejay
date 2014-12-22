@@ -107,6 +107,16 @@ a.btn-link {
 	}
 }
 
+.btn-inverse,
+a.btn-inverse {
+	background: $darkcharcoal;
+	color: white;
+
+	&:hover {
+		background: darken($darkcharcoal,8%);
+	}
+}
+
 .btn-icon {
 
 	.icon {
@@ -346,6 +356,24 @@ a.btn-write .icon {
 .btn-remove .icon {
 	margin: 0 4px;
 }
+
+// button load more
+
+.btn-load-more {
+	display: block;
+	margin: $gutterwidth auto 0;
+	text-align: center;
+	width: 100%;
+
+	@include bp(m) {
+		width: 50%;
+	}
+
+	@include bp(l) {
+		width: 30%;
+	}
+}
+
 
 // dropdown ================================================
 
