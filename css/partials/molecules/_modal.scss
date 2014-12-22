@@ -1,6 +1,7 @@
 .modal-open {
 	overflow: hidden;
 }
+
 .modal {
 	display: none;
 	position: fixed;
@@ -13,33 +14,41 @@
 	outline: 0;
 
   &.in {
+  	background-color: $darkoverlay;
 	display: block;
   }
 }
+
 .modal.fade .modal-dialog {
-	-webkit-transform: translate(0, -25%);
-	-ms-transform: translate(0, -25%);
-	-o-transform: translate(0, -25%);
-	transform: translate(0, -25%);
-	-webkit-transition: -webkit-transform 0.3s ease-out;
-	-o-transition: -o-transform 0.3s ease-out;
-	transition: transform 0.3s ease-out;
+	opacity: 0;
+	-webkit-transform: translate(0, -100%);
+	-ms-transform: translate(0, -100%);
+	-o-transform: translate(0, -100%);
+	transform: translate(0, -100%);
+	-webkit-transition: -webkit-transform 0.3s ease, opacity .3s linear;;
+	-o-transition: -o-transform 0.3s ease, opacity .3s linear;;
+	transition: transform 0.3s ease, opacity .3s linear;
 }
+
 .modal.in .modal-dialog {
-	-webkit-transform: translate(0, 0);
-	-ms-transform: translate(0, 0);
-	-o-transform: translate(0, 0);
-	transform: translate(0, 0);
+	opacity: 1;
+	-webkit-transform: translate(0, 15%);
+	-ms-transform: translate(0, 15%);
+	-o-transform: translate(0, 15%);
+	transform: translate(0, 15%);
 }
+
 .modal-open .modal {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
+
 .modal-dialog {
 	position: relative;
 	width: auto;
 	margin: 10px;
 }
+
 .modal-content {
 	position: relative;
 	background-color: white;
@@ -55,6 +64,7 @@
 		margin-bottom: 10px;
 	}
 }
+
 .modal-backdrop {
 	position: absolute;
 	top: 0;
@@ -66,21 +76,25 @@
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
+
 .modal-backdrop.in {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
+
 .modal-header {
 	padding: 40px 15px;
 	border-bottom: 1px solid $earlygray;
 	min-height: 16.42857143px;
 }
+
 .modal .btn-close {
 	background-color: transparent;
 	position: absolute;
 	right: 0px;
 	top: -40px;
 }
+
 .modal-title {
 	@include font-size(36);
 	font-weight: 300;
@@ -88,6 +102,7 @@
 	line-height: 1.42857143;
 	text-align: center;
 }
+
 .modal-body {
 	background-color: lighten($earlygray, 5%);
 	border-bottom-left-radius: 6px;
@@ -99,6 +114,7 @@
 		width: 100%;
 	}
 }
+
 .modal-footer {
 	background-color: lighten($earlygray, 5%);
 	border-bottom-left-radius: 6px;
@@ -106,16 +122,20 @@
 	padding: 0 40px 40px;
 	text-align: right;
 }
+
 .modal-footer .btn + .btn {
 	margin-left: 5px;
 	margin-bottom: 0;
 }
+
 .modal-footer .btn-group .btn + .btn {
 	margin-left: -1px;
 }
+
 .modal-footer .btn-block + .btn-block {
 	margin-left: 0;
 }
+
 .modal-scrollbar-measure {
 	position: absolute;
 	top: -9999px;
