@@ -85,23 +85,30 @@
 	list-style: none;
 	@include zero;
 
-	li {
+	> li {
 		display: inline-block;
 		text-transform: uppercase;
-		color: $earlygray;
 		font-weight: 300;
+		@include font-size($smallfontsize);
 		padding: 16px 40px;
+
+		> a {
+			color: $earlygray;
+		}
 	}
 
 	li.active {
 		background-color: rgba(19,5,2,.2);
-		color: white;
 		font-weight: 700;
+
+		> a {
+			color: white;
+		}
 	}
 
 	li.completed {
 
-		a {
+		> a {
 			color: $earlygray;
 		}
 
