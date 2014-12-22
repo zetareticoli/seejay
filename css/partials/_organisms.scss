@@ -779,6 +779,10 @@
 	.actions {
 		float: right;
 		margin-top: 20px;
+
+		.btn-light:hover {
+			color: $lightgray;
+		}
 	}
 }
 
