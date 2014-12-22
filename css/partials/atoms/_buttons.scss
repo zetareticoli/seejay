@@ -57,6 +57,7 @@ a.btn-default {
 	border: $inputborderwidth $borderstyle $earlygray;
 	color: $charcoal;
 	font-weight: 700;
+
 	&:hover {
 		background: darken($earlygray, 5%);
 		border-color: darken($earlygray, 5%);
@@ -70,9 +71,14 @@ a.btn-primary {
 	border: $inputborderwidth $borderstyle $red;
 	color: white;
 	font-weight: 700;
+
 	&:hover {
 		background: darken($red, 5%);
 		border-color: darken($red, 5%);
+	}
+
+	.icon {
+		fill: white;	
 	}
 }
 
@@ -82,6 +88,7 @@ a.btn-light {
 	border: $inputborderwidth $borderstyle $lightgray;
 	color: $spacegray;
 	font-weight: 400;
+
 	&:hover {
 		border-color: darken($lightgray, 8%);
 		color: $black;
@@ -114,6 +121,10 @@ a.btn-inverse {
 
 	&:hover {
 		background: darken($darkcharcoal,8%);
+	}
+
+	.icon {
+		fill: white;	
 	}
 }
 
