@@ -376,14 +376,6 @@
 .story-head {
 	margin-bottom: 40px;
 
-	&:after {
-		background-color: $lightgray;
-		content: '';
-		display: block;
-		height: 1px;
-		width: 40px;
-	}
-
 	.story-share {
 		display: none;
 
@@ -791,8 +783,15 @@
 
 .metadata {
 	@include font-size($smallerfontsize);
-	margin: 20px 0 20px 0;
 	@include clearfix;
+
+	&:after {
+		background-color: $lightgray;
+		content: '';
+		display: block;
+		height: 1px;
+		width: 40px;
+	}
 
 	> * {
 		float: left;
