@@ -92,6 +92,10 @@
 		> ul > li > a {
 			color: $spacegray;
 			font-weight: 300;
+
+			&:hover {
+				color: $black;
+			}
 		}
 
 		.label {
