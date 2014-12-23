@@ -519,7 +519,7 @@ a.btn-write .icon {
 
 		.btn {
 			border: 2px solid darken($earlygray,5%);
-			padding: 10px 8px;
+			padding: 4px 2px;
 
 			@include no-selection;
 			@include transition(all .15s ease-in);
