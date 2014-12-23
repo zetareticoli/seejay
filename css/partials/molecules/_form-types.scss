@@ -64,11 +64,15 @@
 
 .form-search {
 	@include clearfix;
-	margin: 20px 10px 0;
+	margin: $gutterwidth 10px 0;
 
 	input[type="search"] {
 		border: none;
-		width: 60%;
+		width: 70%;
+
+		@include bp(l) {
+			width: 80%;
+		}
 	}
 
 	.group-social {
@@ -124,7 +128,6 @@
 		@include transition(opacity .15s ease);
 		top: 12px;
 		width: 24px;
-
 
 		&:hover {
 			opacity: 1;
