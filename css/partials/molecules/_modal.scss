@@ -204,6 +204,10 @@
 		.btn-iconized.active .icon {
 			fill: $red;
 		}
+
+		.controls-attachments .btn-file {
+			position: relative;
+		}
 	}
 
 	.location {
@@ -214,7 +218,7 @@
 			content: '';
 			position: absolute;
 			top: -30px;
-			left: 130px;
+			left: 120px;
 			height: 0;
 			width: 0;
 			border: 15px solid transparent;
@@ -224,6 +228,15 @@
 		&.active {
 			display: block;
 			padding: 15px 40px 40px;
+		}
+	}
+
+	.alert {
+		padding: 20px 40px;
+		position: relative;
+
+		> p {
+			@include font-size($smallfontsize);
 		}
 	}
 
