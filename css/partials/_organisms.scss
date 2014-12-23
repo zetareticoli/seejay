@@ -1060,10 +1060,14 @@
 // story contribute ================================================
 
 .story-contribute {
-	margin: 0px auto;
+	margin: 0px auto 20px;
+	text-align: center;
 	width: auto;
 	max-width: 1400px;
-	text-align: center;
+
+	@include bp(l) {
+		margin-bottom: 40px;
+	}
 
 	h4 {
 		font-family: $altfontfamily;
