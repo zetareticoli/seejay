@@ -184,7 +184,9 @@
 	}
 
 	.control-group:first-child {
-		padding: 24px 5px;
+		background-color: $softgray;
+		color: $spacegray;
+		padding: 24px 12px;
 	}
 
 	.group-searchbox {
