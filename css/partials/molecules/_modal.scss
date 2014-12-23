@@ -58,11 +58,6 @@
 	background-clip: padding-box;
 	outline: 0;
 	width: 700px;
-
-	p {
-		@include font-size($smallfontsize);
-		margin-bottom: 10px;
-	}
 }
 
 .modal-backdrop {
@@ -72,6 +67,7 @@
 	left: 0;
 	background-color: #000000;
 }
+
 .modal-backdrop.fade {
 	opacity: 0;
 	filter: alpha(opacity=0);
@@ -109,6 +105,11 @@
 	border-bottom-right-radius: 6px;
 	position: relative;
 	padding: 15px 40px 40px;
+
+	> p {
+		@include font-size($smallfontsize);
+		margin-bottom: 10px;
+	}
 
 	form {
 		width: 100%;
