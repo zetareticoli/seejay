@@ -313,8 +313,8 @@ div:not(#foo) > input[type='radio']:checked + .gender-radio {
 
 .bootstrap-switch {
 	border: 2px solid darken($earlygray, 10%);
-	margin: 5px 0 0 5px;
 	height: 40px;
+	margin: 0;
 
 	.bootstrap-switch-handle-on,
 	.bootstrap-switch-handle-off,
@@ -328,15 +328,53 @@ div:not(#foo) > input[type='radio']:checked + .gender-radio {
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, 
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
 .bootstrap-switch {
 	background: #F3F1F0;
 	color: $charcoal;
 }
 
 .bootstrap-switch .bootstrap-switch-label {
-	width: 40px !important;
+	width: 30px !important;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		background: $earlygray;
+		height: 1px;
+		width: 15px;
+		left: 0;
+		right: 0;
+		bottom: 42%;
+		margin: 0 auto;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		border-top: 1px solid $earlygray;
+		border-bottom: 1px solid $earlygray;
+		height: 1px;
+		width: 15px;
+		left: 0;
+		right: 0;
+		top: 35%;
+		padding-bottom: 2px;
+		margin: 0 auto;
+	}
 }
+
+.bootstrap-switch-off .bootstrap-switch-label {
+	border-right: 1px solid $earlygray;
+}
+
+.bootstrap-switch-on .bootstrap-switch-label {
+	border-left: 1px solid $earlygray;
+}
+
 // toggle ios switch
 
 .ios-ui-select{
