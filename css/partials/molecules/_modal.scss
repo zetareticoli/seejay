@@ -192,16 +192,20 @@
 		padding-top: 25px;
 		width: 440px;
 
-		.btn-iconized .icon {
+		textarea {
+			margin-bottom: $baselineheight / 2;
+		}
+
+		.controls-attachments .btn .icon {
 			fill: $spacegray;
 			@include transition(fill .15s linear);
 		}
 
-		.btn-iconized:hover .icon {
+		.controls-attachments .btn:hover .icon {
 			fill: $black;
 		}
 
-		.btn-iconized.active .icon {
+		.controls-attachments .btn.active .icon {
 			fill: $red;
 		}
 
