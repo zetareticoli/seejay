@@ -73,11 +73,7 @@
 
 	.group-social {
 		float: left;
-		width: 60%;
-
-		@include bp(l) {
-			width: 340px;
-		}
+		width: auto;
 	}
 
 	.group-searchbox {
@@ -89,10 +85,6 @@
 		position: relative;
 		@include rounded($inputradius);
 		width: 100%; 
-
-		@include bp(xxl) {
-			width: 40%;
-		}
 	}
 
 	.group-buzz-switch {
