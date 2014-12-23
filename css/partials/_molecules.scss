@@ -65,28 +65,32 @@
 
 .search-options {
 	@include clearfix;
-	margin: 0 10px;
+	margin: 10px 10px $baselineheight / 2;
 	position: relative;
 
 	.related-tags {
 		float: left;
-		width: 80%;
+		width: auto;
 
 		.label,
-		ul,
-		li {
+		> ul,
+		> ul > li {
 			display: inline-block;
 			width: auto;
 		}
 
 		.label,
-		li {
-			margin-right: 10px;
+		> ul > li {
+			@include font-size($smallerfontsize);
+			margin-right: $gutterwidth / 3;
+
+			@include bp(l) {
+				margin-right: $gutterwidth / 2;
+			}
 		}
 
-		li > a {
+		> ul > li > a {
 			color: $spacegray;
-			@include font-size($smallerfontsize);
 			font-weight: 300;
 		}
 
