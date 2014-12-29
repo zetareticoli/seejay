@@ -228,11 +228,8 @@
 	.dropdown-toggle {
 		background: transparent;
 		border: 0;
-		margin-top: 2px;
-		.icon {
-			width: 12px;
-			height: 12px;
-		}
+		border-right: 1px solid $earlygray;
+		margin: 2px 10px 0 0;
 	}
 
 	.dropdown-menu {
