@@ -392,10 +392,22 @@ a.btn-write .icon {
 }
 
 .dropdown-toggle {
+	color: $charcoal;
 	display: inline-block;
+
+	&:hover,
+	&:hover .icon {
+		color: $black;
+		fill: $black;
+	}
 	
 	&:focus {
 		outline: none;
+	}
+
+	.icon {
+		width: 12px;
+		height: 12px;
 	}
 }
 
