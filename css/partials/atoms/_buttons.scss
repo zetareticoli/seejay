@@ -415,7 +415,7 @@ a.btn-write .icon {
 	background: white;
 	-webkit-background-clip: padding-box;
   	background-clip: padding-box;
-  	border: $inputborderwidth $borderstyle $earlygray;
+  	border: $inputborderwidth $borderstyle $lightgray;
 	float: left;
 	@include font-size($smallfontsize);
 	height: 0;
@@ -423,16 +423,16 @@ a.btn-write .icon {
 	left: 0;
 	min-width: 160px;
 	margin: 3px 0 0 -2px;
+	opacity: 0;
 	overflow: hidden;
 	padding: 0 !important;
 	position: absolute;
 	@include rounded($inputradius);
 	text-align: left;
 	top: 100%;
-	opacity: 0;
+	@include transition(all .25s ease);
 	width: 0;
 	z-index: 1000;
-	@include transition(all .25s ease);
 }
 
 .dropdown-menu .divider {
