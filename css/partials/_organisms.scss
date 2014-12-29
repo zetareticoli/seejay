@@ -768,12 +768,16 @@
 		margin-bottom: $gutterwidth;
 	}
 
-	.control-embed-code {
+	.control-embed-code,
+	.control-url {
 		color: $spacegray;
 		@include font-size($smallerfontsize);
 		line-height: 1.35em;
-		height: 80px;
 		padding: 8px;
+	}
+
+	.control-embed-code {
+		height: 80px;
 	}
 
 	.btn-clipboard {
