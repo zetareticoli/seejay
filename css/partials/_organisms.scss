@@ -25,10 +25,54 @@
 .foot {
 	background: white;
 	bottom: 0;
+	border-top: 1px solid darken($earlygray,3%);
+	@include clearfix;
 	height: 80px;
 	left: 0;
+	padding: 20px;
 	position: absolute;
 	width: 100%;
+	z-index: 10000;
+
+	.colophon,
+	.footer-links,
+	.contact {
+		float: left;
+	}
+
+	.colophon {
+		width: 30%;
+
+		p, a {
+			line-height: 1.38;
+			@include font-size($smallerfontsize);
+			color: rgb(187,183,183);
+		}
+	}
+
+	.footer-links {
+		width: 33%;
+
+		ul {
+			list-style: none;
+		}
+
+		ul > li {
+			@include font-size($smallfontsize);
+		}
+	}
+
+	.contact {
+		width: 33%;
+		text-align: right;
+
+		.contact-link {
+			width: auto;
+			margin-left: $gutterwidth;
+			margin-bottom: $gutterwidth;
+			opacity: 0.7;
+		}
+	}
 }
 
  /* ==========================================================================
