@@ -289,14 +289,14 @@
 		text-align: right;
 		
 		@include bp(l) {
-			padding-right: $gutterwidth * 2;
+			padding-right: $gutterwidth;
 		}
 
 		li {
 			margin-left: $gutterwidth / 2;
 
 			@include bp(l) {
-				margin-left: $gutterwidth * 2;
+				margin-left: $gutterwidth;
 			}
 		}
 
@@ -310,14 +310,15 @@
 		padding-left: $gutterwidth / 2;
 
 		@include bp(l) {
-			padding-left: $gutterwidth * 2;
+			padding-left: $gutterwidth;
 		}
 
 		li {
+			@include font-size($smallerfontsize);
 			margin-right: $gutterwidth / 2;
 
 			@include bp(l) {
-				margin-right: $gutterwidth * 2;
+				margin-right: $gutterwidth;
 			}
 		}
 
