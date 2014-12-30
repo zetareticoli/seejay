@@ -1,0 +1,159 @@
+.story-item {
+	background: url(cover-image.png) 0 0 no-repeat;
+	background-size: cover;
+	margin: auto;
+	position: relative;
+	@include rounded(8px);
+	width: 100%;
+	max-width: 340px;
+	z-index: 1;
+
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:before {
+		background-color: $darkoverlay;
+		content: '';
+		display: block;
+		padding-top: 100%;
+		@include rounded(8px);
+		@include transition(background-color .15s ease);
+	}
+	
+	&:hover:before {
+		background-color: $redoverlay;
+	}
+
+	.time {
+		color: $lightgray;
+	}
+
+	.story-item-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 20px;
+		vertical-align: center;
+		color: #fff;
+	}
+
+	.story-item-foot {
+		bottom: 20px;
+		@include clearfix;
+		padding-top: 50%;
+		position: absolute;
+		width: 86.5%;
+
+		.icon {
+			fill: $earlygray;
+
+			&:hover {
+				fill: white;
+			}
+		}
+		
+		.story-contributions-counter {
+			float: left;
+			@include font-size($smallfontsize);
+			@include no-selection;
+			width: auto;
+		}
+
+		.story-actions {
+			float: right;
+
+			.btn {
+				display: inline-block;
+				margin: 0 0 0 10px;
+				@include no-selection;
+			}
+		}
+	}
+
+	.story-status {
+
+		.icon-lock {
+			display: none;
+		}
+
+		.icon-unlocked {
+			display: block;
+		}
+
+		&.private {
+		
+			.icon-unlocked {
+				display: none;
+			}
+		
+			.icon-lock {
+				display: block;
+			}
+		}
+	}
+
+	.story-settings-menu {
+		background: $black;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		bottom: 0;
+		height: auto;
+		display: none;
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		/* @include transition(max-height .25s ease-in); */
+
+		&.visible {
+			display: block;
+			animation-name: pullUp;
+			-webkit-animation-name: pullUp; 
+			animation-duration: 1.1s; 
+			-webkit-animation-duration: 1.1s;
+			animation-timing-function: ease-out;  
+			-webkit-animation-timing-function: ease-out;  
+			transform-origin: 0% 100%;
+			-ms-transform-origin: 0% 100%;
+			-webkit-transform-origin: 0% 100%;  
+		}
+
+		.settings-menu-list {
+			@include clearfix;
+			margin: 0;
+			@include nobullet;
+			padding: 20px;
+		}
+
+		.setting-menu-option {
+			float: left;
+			@include font-size($smallerfontsize);
+			width: 50%;
+
+			.icon {
+				fill: $earlygray;
+			}
+
+			> a {
+				color: $earlygray;
+				
+				&:hover {
+					color: white;
+
+					.icon {
+						fill: white;
+					}
+				}
+			}
+		}
+
+		.btn-close {
+			position: absolute;
+			right: 22px;
+			bottom: 20px;
+		}
+	}
+}

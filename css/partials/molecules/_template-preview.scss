@@ -1,0 +1,122 @@
+.template {
+	width: 100%;
+	padding: 20px;
+
+	&:hover {
+		background-color: lighten($softgray,1.75%);
+		cursor: pointer;
+	}
+
+	.counter {
+		color: $lightgray;
+		display: inline-block;
+		@include font-size($smallerfontsize);
+		font-style: italic;
+		font-weight: 300;
+	}
+}
+
+.template-title {
+	color: $spacegray;
+	display: inline-block;
+	line-height: 24px;
+	margin: 0 5px 5px 0;
+
+	.icon {
+		fill: $spacegray;
+		margin-right: 10px;
+	}
+}
+
+.template-dropdown {
+	display: inline-block;
+	float: right;
+	right: 0;
+
+	.dropdown-toggle .icon {
+		fill: $spacegray;
+		@include transition(all .15s ease);
+	}
+
+	&.open .dropdown-toggle .icon,
+	.dropdown-toggle:hover .icon {
+		fill: $black;
+	}
+}
+
+.template-items-list {
+	list-style: none;
+	text-align: left;
+	@include zero;
+	overflow: hidden;
+
+	.template-item {
+		background-color: $earlygray;
+		display: inline-block;
+		margin: 0 0 4px 0;
+		padding: 0 3px;
+
+		.icon {
+			fill: $spacegray;
+			margin: 0 4px;
+			width: 14px;
+		}
+	}
+}
+
+.template-area {
+	border: 1px $borderstyle $earlygray;
+	padding: 15px;
+	text-align: center;
+
+	&.empty-area {
+		border-style: dashed;
+		border-color: darken($earlygray, 10%);
+	}
+
+	.message {
+		color: $spacegray;
+		@include font-size(12);
+		line-height: 12px;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.template.active {
+	background: rgba($earlygray,.5);
+	border-left: 5px solid $red;
+	cursor: default;
+
+	.counter {
+		color: $spacegray;
+	}
+
+	.template-title {
+		font-weight: 700;
+	}
+
+	.template-title {
+		color: $charcoal;
+	}
+
+	.template-title .icon {
+		fill: $charcoal;
+	}
+
+	.template-area {
+		border-color: darken($earlygray, 5%);
+	}
+
+	.template-item {
+		background-color: darken($earlygray,3%);
+		
+		&.added {
+			background-color: $red;
+
+			.icon {
+				fill: white;
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+.user-panel {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	min-width: 160px;
+	width: auto;
+
+	&.dropdown {
+
+		.dropdown-toggle {
+			overflow: hidden;
+			padding: 15px 0 15px 15px;
+			position: relative;
+			text-align: left;
+			@include transition(all .15s ease);
+			width: 100%;
+			z-index: 1;
+		}
+
+		.dropdown-menu {
+			background-color: $black; 
+			border: 0;
+			height: 0;
+			max-height: 0;
+			opacity: 0;
+			position: absolute;
+			@include rounded(0);
+			top: 56px;
+			width: auto;
+
+			> li {
+				border-bottom: 0;
+
+				&:last-child {
+					border-top: 1px solid darken($charcoal,20%);
+				}
+
+				> a {
+					color: $spacegray;
+					@include font-size ($smallfontsize);
+					padding: 12px 15px;
+
+					&:hover {
+						background: darken($charcoal,20%);
+						color: white;
+					}
+				}
+			}
+		}
+
+		&:hover {
+
+			.dropdown-toggle {
+				background-color: $black;
+			}
+
+			.user-name {
+				color: white;
+			}
+
+			.dropdown-menu {
+				opacity: 1;
+				height: auto;
+				max-height: 400px;
+				@include transition(max-height .55s linear);
+				width: auto;
+			}
+		}
+	}
+
+	.user-name {
+		color: $charcoal;
+		display: inline-block;
+		@include font-size($smallfontsize);
+		font-weight: 400;
+		padding-right: 10px;
+	}
+}
