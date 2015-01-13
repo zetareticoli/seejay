@@ -1,0 +1,133 @@
+.avatars-list {
+
+	> li {
+		border: $inputborderwidth solid transparent;
+		cursor: pointer;
+		position: relative;
+		@include rounded(50%);
+		@include transition(all .3s ease);
+
+		&:hover {
+			border-color: $spacegray;
+		}
+
+		.icon {
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			opacity: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 2;
+			@include transition(opacity .15s ease);
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			height: 30px;
+			left: 0;
+			position: absolute;
+			@include rounded(50%);
+			top: 0;
+			@include transition(background .15s linear);
+			width: 30px;
+			z-index: 1;
+		}
+	}
+
+	li.selected {
+		border: $inputborderwidth solid $red;
+
+		.icon-close {
+			fill: $red;
+		}
+
+		&:hover {
+
+			&:before {
+				background: $darkoverlay;
+			}
+
+			.icon-checkmark {
+				opacity: 0;
+			}
+
+			.icon-close {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.share-vertical-list {
+
+	> li {
+		@include font-size($smallfontsize);
+		float: left;
+		margin-bottom: 10px;
+		width: 50%;
+
+		@include bp(l) {
+			width: 100%;
+		}
+	}
+
+	> li a {
+		color: $charcoal;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	.icon {
+		margin-right: 10px;
+
+		@include max-bp(l) {
+			width: 20px;
+			height: 20px;
+			top: 4px;
+		};
+	}
+}
+
+.share-horizontal-list {
+	text-align: right;
+
+	li {
+		color: $lightgray;
+		@include font-size($smallerfontsize);
+		margin-top: 10px;
+		margin-bottom: 10px;
+		vertical-align: middle;
+
+		&.label {
+			margin-left: 20px;
+		}
+	}
+
+	.icon {
+		fill: $lightgray;
+
+		&:hover {
+			&.icon-facebook-circle {
+				fill: $facebook;
+			}
+			&.icon-twitter-circle {
+				fill: $twitter;
+			}
+			&.icon-googleplus-circle {
+				fill: $googleplus;
+			}
+			&.icon-mail-circle {
+				fill: $black;
+			}
+		}
+	}
+
+	.btn-embed {
+		margin-left: 10px;
+	}
+}

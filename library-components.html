@@ -13,31 +13,38 @@
 
   <!-- Alerts -->
   <section class="library-section section-alerts">
-    <h2 class="library-subtitle">Alert messages</h2>
-    <p>Alert messages are used to provide action-based feedback messages or to convey informational and/or critical information to the user.</p>
-    
-    <!-- @include _alerts -->
+    <div class="line">
+      <div class="unit size1of1">
+        <h2 class="library-subtitle">Alert messages</h2>
+        <p>Alert messages are used to provide action-based feedback messages or to convey informational and/or critical information to the user.</p>
+        <!-- @include _alerts -->
+      </div>
 
-    <pre class="prettyprint">
-    <code data-lang="html">
-    <div class="alert alert-success" role="alert">
-      <svg class="icon icon-lg icon-tick-circle"><use xlink:href="#icon-tick-circle"></use></svg>
-      <p>Well done! You successfully read this important alert message.</p>
+      <div class="unit size1of1">
+        <pre class="prettyprint">
+        <code data-lang="html">
+        <div class="alert alert-success" role="alert">
+          <svg class="icon icon-lg icon-tick-circle"><use xlink:href="#icon-tick-circle"></use></svg>
+          <p>Well done! You successfully read this important alert message.</p>
+        </div>
+        <div class="alert alert-info" role="alert">
+          <svg class="icon icon-lg icon-info-circle"><use xlink:href="#icon-info-circle"></use></svg>
+          <p>Heads up! This alert needs your attention, but it's not super important.</p>
+        </div>
+        <div class="alert alert-warning" role="alert">
+          <svg class="icon icon-lg icon-help-circle"><use xlink:href="#icon-help-circle"></use></svg>
+          <p>Warning! Better check yourself, you're not looking too good.</p>
+        </div>
+        <div class="alert alert-danger" role="alert">
+          <svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
+          <p>Oh snap! Change a few things up and try submitting again.</p>
+        </div>
+        </code>
+        </pre>
+        <br>
+        <p>Partial location: <em>/includes/components/_modal.html</em></p>
+      </div>
     </div>
-    <div class="alert alert-info" role="alert">
-      <svg class="icon icon-lg icon-info-circle"><use xlink:href="#icon-info-circle"></use></svg>
-      <p>Heads up! This alert needs your attention, but it's not super important.</p>
-    </div>
-    <div class="alert alert-warning" role="alert">
-      <svg class="icon icon-lg icon-help-circle"><use xlink:href="#icon-help-circle"></use></svg>
-      <p>Warning! Better check yourself, you're not looking too good.</p>
-    </div>
-    <div class="alert alert-danger" role="alert">
-      <svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
-      <p>Oh snap! Change a few things up and try submitting again.</p>
-    </div>
-    </code>
-    </pre>
   </section>
 
   <!-- Navigation Tabs -->
@@ -171,23 +178,29 @@
 
   <!-- Result Elements -->
   <section class="library-section section-results">
-    <h2 class="library-subtitle">Result Bricks</h2>
+    <div class="line">
+      <div class="unit size1of1">
+        <h2 class="library-subtitle">Result Bricks</h2>
 
-    <p>Result elements are displayed in a responsive grid using the masonry jQuery plugin. Each results has a min-height value set to 262px. Content area (text) has a max-height value equal to 250px. Long text paragraphs are truncated. </p>
-    <div class="results-list inverted-bg js-masonry">
-      <!-- @include _result-twitter -->
-      <!-- @include _result-facebook -->
-      <!-- @include _result-instagram -->
-      <!-- @include _result-flickr -->
-      <!-- @include _result-googleplus -->
-      <!-- @include _result-youtube -->
-      <!-- @include _result-twitter -->
-      <!-- @include _result-facebook -->
-      <!-- @include _result-instagram -->
-      <!-- @include _result-flickr -->
-      <!-- @include _result-googleplus -->
-      <!-- @include _result-youtube -->
-      <!-- @include _result-twitter -->
+        <p>Result elements are displayed in a responsive grid using the masonry jQuery plugin. Each results has a min-height value set to 262px. Content area (text) has a max-height value equal to 250px. Long text paragraphs are truncated. </p>
+        <div class="results-list inverted-bg js-masonry">
+          <!-- @include _result-twitter -->
+          <!-- @include _result-facebook -->
+          <!-- @include _result-instagram -->
+          <!-- @include _result-flickr -->
+          <!-- @include _result-googleplus -->
+          <!-- @include _result-youtube -->
+          <!-- @include _result-twitter -->
+          <!-- @include _result-facebook -->
+          <!-- @include _result-instagram -->
+          <!-- @include _result-flickr -->
+          <!-- @include _result-googleplus -->
+          <!-- @include _result-youtube -->
+          <!-- @include _result-twitter -->
+        </div>
+        <br>
+        <p>Partial location: <em>/includes/components/_result-*.html</em></p>
+      </div>
     </div>
   </section>
 
@@ -205,12 +218,18 @@
       <div class="unit size1of4">
         <!-- @include _template-brick-text -->
       </div>
+      <div class="unit size1of1">
+        <p>Partial location: <em>/includes/components/_template-brick-media.html</em></p>
+        <p>Partial location: <em>/includes/components/_template-text.html</em></p>
+      </div>
     </div>
 
     <h3 class="library-fieldtitle">Single template</h3>
     <div clas="line">
       <div class="unit size1of1">
         <!-- @include _template-single -->
+        <br>
+        <p>Partial location: <em>/includes/components/_template-single.html</em></p>
       </div>
     </div>
 
@@ -218,6 +237,8 @@
     <div class="line">
       <div class="unit size1of1">
         <!-- @include _template-gallery -->
+        <br>
+        <p>Partial location: <em>/includes/components/_template-gallery.html</em></p>
       </div>
     </div>
     
@@ -225,6 +246,8 @@
     <div class="line">
       <div class="unit size1of1">
         <!-- @include _template-timeline -->
+        <br>
+        <p>Partial location: <em>/includes/components/_template-timeline.html</em></p>
       </div>
     </div>
 
@@ -242,7 +265,9 @@
           </div>
           <!-- @include _template-single -->
         </div>
-
+      </div>
+      
+      <div class="unit size1of1">
         <pre class="prettyprint linemus">
         <code data-lang="html">
         <div class="content-section drag-active">

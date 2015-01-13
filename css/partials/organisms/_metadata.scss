@@ -1,0 +1,87 @@
+.metadata {
+	@include font-size($smallerfontsize);
+	@include clearfix;
+
+	&:after {
+		background-color: $lightgray;
+		content: '';
+		display: block;
+		height: 1px;
+		width: 40px;
+	}
+
+	> * {
+		float: left;
+	}
+
+	.author {
+		width: 80%;
+
+		@include bp(m) {
+			border-right: 1px solid $lightgray;
+			display: block;
+			width: 200px;
+		}
+
+		.avatar {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.author-name,
+		.date {
+			display: block;
+		}
+
+		.author-name {
+			color: $red;
+			font-weight: 700;
+		}
+
+		.date {
+			color: $lightgray;
+		}
+	}
+
+	.btn-share {
+		text-align: right;
+
+		@include bp(m) {
+			display: none;
+		}
+	}
+
+	.counter,
+	.avatars-list {
+		display: none;
+
+		@include bp(m) {
+			display: inline-block;
+		}
+	}
+
+	.counter {
+		margin: 0 10px;
+
+		.number,
+		.label {
+			display: block;
+			@include font-size($smallerfontsize);
+		}
+
+		.number {
+			@include font-size(18);
+			font-weight: 700;
+			line-height: 1em;
+		}
+
+		.label {
+			color: $lightgray;
+			text-transform: uppercase;
+		}
+	}
+
+	.avatars-list {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,130 @@
+.masthead {
+	background-color: $charcoal;
+	height: 60px;
+	position: relative;
+	z-index: 10;
+
+	.btn-write.open {
+		opacity: 0;
+		@include transition(opacity .25s ease 1s);
+	}
+}
+
+.masthead-steps {
+	position: relative;
+	width: 100%;
+
+	.btn-group {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.btn {
+		border: 0;
+		float: left;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 20px;
+		@include rounded(0);
+	}
+
+	&.affixed {
+		top: 0;
+		z-index: 999;
+	}
+}
+
+.profile-head {
+	@include clearfix;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+
+	@include bp(l) {
+		width: 940px;
+	}
+
+	.profile-info,
+	.profile-avatar,
+	.profile-stats {
+		float: left;
+	}
+
+	.profile-info,
+	.profile-stats {
+		@include font-size($smallfontsize);
+		font-weight: 300;
+		margin: 28px 0;
+		@include nobullet;
+		padding: 0;
+		width: 320px;
+
+		@include bp(l) {
+			width: 415px;
+		}
+
+		li {
+			color: $spacegray;
+			display: inline-block;
+		}
+	}
+
+	.profile-avatar {
+		margin-top: -12px;
+		width: 110px;
+	}
+
+	.profile-info {
+		padding-right: $gutterwidth / 2;
+		text-align: right;
+		
+		@include bp(l) {
+			padding-right: $gutterwidth;
+		}
+
+		li {
+			margin-left: $gutterwidth / 2;
+
+			@include bp(l) {
+				margin-left: $gutterwidth;
+			}
+		}
+
+		.icon {
+			fill: $softgray;
+		}
+	}
+
+	.profile-stats {
+		@include font-size($smallfontsize);
+		padding-left: $gutterwidth / 2;
+
+		@include bp(l) {
+			padding-left: $gutterwidth;
+		}
+
+		li {
+			@include font-size($smallerfontsize);
+			margin-right: $gutterwidth / 2;
+
+			@include bp(l) {
+				margin-right: $gutterwidth;
+			}
+		}
+
+		.emphasis {
+			color: $softgray;
+			@include font-size(18);
+
+			@include bp(l) {
+				@include font-size(24);
+			}
+		}
+	}
+
+	.profile-name {
+		margin: 20px 0 0;
+		text-align: center;
+	}
+}
