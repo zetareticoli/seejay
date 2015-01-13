@@ -307,12 +307,22 @@
 .template-title {
 	color: $spacegray;
 	display: inline-block;
+	@include font-size(16);
 	line-height: 24px;
 	margin: 0 5px 5px 0;
 
 	.icon {
 		fill: $spacegray;
-		margin-right: 10px;
+		top: 3px;
+	}
+
+	.template-name.edit {
+		margin: 0;
+		background: white;
+		border: 1px solid $lightgray;
+		@include font-size($smallfontsize);
+		padding: 3px;
+		width: auto;
 	}
 }
 
@@ -320,6 +330,7 @@
 	display: inline-block;
 	float: right;
 	right: 0;
+	top: 3px;
 
 	.dropdown-toggle .icon {
 		fill: $spacegray;
@@ -373,7 +384,7 @@
 
 .template.active {
 	background: rgba($earlygray,.5);
-	border-left: 5px solid $red;
+	border-left: 3px solid $red;
 	cursor: default;
 
 	.counter {
@@ -381,15 +392,12 @@
 	}
 
 	.template-title {
+		color: $black;
 		font-weight: 700;
 	}
 
-	.template-title {
-		color: $charcoal;
-	}
-
 	.template-title .icon {
-		fill: $charcoal;
+		fill: $black;
 	}
 
 	.template-area {

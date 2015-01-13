@@ -1197,6 +1197,10 @@
 	.templates-title {
 		color: $lightgray;
 		margin: 15px 0 15px 20px;
+
+		@include bp(l) {
+			@include font-size(20);
+		}
 	}
 
 	.new-template-dropdown {
