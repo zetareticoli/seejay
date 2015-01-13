@@ -106,6 +106,7 @@ a.btn-link {
 	}
 
 	&:hover{
+		color: $darkred;
 		text-decoration: underline;
 		
 		.icon {

@@ -462,7 +462,12 @@
 
 	.new-template-dropdown {
 		display: block;
-		@include font-size(14);
+		@include font-size($smallerfontsize);
 		margin: 20px 0 0 20px;
+
+		.icon-plus {
+			width: 10px;
+			height: 10px;
+		}
 	}
 }
