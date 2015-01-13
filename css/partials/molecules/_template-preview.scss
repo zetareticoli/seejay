@@ -19,6 +19,7 @@
 .template-title {
 	color: $spacegray;
 	display: inline-block;
+	@include font-size($basefontsize);
 	line-height: 24px;
 	margin: 0 5px 5px 0;
 
@@ -28,10 +29,9 @@
 	}
 
 	.template-name.edit {
-		border-color: $spacegray;
 		border-width: 1px;
+		color: $charcoal;
 		margin: 0;
-		@include font-size($smallfontsize);
 		padding: 3px 5px;
 		width: auto;
 	}
