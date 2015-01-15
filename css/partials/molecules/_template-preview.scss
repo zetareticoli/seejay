@@ -13,6 +13,11 @@
 		@include font-size($smallerfontsize);
 		font-style: italic;
 		font-weight: 300;
+		margin: 5px 0;
+
+		@include bp(l) {
+			margin: 0;
+		} 
 	}
 }
 
@@ -33,7 +38,11 @@
 		color: $charcoal;
 		margin: 0;
 		padding: 3px 5px;
-		width: auto;
+		width: 85%;
+
+		@include bp(l) {
+			width: auto;
+		}
 	}
 }
 
