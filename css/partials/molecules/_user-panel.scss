@@ -10,12 +10,17 @@
 
 		.dropdown-toggle {
 			overflow: hidden;
-			padding: 15px 0 15px 15px;
+			padding: 15px;
 			position: relative;
 			text-align: left;
 			@include transition(all .15s ease);
 			width: 100%;
 			z-index: 1;
+
+			.avatar {
+				float: right;
+				margin-left: 10px;
+			}
 		}
 
 		.dropdown-menu {
@@ -27,7 +32,6 @@
 			position: absolute;
 			@include rounded(0);
 			top: 56px;
-			width: auto;
 
 			> li {
 				border-bottom: 0;
@@ -64,7 +68,7 @@
 				height: auto;
 				max-height: 400px;
 				@include transition(max-height .55s linear);
-				width: auto;
+				width: 100%;
 			}
 		}
 	}
@@ -74,6 +78,7 @@
 		display: inline-block;
 		@include font-size($smallfontsize);
 		font-weight: 400;
-		padding-right: 10px;
+		float: left;
+		padding-top: 5px;
 	}
 }
