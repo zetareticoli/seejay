@@ -51,6 +51,7 @@
 
 	.brick-content {
 		border-top: 1px solid $earlygray;
+		min-height: 180px;
 
 		.brick-media {
 			background-color: $black;
@@ -62,6 +63,7 @@
 			padding: 12px 10px;
 		}
 	}	
+
 	.brick-stats {
 		right: 10px;
 		bottom: 12px;
