@@ -48,6 +48,10 @@
 					&:hover {
 						background: darken($charcoal,20%);
 						color: white;
+
+						.icon {
+							fill: white;
+						}
 					}
 				}
 			}
