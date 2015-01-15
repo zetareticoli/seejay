@@ -31,9 +31,11 @@
 	// metadata
 
 	.metadata {
+		padding-top: 20px;
+
 		.author,
 		.counter {
-			margin-bottom: 20px;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -86,8 +88,8 @@
 	color: $red;
 	font-family: KlavikaWebBasicBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include font-size(40);
-	line-height: $baselineheight / 1.75;
-	margin-bottom: $gutterwidth;
+	line-height: $baselineheight / 2;
+	margin-bottom: 0;
 
 	@include bp(l) {
 		@include font-size(48);

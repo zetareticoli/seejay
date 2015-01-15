@@ -20,7 +20,7 @@
 		@include bp(m) {
 			border-right: 1px solid $lightgray;
 			display: block;
-			width: 200px;
+			width: auto;
 		}
 
 		.avatar {
@@ -36,6 +36,7 @@
 		.author-name {
 			color: $red;
 			font-weight: 700;
+			min-width: 180px;
 		}
 
 		.date {
@@ -77,6 +78,7 @@
 
 		.label {
 			color: $lightgray;
+			@include font-size(10);
 			text-transform: uppercase;
 		}
 	}
