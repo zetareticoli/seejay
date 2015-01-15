@@ -89,7 +89,7 @@
 	font-family: KlavikaWebBasicBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include font-size(40);
 	line-height: $baselineheight / 2;
-	margin-bottom: 0;
+	margin-bottom: $gutterwidth;
 
 	@include bp(l) {
 		@include font-size(48);
