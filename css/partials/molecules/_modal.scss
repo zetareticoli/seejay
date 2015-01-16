@@ -250,3 +250,40 @@
 		display: inline-block;
 	}
 }
+
+.modal-custom-logo {
+
+	.upload-area {
+		border: 2px dashed $earlygray;
+		margin-bottom: $gutterwidth;
+		padding: $gutterwidth * 2 $gutterwidth $gutterwidth;
+	}
+
+	.upload-area > .unit,
+	.divider {
+		text-align: center;
+	}
+
+	.upload-area > .unit:first-child {
+		border-right: 1px solid $earlygray;
+	}
+
+	.thumbnail {
+		height: 50px;
+		position: relative;
+	}
+
+	.thumbnail > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		vertical-align: middle;
+	}
+
+	.divider {
+		margin-bottom: $gutterwidth;
+	}
+}
