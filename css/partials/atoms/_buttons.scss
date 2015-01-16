@@ -451,17 +451,26 @@ a.btn-write .icon {
 	}
 }
 
-.dropdown-menu > li > a {
-	color: $charcoal;
+.dropdown-menu > li > a,
+.dropdown-menu > li > span {
 	display: block;
 	line-height: $baselineheight;
 	padding: 8px 12px;
 	white-space: nowrap;
+}
+
+.dropdown-menu > li > span {
+	color: $lightgray;
+}
+
+.dropdown-menu > li > a {
+	color: $charcoal;
 	@include transition(all .1s ease);
 }
 
 .dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > ul > li > a:hover {
 	text-decoration: none;
 	background-color: $softgray;;
 	color: $black;
@@ -489,11 +498,25 @@ a.btn-write .icon {
 	right: auto;
 }
 
+.dropdown-item > ul {
+	list-style: none;
+	margin-bottom: $gutterwidth / 2;
+	padding: 0;
+
+	> li > a {
+		color: $charcoal;
+		display: block;
+		@include font-size($smallfontsize);
+		padding-left: 12px;
+	}
+}
+
 .dropup .caret {
   border-top: 0;
   border-bottom: 4px solid;
   content: "";
 }
+
 .dropup .dropdown-menu {
   top: auto;
   bottom: 100%;
