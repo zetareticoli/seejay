@@ -3,6 +3,45 @@
 
 <!-- @include _header -->
 
+<div class="modal modal-custom-logo fade" id="white-label" tabindex="-1" role="dialog" aria-labelledby="white-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        	<button type="button" class="btn btn-close" data-dismiss="modal">
+        	  <svg class="icon icon-lg icon-cross-circle"><use xlink:href="#icon-cross-circle"></use></svg>
+        	</button>
+            <div class="modal-header">
+                <h2 class="modal-title" id="myModalLabel">Custom logo</h2>
+            </div>
+
+            <div class="modal-body">
+                <p class="lead">Upload here your custom logo and complete entering custom address where you wish to redirect users click on it.</p>
+                <p class="help-block">Recommended size: <em>width:290px height:35px</em></p>
+                <input type="hidden" name="WLogo" id="WLogo" value="">
+                <input type="hidden" name="original_filename" id="original_filename" value="">
+                <div class="line upload-area">
+                    <div class="unit size1of2">
+                        <div class="fileupload-new">
+                            <button type="file" class="btn btn-primary btn-lg" name="avatar" id="customLogo">Upload a file</button>
+                        </div>
+                    </div>
+                    <div class="unit size1of2">
+                        <div class="fileupload-new thumbnail">
+                            <img src="http://dev.seejay.co/images/logo.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="divider">OR</p>
+                <div class="controls">
+                    <input type="text" name="WLogoUrl" id="WLogoUrl" value="" class="control control-lg" placeholder="Paste a custom URL">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Salva e chiudi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="page backend <!-- $page-class -->">
 	
 	<!-- @include _head -->
@@ -19,7 +58,7 @@
 		    <span>Preview</span>
 		  </a>
 		  <a href="#" class="btn btn-icon btn-primary">
-		    <span>Customize</span>
+		    <span>Publish</span>
 		    <svg class="icon icon-sm icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
 		  </a>
 		</div>
