@@ -38,3 +38,76 @@
 .page-story .story-head .metadata {
 	padding-top: 0;
 }
+
+// page login ================================================
+
+.page.page-login {
+	position: relative;
+	width: 100%;
+	background: url(sj-background.jpg) rgb(59, 59, 59);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	.form-wrapper {
+		padding: 0;
+		text-align: center;
+		width: 460px;
+	}
+
+	.control-remember label,
+	.control-forgot-password {
+		@include font-size($smallerfontsize);
+
+	}
+
+	.control-remember {
+		float: left;
+
+		label.checkbox {
+			padding-top: 0;
+		}
+		input[type="checkbox"] {
+			margin: 2px 5px 0 0;
+		}
+	}
+
+	.control-forgot-password {
+		float: right;
+		padding-top: 2px;
+	}
+
+	.sign-in {
+		background-color: white;
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+		padding: 30px 40px;
+
+		> p {
+			color: $charcoal;
+			font-weight: 300;
+			margin-bottom: $gutterwidth / 2;
+		}
+	}
+
+	.sign-up {
+		background-color: lighten($earlygray, 5%);
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;
+		padding: 30px 40px;
+
+		> * {
+			display: block;
+			@include font-size($smallfontsize);
+		}
+
+		> span {
+			color: $lightgray;
+			margin-bottom: 10px;
+		}
+	}
+
+	.social-sign-in {
+		margin-bottom: $gutterwidth;
+	}
+}
