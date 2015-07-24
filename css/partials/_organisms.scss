@@ -358,6 +358,15 @@
 	}
 } 
 
+// search results ================================================
+
+@include bp(xxl) {
+	.search-results {
+		width: 100%;
+		padding-right: 470px;
+	}
+}
+
 // story contribute ================================================
 
 .story-contribute {
@@ -446,6 +455,10 @@
 	background-color: white;
 	height: 100%;
 	max-height: 100%;
+
+	@include bp(xxl) {
+		max-width: 450px;
+	}
 
 	&.affixed {
 		top: 60px;

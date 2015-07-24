@@ -118,16 +118,17 @@
 	}
 
 	.btn-search {
-		background: url(search.svg) 0 0 no-repeat;
+		background: $lightgray url(search.svg) 50% 50% no-repeat;
 		border: none;
-		height: 24px;
+		height: 40px;
 		opacity: .5;
 		position: absolute;
-		right: 20px;
+		right: 4px;
+		@include rounded(3px);
 		text-indent: -9999px;
 		@include transition(opacity .15s ease);
-		top: 12px;
-		width: 24px;
+		top: 4px;
+		width: 40px;
 
 		&:hover {
 			opacity: 1;
